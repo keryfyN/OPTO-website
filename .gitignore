@@ -3,7 +3,10 @@
 *.db
 .idea
 
-.idea/*
+.idea/*.xml
+.idea/*.iml
+.idea/.name
+.idea/dictionaries
 .idea/workspace.xml
 .idea/workspace.xml
 .idea/workspace.xml
