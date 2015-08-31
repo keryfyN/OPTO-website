@@ -1,0 +1,237 @@
+<!-- navbar for large and small size -->
+<div class="uk-panel">&nbsp;</div>
+    <div>
+        <a href="{{ url_for('index') }}" class="uk-navbar-brand">
+            <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="200px">
+        </a>
+    </div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+<div class="uk-panel">&nbsp;</div>
+<div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+<nav class="uk-navbar uk-hidden-small" xmlns:align="http://www.w3.org/1999/xhtml">
+    <!--<a href="{{ url_for('index') }}" class="uk-navbar-brand">OPTO Logic TECHNOLOGY SA</a>-->
+        <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip ">
+            <!-- Products menu -->
+            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+                <a href="{{ url_for('products') }}">Products</a>
+                <div style="" class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3">
+                    <div class="uk-grid uk-dropdown-grid">
+                        <!-- Column 1 -->
+                        <div class="uk-width-1-3">
+                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                <!-- new sub -->
+                                <div class="uk-panel">
+                                    <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
+                                </div>
+                                <!--<li class="uk-nav-header" href="/products/displays/">Displays</li>-->
+                                <li><a href="{{ url_for('tft') }}">TFT Displays</a></li>
+                                <li><a href="#">LCD Graphic</a></li>
+                                <li><a href="#">LCD Segment</a></li>
+                                <li><a href="#">OLED</a></li>
+                                <li><a href="#">ePAPER</a></li>
+                                <li><a href="#">CUSTOM Displays</a></li>
+                                <!-- new sub -->
+                                <div class="uk-panel">
+                                    <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                </div>
+                                <li class="uk-nav-header">Touch panels</li>
+                                <li><a href="#">PCAP</a></li>
+                                <li><a href="#">RTP</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="uk-width-1-3">
+                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                <!-- new sub -->
+                                <div class="uk-panel">
+                                    <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                </div>
+                                <li class="uk-nav-header">Thermal printer</li>
+                                <li><a href="#">Panel printer</a></li>
+                                <li><a href="#">Mobile printer</a></li>
+                                <li><a href="#">Mechanism</a></li>
+                                <li><a href="#">POS printer</a></li>
+                                <!-- new sub -->
+                                <div class="uk-panel">
+                                    <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                </div>
+                                <li class="uk-nav-header">Computers</li>
+                                <li><a href="#">Industrial PCs</a></li>
+                                <li><a href="#">Monitors</a></li>
+                                <li><a href="#">SOM System On Module</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="uk-width-1-3">
+                            <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                <!-- new sub -->
+                                <div class="uk-panel">
+                                    <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                </div>
+                                <li class="uk-nav-header">Others</li>
+                                <li><a href="#">Laser diodes</a></li>
+                                <li><a href="#">POS systems</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Solutions -->
+            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+                <a href="{{ url_for('solutions') }}">Solutions</a>
+                <div style="" class="uk-dropdown uk-dropdown-navbar">
+                  ..
+                </div>
+            </li>
+            <!-- Partners -->
+            <li><a href="/partners/">Partners</a></li>
+            <!-- Company -->
+            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+                <a href="{{ url_for('company') }}">Company</a>
+                <div style="" class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-dropdown uk-panel">
+                        <div class="uk-panel">
+                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                        </div>
+                        <li><a href="{{ url_for('company') }}">Presentation</a></li>
+                        <li><a href="{{ url_for('company') }}">Philosophy</a></li>
+                        <li><a href="{{ url_for('company') }}">Quality management</a></li>
+                        <li><a href="{{ url_for('company') }}">Job opportunities</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Support -->
+            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+                <a href="{{ url_for('support') }}">Support</a>
+                <div style="" class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-dropdown uk-panel">
+                        <div class="uk-panel">
+                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                        </div>
+                        <li><a href="{{ url_for('support') }}">RMA</a></li>
+                        <li><a href="{{ url_for('support') }}">Terms & conditions</a></li>
+                        <li><a href="{{ url_for('support') }}">Drivers</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Contact -->
+            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+                <a href="/contact/">Contact</a>
+                <div style="" class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-dropdown uk-panel">
+                        <p class="uk-panel">
+                            <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}"><br><br>
+                            <a href="tel:+41219482080"> Call us: +41(0)21 948 20 80</a>
+                    </ul>
+                </div>
+            </li>
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">OPTO Logic</div>
+    </ul>
+</nav>
+</div>
+<!-- visibility small -->
+<div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+    <nav class="uk-navbar  uk-visible-small " xmlns:align="http://www.w3.org/1999/xhtml">
+        <div class="uk-navbar-toggle uk-contrast uk-navbar-flip" data-uk-offcanvas="{target:'#offcanvas-4'}" href="#"></div>
+        <!-- ================================================================================================================== -->
+        <div aria-hidden="true" id="offcanvas-4" class="uk-offcanvas uk-text-align-center">
+                <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+                    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav="">
+                        <li aria-expanded="false" class="uk-parent">
+                            <a href="#"> <b>Products</b></a>
+                                <ul class="uk-nav-sub">
+                                    <a href="/statis/">Displays</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="{{ url_for('tft') }}">TFT Displays</a></li>
+                                        <li><a href="">LCD Graphics</a></li>
+                                        <li><a href="">LCD Segments</a></li>
+                                        <li><a href="">OLED</a></li>
+                                        <li><a href="">ePAPER</a></li>
+                                        <li><a href="">Custom Displays</a></li>
+                                    </ul>
+                                    <a href="">Touch Panels</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="">PCAP</a></li>
+                                        <li><a href="">RTP</a></li>
+                                    </ul>
+                                    <a href="">Thermal Printers</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="">Panel printer</a></li>
+                                        <li><a href="">Mobile printer</a></li>
+                                        <li><a href="">Mechanism</a></li>
+                                        <li><a href="">POS printer</a></li>
+                                    </ul>
+                                    <a href="">Computers</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="">Industrial PCs</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">SOM System on Module</a></li>
+                                    </ul>
+                                    <a href="">Others</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="">Laser diodes</a></li>
+                                        <li><a href="">RPOS System</a></li>
+                                    </ul>
+                                </ul>
+                        </li>
+                        <li aria-expanded="false" class="uk-parent">
+                            <a href="#"> <b>Solutions</b></a>
+                            <ul class="uk-nav-sub">
+                                <a href="">TehBestOne</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="">Solution1</a></li>
+                                    <li><a href="">Solution2</a></li>
+                                </ul>
+                                <a href="">TehOneYollNeed</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="">Solution1</a></li>
+                                        <li><a href="">Solution2</a></li>
+                                    </ul>
+                            </ul>
+                        </li>
+                        <li aria-expanded="false" class="uk-parent">
+                            <a href="{{ url_for('partners') }}"> <b>Partners</b></a>
+                            <ul class="uk-nav-sub">
+                                <a href="{{ url_for('partners') }}">Partner1</a>
+                                <ul class="uk-nav-sub">
+                                </ul>
+                                <a href="{{ url_for('partners') }}">Partner2</a>
+                                <ul class="uk-nav-sub">
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li aria-expanded="false" class="uk-parent">
+                            <a href="#"> <b>Company</b></a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="">Presentation</a></li>
+                                <li><a href="">Philosophy</a></li>
+                                <li><a href="">Qaility Management</a></li>
+                                <li><a href="">Job opportunities</a></li>
+                            </ul>
+                        </li>
+
+                        <li aria-expanded="false" class="uk-parent">
+                            <a href="{{ url_for('support') }}"> <b>Support</b></a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="{{ url_for('support') }}">RMA</a></li>
+                                <li><a href="{{ url_for('support') }}">Terme & conditions</a></li>
+                                <li><a href="{{ url_for('support') }}">Drivers</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="uk-nav-divider"></li>
+                        <!--<li class="uk-nav-divider"></li>-->
+                        <ul class="uk-panel">
+                            <img src="{{ url_for('static', filename='img/logo_opto_250x51.png') }}" alt="Contact Opto Logic TECHNOLOGY"><br>
+                            <li class="uk-nav-divider"></li>
+                            <li class="text-align:center"><a href="tel:+41219482080"> <i> Call us: +41(0)21 948 20 80</i></a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+</div>

@@ -1,0 +1,18 @@
+{% extends "structure/base_en.html" %}
+
+{% block content %}
+
+<div class="uk-grid">
+    <div class="uk-width-1-1 uk-container-center uk-text-center">
+        <img src="{{ url_for('static', filename='img/404.jpg') }}" alt="Page not found (404)">
+    </div>
+</div>
+
+<div class="uk-grid">
+    <div class="uk-width-1-1 uk-container-center uk-text-center">
+        <a class="uk-button uk-button-danger" type="button" href="{{ url_for('index') }}">Return to index</a>
+    </div>
+</div>
+
+
+{% endblock %}
