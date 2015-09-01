@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  {% if title %}
-    <title>{{title}}</title>
-  {% else %}
-    <title>OPTO Logic TECHNOLOGY S.A.</title>
-  {% endif %}
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit.min.css') }}" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/uikit.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/uikit.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow-fx.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/sticky.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/sticky.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideset.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideset.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slider.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slider.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/parallax.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/parallax.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/core/scrollspy.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/core/scrollspy.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/test-parallax.js') }}"></script>
-  <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/test-parallax.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit_custom.css') }}" />
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>{{title}}</title>
+    {% else %}
+      <title>OPTO Logic TECHNOLOGY S.A.</title>
+    {% endif %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/css/uikit.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/uikit.js"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow-fx.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideset.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slider.js') }}"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/components/parallax.js"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/core/scrollspy.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/test-parallax.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/test-parallax.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit_custom.css') }}" />
 
-</head>
-<body>
-  <div id="wrap">
-    {% include '/structure/include_parts/header_en.html' %}
-     <div class="container">
-    {% block content %}{% endblock %}
-     </div> <!-- container-fluid -->
-    <div id="push"></div>
-  </div> <!-- wrap id -->
+  </head>
+  <body>
+    <div id="wrap">
+      {% include '/structure/include_parts/header_en.html' %}
+       <div class="uk-container" data-uk-parallax="{bg: '200'}">
+      {% block content %}{% endblock %}
+       </div> <!-- container-fluid -->
+      <div id="push"></div>
+    </div> <!-- wrap id -->
 
-  {% include '/structure/include_parts/footer_en.html' %}
-</body>
+    {% include '/structure/include_parts/footer_en.html' %}
+  </body>
 </html>

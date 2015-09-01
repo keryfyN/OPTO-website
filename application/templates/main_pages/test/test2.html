@@ -1,49 +1,352 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>UIkit parallax example</title>
-
-      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/css/uikit.css">
-
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/uikit.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/components/parallax.js"></script>
-
-    <link rel="stylesheet" href="../static/uikit-2.21.0/css/test-parallax.css">   <!-- -->
+{% extends "structure/base_en.html" %}
+{% block content %}
 
 
-</head>
-<body>
-    <header class="header" data-uk-parallax="{bg:'-200'}">
-
-        <div class="header-inner"  data-uk-parallax="{opacity:0, y: 100}">
-            <h1>A World covered in mist</h1>
-            <h2>Some awesome subtitle to go along</h2>
+<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}" >
+    <ul class="uk-slideshow uk-overlay-active">
+    <!-- 1st image of the slideshow -->
+        <li class="uk-active" aria-hidden="false">
+            <img style="" src="{{ url_for('static', filename='img/large_000.jpg') }}"width="1024px" height="100%">
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                <h3>Go to 1st the Section</h3>
+                <p>Lorem <a href="#">TFT Displays</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                <a href="/tft/"><button class="uk-button uk-button-primary">Learn more</button></a>
+                <a href="#1st_section"><button class="uk-button uk-button-primary">Go</button></a>
+                <div class="uk-grid">
+                    <div class="uk-width-1-1 uk-text-center">
+                        <a href="#1st_section" class="uk-icon-chevron-down uk-icon-large" data-uk-smooth-scroll=""></a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- 2st image of the slideshow -->
+        <li>
+        <img src="{{ url_for('static', filename='img/large_001.jpg') }}"><a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                <div>
+                    <h3>Go to the 2nd Section</h3>
+                    <p>Lorem <a href="#">Go to the 2nd Section</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <a href="#"><button class="uk-button uk-button-primary">Learn more</button></a>
+                    <div class="uk-grid ">
+                        <div class="uk-width-1-1 uk-text-center">
+                            <a href="#2nd_section" class="uk-icon-chevron-down uk-icon-large" data-uk-smooth-scroll=""></a>
+                            <a href="" data-uk-slideshow-item="previous"></a>
+                            <a href="" data-uk-slideshow-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- 3rd image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                <div>
+                    <h3>Go to the 3rd Section</h3>
+                    <p>Lorem <a href="#">Go to the 3rd Section</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <a href="#"><button class="uk-button uk-button-primary">Learn more</button></a>
+                    <div class="uk-grid ">
+                        <div class="uk-width-1-1 uk-text-center">
+                            <a href="#3rd_section" class="uk-icon-chevron-down uk-icon-large"data-uk-smooth-scroll=""></a>
+                            <a href="" data-uk-slideshow-item="previous"></a>
+                            <a href="" data-uk-slideshow-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- 4th image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                <div>
+                    <h3>Go to the 4th Section</h3>
+                    <p>Lorem <a href="#">Go to the 4th Section</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <a href="#"><button class="uk-button uk-button-primary">Learn more</button></a>
+                    <div class="uk-grid ">
+                        <div class="uk-width-1-1 uk-text-center">
+                            <a href="#4th_section" class="uk-icon-chevron-down uk-icon-large"data-uk-smooth-scroll=""></a>
+                            <a href="" data-uk-slideshow-item="previous"></a>
+                            <a href="" data-uk-slideshow-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div><!-- end div slidshow -->
+<!-- Section produits classe important -->
+<div class="uk-margin-large-left uk-margin-large-right">
+    <div id="1st_section">
+        <div class="uk-grid">
+            <div class="uk-width-1-3"></div>
+            <div class="uk-width-1-3" data-uk-parallax="{viewport:'0.5',scale:'0,1'}">
+                <h1 class="uk-contrast uk-text-center">Products</h1>
+            </div>
+            <div class="uk-width-1-3"></div>
         </div>
-
-    </header>
-
-    <!-- making sure we can scroll -->
-    <div style="height:200vh">
-
-        <!--
-        Option            Description
-        x                 Animate translateX in pixels.
-        xp                Animate translateX in percent.
-        y                 Animate translateY in pixels.
-        yp                Animate translateY in percent.
-        bg                Animate a background image.
-        bgp               Animate a background image in percent.
-        rotate            Animate rotation clockwise in degree.
-        scale             Animate scaling.
-        color             Animate color (needs start and stop value).
-        background-color  Animate background-color (needs start and stop value).
-        border-color      Animate border color (needs start and stop value).
-        opacity           Animate the opacity.
-        viewport          Animation range depending on viewport
-        target            Reference element for animation duration
-        velocity          Animation velocity
-        -->
+        <!-- visibility -->
+        <div class="uk-hidden-small">
+            <div class="uk-panel">
+                <div class="uk-panel ">
+                    <div class="uk-panel-box uk-grid uk-container-center uk-grid-divider " data-uk-parallax="{viewport:'0.4',scale:'0,1'}">
+                        <div class="uk-width-1-2">
+                            <img src="{{ url_for('static', filename='img/tft_landing_pic000.JPG') }}" alt="">
+                        </div>
+                        <div class="uk-width-1-2 uk-width-medium-* uk-width-large-*">
+                            <div class="uk-grid" >
+                            <h2 data-uk-parallax="{viewport:'0.5', xp:'0'}">Enter Product Name</h2>
+                            <p class="uk-text-align-right"> Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                                fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                                Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                                Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                                ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi</p>
+                            </div>
+                            <br>
+                            <div class="uk-grid ">
+                                <div class=" uk-vertical-align-bottom uk-width-1-1">
+                                    <a href="#">
+                                        <button class="uk-align-right uk-button uk-button-primary ">Learn more</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- second main product -->
+                    <div class="uk-grid uk-container-center uk-grid-divider"   data-uk-parallax="{viewport:'0.46', xp:'0'}">
+                        <div class="uk-panel-box uk-width-1-2">
+                            <div class="">
+                                <h2>Enter Product Name</h2>
+                                    <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,</p>
+                                    <p>fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.</p>
+                                    <p>Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.</p>
+                                    <p>Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam</p>
+                                    <p>ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi</p>
+                            </div>
+                            <hr>
+                            <span class="">
+                                <a href="#"><button class="uk-button uk-button-primary uk-align-right">Learn more</button></a>
+                            </span>
+                        </div><!-- end div grid -->
+                        <div class="uk-width-1-2">
+                            <img src="{{ url_for('static', filename='img/index_display_00.jpg') }}" alt="" width="" height="200px">
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- second product section double product in a row -->
+                    <div class="uk-custom-block-primary">
+                        <div data-uk-parallax="{viewport: '0.5'}"></div>
+                    <div class="uk-grid uk-grid-divider">
+                        <div class="uk-width-1-2">
+                            <img src="{{ url_for('static', filename='img/opto_pics/DSC08186.JPG') }}" alt="">
+                            <h2>
+                                Another Display
+                            </h2>
+                            <p>
+                                Fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                            </p>
+                            <hr>
+                            <a href="#"><button class="uk-button uk-button-primary uk-align-right">Learn more</button></a>
+                        </div>
+                        <div class="uk-width-1-2">
+                            <img src="{{ url_for('static', filename='img/opto_pics/DSC08185.JPG') }}" alt="">
+                            <h2>TftProducts</h2>
+                            <p>
+                                Dullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi.
+                            </p>
+                            <hr>
+                            <a href="#"><button class="uk-button uk-button-primary uk-align-right">Learn more</button></a>
+                        </div>
+                    </div><!-- ENDU -->
+                </div>
+    <!-- --></div>
+            <hr>
+            <!--3rd line of products -->
+            <div class="uk-grid">
+                <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                    <figure class="uk-overlay uk-overlay-hover">
+                        <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                            <p>Your Title Here.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                    <figure class="uk-overlay uk-overlay-hover">
+                        <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                            <p>Your Title Here.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                    <figure class="uk-overlay uk-overlay-hover">
+                        <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                            <p>Your Title Here.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                    <figure class="uk-overlay uk-overlay-hover">
+                        <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                            <p>Your Title Here.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div><!-- end 3rd line products-->
+            <a href="#top" class="uk-icon-chevron-up uk-container-center uk-align-center" data-uk-smooth-scroll=""></a>
+        </div><!-- end 3rd_products -->
     </div>
-</body>
-</html>
+    <!-- Visible Small -->
+    <div class="uk-visible-small">
+            <div class="uk-panel uk-panel-box">
+                <div class="uk-panel">
+                    <img src="{{ url_for('static', filename='img/tft_landing_pic000.JPG') }}" alt="" width="100%">
+                    <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                        fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                        Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                        Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                        ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
+                    </p>
+                    <hr>
+                    <div class="uk-panel">
+                        <a href="#"><button class="uk-button uk-button-primary uk-align-right uk-container-center">Learn more</button></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/index_display_00.JPG') }}" alt="" width="100%">
+                    <h2>TftProducts</h2>
+                    <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                        fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                        Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                        Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                        ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
+                    </p>
+                    <hr>
+                    <a href="#"><button class="uk-button uk-button-primary uk-container-center uk-align-right ">Learn more</button></a>
+                    <br>
+                </div>
+                <!-- 2nd product section double product in a row -->
+                <div class="uk-custom-block-primary">
+                    <div class="uk-grid uk-grid-divider">
+                        <div class="uk-width-1-2">
+                            <img src="{{ url_for('static', filename='img/opto_pics/DSC08186.JPG') }}" alt="">
+                            <h2>
+                                Another Display
+                            </h2>
+                            <p>
+                                Fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                            </p>
+                            <hr>
+                            <a href="#"><button class="uk-button uk-button-primary uk-align-right">Learn more</button></a>
+                        </div>
+                        <div class="uk-width-1-2">
+                            <div class="uk-panel">
+                                <img src="{{ url_for('static', filename='img/opto_pics/DSC08185.JPG') }}" alt="">
+                                <h2>TftProducts</h2>
+                                <p>
+                                    Dullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi.
+                                </p>
+                                <hr>
+                                <a href="#"><button class="uk-button uk-button-primary uk-align-right">Learn more</button></a>
+                            </div>
+                        </div>
+                    </div><!-- ENDU -->
+                </div>
+                <!--3rd line of products -->
+                <div class="uk-panel">
+                    <div class="uk-grid">
+                        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                            <figure class="uk-overlay uk-overlay-hover">
+                                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <p>Your Title Here.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                            <figure class="uk-overlay uk-overlay-hover">
+                                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <p>Your Title Here.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                            <figure class="uk-overlay uk-overlay-hover">
+                                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <p>Your Title Here.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+                            <figure class="uk-overlay uk-overlay-hover">
+                                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                                    <p>Your Title Here.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!-- end 3rd line products-->
+                    <a href="#top" class="uk-icon-chevron-up uk-container-center uk-align-center" data-uk-smooth-scroll=""></a>
+                </div><!-- end 3rd_products -->
+            </div>
+        </div>
+    </div>
+    <div id="2nd_section" class="uk-block uk-block-custom-1 uk-block-large" data-uk-parallax="{bg: '-300'}">
+        <h1>Here's the 2nd Section</h1>
+        Your Content Here.
+        <a href="#top" class="uk-icon-chevron-up" data-uk-smooth-scroll=""></a>
+    </div>
+    <a href="#top" class="uk-icon-chevron-up" data-uk-smooth-scroll=""></a>
+    <div id="3rd_section"class="uk-block uk-block-custom-2 uk-constrast uk-block-large" data-uk-parallax="{bg: '-300'}">
+        <h1>Here's the 3rd Section</h1>
+        <a href="#top" class="uk-icon-chevron-up" data-uk-smooth-scroll="="></a>
+    </div>
+    <div id="4th_section"class="uk-block uk-block-custom-1  uk-block-large" data-uk-parallax="{bg: '-300'}">
+        <div class="uk-grid uk-margin-small-right uk-margin-small-left">
+            <div class="uk-width-1-2">
+                <ul id="picture_switcher" class="uk-switcher">
+                    <li><img class="uk-margin-large-top" src="{{ url_for('static', filename='img/tft_landing_pic000.jpg') }}"></li>
+                    <li><img class="uk-margin-large-top" src="{{ url_for('static', filename='img/tft_landing_pic001.jpg') }}"></li>
+                    <li><img class="uk-margin-large-top" src="{{ url_for('static', filename='img/tft_landing_pic002.jpg') }}"></li>
+                </ul>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="row">
+                    <div class="uk-block ">
+                        <div class="uk-text-left">
+                            <h1>TFT Graphic</h1>
+                        </div>
+                        <ul data-uk-switcher="{connect:'#text_switcher, #picture_switcher'}" class="uk-subnav uk-subnav-pill">
+                            <li class="uk-active" aria-expanded="false"><a href="">TFT0</a></li>
+                            <li><a href="">TFT1</a></li>
+                            <li><a href="">TFT2</a></li>
+                        </ul>
+                        <div class="grid"><!-- SWITCHER DIV -->
+                        <!-- These are the containers of the content items -->
+                            <ul id="text_switcher" class="uk-switcher">
+                                <li>This is a TFT0 Diplays that you'll need.</li>
+                                <li>This is a TFT1 Diplays that you'll need.</li>
+                                <li>This is a TFT2 Diplays that you'll need.</li>
+                            </ul>
+                        </div> <!-- END SWITCHER DIV -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="uk-icon-chevron-up" data-uk-smooth-scroll=""></a>
+    </div>
+</div>
+
+
+{% endblock %}

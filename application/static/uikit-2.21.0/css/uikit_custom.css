@@ -1048,7 +1048,9 @@ iframe {
   background: #222222;
 }
 .uk-block-custom-1 {
-  background: #4fd0c9;
+  /*background: #4fd0c9;*/
+  /*background-image: url(../../img/opto_color_bg.svg);*/
+  background-size:
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
@@ -1332,10 +1334,11 @@ ul.uk-nav-sub {
 }
 .uk-nav-dropdown > li > a:hover,
 .uk-nav-dropdown > li > a:focus {
+  border-radius: 3px;
   background: #00c0b5;
   color: #ffffff;
   outline: none;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.5) inset;
   border-left-color: (0, 0, 0, 0.1);
   border-right-color: (0, 0, 0, 0.1);
   border-top-color: (0, 0, 0, 0.1);
@@ -1416,7 +1419,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   clear: both;
 }
 .uk-navbar-nav {
-  margin: 0;
+  margin-right: 20px;
   padding: 0;
   list-style: none;
   float: left;
@@ -1445,6 +1448,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-open > a {
+  border-radius: 3px;
   background-color: #f5f5f5;
   outline: 0px none;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
@@ -5107,6 +5111,7 @@ a.uk-thumbnail:focus {
   }
 }
 .uk-dropdown {
+  border-radius: 3px;
   display: none;
   position: absolute;
   top: 100%;
@@ -5115,17 +5120,17 @@ a.uk-thumbnail:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 200px;
-  margin-top: -10px;
+  margin-top: 1px;
   padding: 15px;
   padding-top: 0px;
   background: #f5f5f5;
   color: #444444;
-  font-size: 1rem;
+  font-size: 0.85em;
   vertical-align: top;
 }
 .uk-open > .uk-dropdown {
   display: block;
-  -webkit-animation: uk-fade 0.2s ease-in-out;
+  -webkit-animation: uk-fade 0.001s ease-in-out;
   animation: uk-fade 0.2s ease-in-out;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -5491,12 +5496,14 @@ a.uk-thumbnail:focus {
 .uk-container {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 980px;
+  background-image: url(../../img/bg_opto1.png);
+  /*max-width: 100%;*/
   padding: 0 25px;
+  /*background-image: url('http://lorempixel.com/1920/1920/abstract/');*/
 }
 @media (min-width: 1220px) {
   .uk-container {
-    max-width: 1200px;
+    max-width: 100%;
     padding: 0 35px;
   }
 }
