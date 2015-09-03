@@ -1,3 +1,8 @@
 .DS_Store
 *.pyc
 *.db
+.idea/.name
+.idea/inspectionProfiles/Project_Default.xml
+.idea/OPTO_ver 00.00.iml
+.idea/misc.xml
+.idea/vcs.xml
