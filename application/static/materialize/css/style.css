@@ -67,11 +67,8 @@ nav {
 }
 
 .navbar-fixed {
-  margin-top: 42px;
-}
   position: relative;
-  top:0px;
-  height: 56px;
+  height: 64px;
   z-index: 998; }
   .navbar-fixed nav {
     position: fixed; }
