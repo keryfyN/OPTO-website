@@ -5249,18 +5249,18 @@ span.badge {
 
 nav {
   color: #fff;
-  background-color: #;
+  background-color: #fff;
   width: 100%;
   height: 56px;
   line-height: 56px; }
   nav a {
-    color: #fff; }
-  nav .nav-wrapper {
+    color: #00c0b5; }
+    nav .nav-wrapper {
     position: relative;
     height: 100%; }
     nav .nav-wrapper i {
       display: block;
-      font-size: 2rem; }
+      font-size: 1rem; }
   @media only screen and (min-width : 993px) {
     nav a.button-collapse {
       display: none; } }
@@ -5275,7 +5275,7 @@ nav {
       line-height: 56px; }
   nav .brand-logo {
     position: absolute;
-    color: #fff;
+    color: #00c0b5;
     display: inline-block;
     font-size: 2.1rem;
     padding: 0;
@@ -5311,8 +5311,9 @@ nav {
       nav ul li:hover, nav ul li.active {
         background-color: rgba(0, 0, 0, 0.1); }
     nav ul a {
-      font-size: 1rem;
-      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: ##00c0b5;
       display: block;
       padding: 0 15px; }
     nav ul.left {
@@ -5392,8 +5393,8 @@ a {
 html {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.87); }
+  font-weight: 500;
+  color: #00c0b5; }
   @media only screen and (min-width: 0) {
     html {
       font-size: 14px; } }
@@ -5888,17 +5889,17 @@ button.btn-floating {
   will-change: width, height; }
   .dropdown-content li {
     clear: both;
-    color: rgba(0, 0, 0, 0.87);
+    color: #00c0b5;
     cursor: pointer;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     width: 100%;
     text-align: left;
     text-transform: none; }
     .dropdown-content li:hover, .dropdown-content li.active {
       background-color: #eee; }
     .dropdown-content li > a, .dropdown-content li > span {
-      font-size: 1.2rem;
-      color: #26a69a;
+      font-size: 1rem;
+      color: #00c0b5;
       display: block;
       padding: 1rem 1rem; }
     .dropdown-content li > a > i {
