@@ -1,15 +1,17 @@
 <!-- Dropdown Structure -->
-<div class="panel">&nbsp;</div>
-    <div>
-        <a href="{{ url_for('index') }}" class="uk-navbar-brand">
-            <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="200px">
-        </a>
-    </div>
-<div class="panel">&nbsp;</div>
-
-<!-- Dropdown Structure -->
+<nav class="nav-wrapper navbar-fixed">
+  <a href="" class="brand-logo"><img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" height ="60px"></a>
+  <ul class="right hide-on-med-and-down">
+    <li><a class="dropdown-button active" href="#!" data-activates="dropdown1">Product<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Components<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+  </ul>
+</nav>
+<!-- background parallax -->
+<div class="parallax-container">
+    <div class="parallax"><img src="{{ url_for('static', filename='img/img_materialize/parallax1.jpg') }}"></div>
+</div>
 <ul data-beloworigin="true" id="dropdown1" class="dropdown-content" >
-
   <li><a href="#!">TFT Displays</a></li>
   <li><a href="#!">LCD Graphic</a></li>
   <li><a href="#!">LCD Segment</a></li>
@@ -20,8 +22,8 @@
   <li><a href="#!">Touch Panels</a></li>
   <li><a href="#!">PCAP</a></li>
   <li><a href="#!">RTP</a></li>
-
 </ul>
+
 <ul id="dropdown2" class="dropdown-content">
   <li><a href="#!">TFT Displays</a></li>
   <li><a href="#!">LCD Graphic</a></li>
@@ -32,6 +34,7 @@
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
 </ul>
+
 <ul id="dropdown3" class="dropdown-content">
   <li><a href="#!">TFT Displays</a></li>
   <li><a href="#!">LCD Graphic</a></li>
@@ -42,17 +45,4 @@
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
 </ul>
-
-<nav>
-  <div class="nav-wrapper">
-    <a href="" class="brand-logo"><img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" height ="60px"></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a class="dropdown-button active" href="#!" data-activates="dropdown1">Product<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-
-</ul>
-</nav>
         

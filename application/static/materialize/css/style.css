@@ -6,8 +6,6 @@
  * Made By MaterializeCSS.com
  */
 
-
-
 p {
   line-height: 2rem;
 }
@@ -66,7 +64,7 @@ footer.page-footer {
 
 
 nav {
-  background-color: #00c0b5;
+  background-color: N/A;
 }
 h2{
   color: #00c0b5;
@@ -102,11 +100,4 @@ h2{
     height: inherit;
     line-height: inherit;}
 
-/**
- * Remove default margin.
- */
-
-
-
-
-
+/*custom nav */
