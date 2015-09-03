@@ -1,5 +1,5 @@
 <!-- Dropdown Structure -->
-<nav class="nav-wrapper navbar-fixed">
+<nav class="navbar-fixed pinned">
   <a href="" class="brand-logo"><img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" height ="60px"></a>
   <ul class="right hide-on-med-and-down">
     <li><a class="dropdown-button active" href="#!" data-activates="dropdown1">Product<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -8,7 +8,7 @@
   </ul>
 </nav>
 <!-- background parallax -->
-<div class="parallax-container">
+<div id="initialization" class="parallax-container section scrollspy">
     <div class="parallax"><img src="{{ url_for('static', filename='img/img_materialize/parallax1.jpg') }}"></div>
 </div>
 <ul data-beloworigin="true" id="dropdown1" class="dropdown-content" >
