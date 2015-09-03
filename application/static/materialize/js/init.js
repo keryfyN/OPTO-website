@@ -1,4 +1,7 @@
 (function($){
+
+  var parallax = UIkit.parallax(element, { /* options */ });
+
   var wrap = $("#wrap");
   wrap.on("scroll", function(e)
   {
