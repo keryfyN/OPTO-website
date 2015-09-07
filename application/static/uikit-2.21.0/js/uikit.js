@@ -3414,6 +3414,7 @@
     });
   }
 });
+var parallax = UIkit.parallax(element, { /* options */ });
 /*UIkit.ready(function() {
   UIkit.$body.prepend('<div class="uk-float-right uk-badge">UIkit version ' + UIkit.version + '</div>')
 });*/
