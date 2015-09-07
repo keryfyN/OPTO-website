@@ -291,7 +291,7 @@ iframe {
 }
 @media (min-width: 1220px) {
   .uk-grid {
-    margin-left: -35px;
+    margin-left: 0px;
   }
   .uk-grid > * {
     padding-left: 35px;
@@ -1047,21 +1047,7 @@ iframe {
 .uk-block-secondary {
   background: #222222;
 }
-.uk-block-custom-1 {
-  /*background: #4fd0c9;*/
-  /*background-image: url(../../img/opto_color_bg.svg);*/
-  background-size:
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
 
-}
-.uk-block-custom-2 {
-  /*background: #f5f5f5;*/
-  margin-top: 0px;
-  padding-top:0px;
-  padding-bottom:0px;
-}
 .uk-block-default + .uk-block-default,
 .uk-block-muted + .uk-block-muted,
 .uk-block-primary + .uk-block-primary,
@@ -7462,7 +7448,6 @@ a.uk-datepicker-table-muted {
   margin: 0 auto;
   width: 100%;
   height:30em;
-  z-index: 50;
   padding: 50px 10px 50px;
 }
 .bg-parallax-2{
@@ -7471,8 +7456,21 @@ a.uk-datepicker-table-muted {
   width: 100%;
   height:30em;
   padding: 50px 10px 50px;
-  z-index: 51;
 }
-.txt-parallax
-{
+.uk-block-custom-1 {
+  margin-top: 1em;
+  margin-bottom: 0px;
+  padding-left: 1em;
+  padding-top: 0px;
+
+}
+.uk-block-custom-2 {
+  margin-top: 1em;
+  margin-bottom: 0px;
+  padding-left: 1em;
+  padding-top: 0px;
+}
+.uk-overlay-background {
+  background: rgba(0,192,178, 0.5);
+  border-radius: 5px;
 }

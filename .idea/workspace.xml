@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0266da1-e3db-41e6-90bc-6b78488d99c3" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\img\img_materialize\background1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\img\img_materialize\background2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\img\img_materialize\background3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\img\img_materialize\parallax1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\img\img_materialize\parallax2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\img\opto_pics\filling_pic01.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\css\materialize.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\css\materialize.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\material-design-icons\LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\material-design-icons\Material-Design-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\material-design-icons\Material-Design-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\material-design-icons\Material-Design-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\material-design-icons\Material-Design-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\material-design-icons\Material-Design-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Bold.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Bold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Light.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Light.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Medium.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Medium.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Medium.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Thin.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Thin.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\font\roboto\Roboto-Thin.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\js\init.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\js\materialize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\static\materialize\js\materialize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\base_en_mat.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\footer_en_mat.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\header_en_mat.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\essai.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Documentation/OPTO_WEBSITE_DOC.docx" afterPath="$PROJECT_DIR$/Documentation/OPTO_WEBSITE_DOC.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/base_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/base_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/test/test.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.21.0/js/uikit.js" afterPath="$PROJECT_DIR$/application/static/uikit-2.21.0/js/uikit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OPTO-website.iws" />
@@ -74,28 +29,50 @@
       <file leaf-file-name="uikit_custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.413794">
+              <caret line="7452" column="15" selection-start-line="7452" selection-start-column="15" selection-end-line="7452" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.71308017">
+              <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+              <folding>
+                <element signature="n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.576923">
+              <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_en.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base_en.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header_en.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -105,6 +82,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
+        <option value="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
+      </list>
+    </option>
   </component>
   <component name="NamedScopeManager">
     <order />
@@ -229,6 +215,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include_parts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main_pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -331,7 +343,131 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OPTO_ver 00-31-08-15_007b" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPTO-website" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPTO-website" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPTO-website" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPTO-website" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPTO-website" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OPTO-website" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -347,14 +483,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11485775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11679644" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -375,27 +511,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.576923">
+          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.413794">
+          <caret line="7452" column="15" selection-start-line="7452" selection-start-column="15" selection-end-line="7452" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.71308017">
+          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
