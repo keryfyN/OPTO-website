@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html content="width=device-width, initial-scale=1" lang="en">
   <head>
     <meta charset="utf-8">
     {% if title %}
@@ -9,28 +9,39 @@
     {% endif %}
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/css/uikit.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit_custom.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/components/dotnav.css') }}" />
+
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/uikit.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/components/parallax.js"></script>
+
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow-fx.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/sticky.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideset.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slider.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/scrollspy.js') }}"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/components/parallax.js"></script>
+
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/core/scrollspy.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/test-parallax.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/test-parallax.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit_custom.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/components/dotnav.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/components/dotnav.css') }}" />
+
 
   </head>
   <body>
 
-      {% include '/structure/include_parts/header_en.html' %}
-      {% block content %}{% endblock %}
-      {% include '/structure/include_parts/footer_en.html' %}
+      <div class="uk-container uk-margin-top uk-margin-large-bottom">
+          <div class="uk-grid">
+              <a href="{{ url_for('index') }}" class="uk-navbar-brand">
+                  <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="200px">
+              </a>
+          </div>
+
+          {% include '/structure/include_parts/header_en.html' %}
+          {% block content %}{% endblock %}
+          {% include '/structure/include_parts/footer_en.html' %}
+
+      </div>
 
   </body>
 </html>

@@ -7445,15 +7445,15 @@ a.uk-datepicker-table-muted {
 }
 .bg-parallax-1{
   background-image: url(../../img/test/epaper_BG.jpg);
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 0;
+  max-width: 100%;
   height:30em;
   padding: 50px 10px 50px;
 }
 .bg-parallax-2{
   background-image: url(../../img/test/printer_BG.png);
   margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
   height:30em;
   padding: 50px 10px 50px;
 }
