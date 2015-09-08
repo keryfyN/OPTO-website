@@ -1,12 +1,6 @@
-html {
-  font: normal 14px / 20px Verdana, Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background: #ffffff;
-  color: #444444;
-}
+
 body {
-  margin: 0;
+  margin:0 0 0 0;
 }
 a {
   background: transparent;
@@ -279,7 +273,7 @@ iframe {
   margin-bottom: 0;
 }
 .uk-grid {
-  margin-left: -25px;
+  margin-left: 25;
 }
 .uk-grid > * {
   padding-left: 25px;
@@ -1363,9 +1357,8 @@ ul.uk-nav-sub {
   color: #00a59c;
 }
 .uk-nav-offcanvas > li > a {
-  /*color: #cccccc;*/
   color: #00c0b5;
-  padding: 10px 15px;
+  padding: 5px 5px;
 }
 .uk-nav-offcanvas > .uk-open > a,
 html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover,
@@ -1373,6 +1366,7 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:focus {
   background: #404040;
   color: #00c0b5;
   outline: none;
+  font-size: 12px;
 }
 html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
   background: #1a1a1a;
@@ -1387,6 +1381,7 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
 .uk-nav-offcanvas ul a {
   /*color: #cccccc;*/
   color: #00c0b5;
+  font: 11px;
 }
 html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #ffffff;
@@ -1405,7 +1400,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   clear: both;
 }
 .uk-navbar-nav {
-  margin-right: 20px;
+  margin-right: 0px;
   padding: 0;
   list-style: none;
   float: left;
@@ -1420,7 +1415,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   box-sizing: border-box;
   text-decoration: none;
   height: 40px;
-  padding: 0px 0px 0px 15px;/**/
+  min-width: 60px;
+  padding: 0px 0px 0px 0px;/**/
   margin-right:0px;
   line-height: 40px;
   color: #f5f5f5;
@@ -1444,13 +1440,10 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar-nav > li > a:active {
   background-color: #dddddd;
-  /*color: #444444;/**/
   color:#444444;
-
 }
 .uk-navbar-nav > li.uk-active > a {
   background-color: #f5f5f5;
-  /*color: #444444;*/
   color:#00c0b5;
 
 }
@@ -5356,7 +5349,7 @@ a.uk-thumbnail:focus {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   z-index: 1001;
-  width: 270px;
+  width: 200px;
   max-width: 100%;
   background: #333333;
   overflow-y: auto;
@@ -5478,11 +5471,6 @@ a.uk-thumbnail:focus {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-}
-.uk-container {
-  box-sizing: border-box;
-  padding: 0 0px;
-  max-width:100%;
 }
 /* Large screen and bigger */
 @media (min-width: 1220px) {
@@ -7473,4 +7461,9 @@ a.uk-datepicker-table-muted {
 .uk-overlay-background {
   background: rgba(0,192,178, 0.5);
   border-radius: 5px;
+}
+.uk-container {
+  box-sizing: border-box;
+  max-width: 1500px;
+  padding: 0 20px;
 }

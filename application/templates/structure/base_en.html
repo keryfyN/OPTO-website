@@ -29,18 +29,13 @@
   </head>
   <body>
 
-      <div class="uk-container uk-margin-top uk-margin-large-bottom">
-          <div class="uk-grid">
-              <a href="{{ url_for('index') }}" class="uk-navbar-brand">
-                  <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="200px">
-              </a>
-          </div>
 
           {% include '/structure/include_parts/nav_en_large.html' %}
+          {% include '/structure/include_parts/nav_en_small.html' %}
+
           {% block content %}{% endblock %}
           {% include '/structure/include_parts/footer_en.html' %}
 
-      </div>
 
   </body>
 </html>

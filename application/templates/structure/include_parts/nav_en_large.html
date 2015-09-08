@@ -1,6 +1,9 @@
-<div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+<div data-uk-sticky="{top, animation:'uk-animation-slide-top'}" >
     <nav class="uk-navbar uk-hidden-small">
-        <ul class="uk-navbar-nav uk-hidden-small uk-navbar-flip ">
+        <a href="{{ url_for('index') }}" class="uk-navbar-brand">
+          <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="180px">
+        </a>
+        <ul class="uk-navbar-nav uk-navbar-flip ">
             <!-- Products menu -->
             <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
                 <a href="{{ url_for('products') }}">Products</a>
@@ -13,7 +16,7 @@
                                 <li class="uk-panel">
                                     <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
                                 </li>
-                                <!--<li class="uk-nav-header" href="/products/displays/">Displays</li>-->
+                                <li class="uk-nav-header" href="/products/displays/">Displays</li>
                                 <li><a href="{{ url_for('tft') }}">TFT Displays</a></li>
                                 <li><a href="#">LCD Graphic</a></li>
                                 <li><a href="#">LCD Segment</a></li>
@@ -115,8 +118,6 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a></li>
-        <li class="uk-navbar-brand uk-navbar-center uk-visible-small">OPTO Logic</li>
-    </ul>
+        </ul>
     </nav>
 </div>

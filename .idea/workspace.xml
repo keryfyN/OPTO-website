@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0266da1-e3db-41e6-90bc-6b78488d99c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/base_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/base_en.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.21.0/js/jquery.min.js" afterPath="$PROJECT_DIR$/application/static/uikit-2.21.0/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/img/logo_opto_vecto.svg" afterPath="$PROJECT_DIR$/application/static/img/logo_opto_vecto.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/test/test.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OPTO-website.iws" />
@@ -30,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6153846">
-              <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.70135134">
+              <caret line="145" column="100" selection-start-line="145" selection-start-column="100" selection-end-line="145" selection-end-column="100" />
               <folding>
                 <element signature="n#div#0;n#!!top" expanded="false" />
               </folding>
@@ -45,18 +46,8 @@
       <file leaf-file-name="uikit_custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.413794">
-              <caret line="5499" column="1" selection-start-line="5499" selection-start-column="1" selection-end-line="5499" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uikit.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7279" column="0" selection-start-line="7279" selection-start-column="0" selection-end-line="7290" selection-end-column="1" />
+            <state vertical-scroll-proportion="-1.1724138">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -65,8 +56,8 @@
       <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9230769">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-21.538462">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -75,8 +66,8 @@
       <file leaf-file-name="base_en.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+            <state vertical-scroll-proportion="-22.884615">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -85,8 +76,8 @@
       <file leaf-file-name="header_en.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
+            <state vertical-scroll-proportion="-81.73077">
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,18 +86,18 @@
       <file leaf-file-name="nav_en_large.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.072727">
-              <caret line="121" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="6" />
+            <state vertical-scroll-proportion="-1.2363636">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav_en_small.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav_en_small.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.95405406">
-              <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+            <state vertical-scroll-proportion="-4.018182">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -120,16 +111,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
         <option value="$PROJECT_DIR$/application/static/uikit-2.21.0/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" />
-        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
-        <option value="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" />
-        <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
-        <option value="$PROJECT_DIR$/application/templates/structure/base_en.html" />
         <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css" />
-        <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
+        <option value="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
+        <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
         <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" />
+        <option value="$PROJECT_DIR$/application/templates/structure/base_en.html" />
+        <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
       </list>
     </option>
   </component>
@@ -638,32 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9230769">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6153846">
-          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42167103">
@@ -672,43 +637,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7279" column="0" selection-start-line="7279" selection-start-column="0" selection-end-line="7290" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.413794">
-          <caret line="5499" column="1" selection-start-line="5499" selection-start-column="1" selection-end-line="5499" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.072727">
-          <caret line="121" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="6" />
+        <state vertical-scroll-proportion="-1.2363636">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95405406">
-          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+        <state vertical-scroll-proportion="-4.018182">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5675673">
+          <caret line="7279" column="0" selection-start-line="7279" selection-start-column="0" selection-end-line="7283" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1724138">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-81.73077">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.538462">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.884615">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70135134">
+          <caret line="145" column="100" selection-start-line="145" selection-start-column="100" selection-end-line="145" selection-end-column="100" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
