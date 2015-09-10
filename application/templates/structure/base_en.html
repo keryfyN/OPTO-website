@@ -28,10 +28,11 @@
 
   </head>
   <body>
-
-
-          {% include '/structure/include_parts/nav_en_large.html' %}
-          {% include '/structure/include_parts/nav_en_small.html' %}
+    <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+      {% include '/structure/include_parts/nav_en_large.html' %}
+      {% include '/structure/include_parts/nav_en_med.html' %}
+      {% include '/structure/include_parts/nav_en_small.html' %}
+    </div>
 
           {% block content %}{% endblock %}
           {% include '/structure/include_parts/footer_en.html' %}

@@ -1,21 +1,21 @@
-    <nav class="uk-navbar uk-visible-large">
+    <nav class="uk-navbar uk-hidden-small uk-visible-medium uk-hidden-large">
         <a href="{{ url_for('index') }}" class="uk-navbar-brand">
-          <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
+            <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
         </a>
-        <ul class="uk-navbar-nav uk-navbar-flip ">
+        <ul class="uk-navbar-nav uk-navbar-flip uk-text-medium ">
             <!-- Products menu -->
             <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
                 <a href="{{ url_for('products') }}">Products</a>
                 <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3">
                     <div class="uk-grid uk-dropdown-grid">
                         <!-- Column 1 -->
-                        <div class="uk-width-1-3">
+                        <div class="uk-width-1-3 ">
                             <ul class="uk-nav uk-nav-dropdown uk-panel">
                                 <!-- new sub -->
                                 <li class="uk-panel">
                                     <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
                                 </li>
-                                <li class="uk-nav-header" href="/products/displays/">Displays</li>
+                                <li class="uk-nav-header">Displays</li>
                                 <li><a href="{{ url_for('tft') }}">TFT Displays</a></li>
                                 <li><a href="#">LCD Graphic</a></li>
                                 <li><a href="#">LCD Segment</a></li>
