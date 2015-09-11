@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0266da1-e3db-41e6-90bc-6b78488d99c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html" />
+      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\lcd\lcd_advanced_search.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\lcd\lcd_details.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\lcd\lcd_landing_page.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\lcd\lcd_list.html" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\tft_\tft_advanced_search.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_advanced_search.html" />
+      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\tft_\tft_details.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_details.html" />
+      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\tft_\tft_landing_page.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html" />
+      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\tft_\tft_list.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/base_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/base_en.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/index_en.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/index_en.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/index_fr.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/index_fr.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/manager.py" afterPath="$PROJECT_DIR$/application/manager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" afterPath="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/products/products_en.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/products/products_en.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/test/test.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" afterPath="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,61 +42,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37972972">
-              <caret line="113" column="20" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+            <state vertical-scroll-proportion="-23.23077">
+              <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uikit_custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
+      <file leaf-file-name="tft_advanced_search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_advanced_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.620689">
-              <caret line="1399" column="17" selection-start-line="1399" selection-start-column="17" selection-end-line="1399" selection-end-column="17" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uikit.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
+      <file leaf-file-name="prod_tft_displays_landing_en.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.324325">
-              <caret line="7741" column="16" selection-start-line="7741" selection-start-column="3" selection-end-line="7741" selection-end-column="16" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="26" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
+      <file leaf-file-name="manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="109" selection-end-column="10" />
-              <folding />
+            <state vertical-scroll-proportion="-7.214286">
+              <caret line="86" column="91" selection-start-line="86" selection-start-column="69" selection-end-line="86" selection-end-column="91" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_en.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/lcd/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.038462">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header_en.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.41407308">
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -93,8 +97,8 @@
       <file leaf-file-name="nav_en_large.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.615385">
-              <caret line="30" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="10" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -103,8 +107,8 @@
       <file leaf-file-name="nav_en_med.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="87" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -113,14 +117,41 @@
       <file leaf-file-name="nav_en_small.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.218182">
-              <caret line="109" column="95" selection-start-line="109" selection-start-column="95" selection-end-line="109" selection-end-column="95" />
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="18" column="91" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphic_lcd_landing_en.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="19.26923">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products_en.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/products_en.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.090909">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,13 +163,20 @@
         <option value="$PROJECT_DIR$/application/static/uikit-2.21.0/css/uikit_custom.css" />
         <option value="$PROJECT_DIR$/application/templates/main_pages/test/test2.html" />
         <option value="$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html" />
-        <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
         <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/products/products_en.html" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/index_fr.html" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/index_en.html" />
+        <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
         <option value="$PROJECT_DIR$/application/templates/structure/base_en.html" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/products/tft_displays/prod_tft_displays_en.html" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/products/tft_displays/prod_tft_displays_landing_en.html" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html" />
+        <option value="$PROJECT_DIR$/application/manager.py" />
+        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
+        <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html" />
         <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html" />
         <option value="$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html" />
-        <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
-        <option value="$PROJECT_DIR$/application/templates/main_pages/test/test.html" />
       </list>
     </option>
   </component>
@@ -174,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,7 +355,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main_pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="displays" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main_pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="displays" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphic_lcd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,7 +459,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uikit-2.22.0" />
+              <option name="myItemId" value="uikit-2.21.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,7 +481,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uikit-2.22.0" />
+              <option name="myItemId" value="uikit-2.21.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -386,15 +489,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lcd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays" />
+      <recent name="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\tft_displays" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -573,6 +700,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="109" column="95" selection-start-line="109" selection-start-column="95" selection-end-line="109" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -786,72 +945,162 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/header_en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/products_fr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.324325">
-          <caret line="7741" column="16" selection-start-line="7741" selection-start-column="3" selection-end-line="7741" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385">
-          <caret line="30" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="120" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.038462">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.218182">
-          <caret line="109" column="95" selection-start-line="109" selection-start-column="95" selection-end-line="109" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.620689">
-          <caret line="1399" column="17" selection-start-line="1399" selection-start-column="17" selection-end-line="1399" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
+        <state vertical-scroll-proportion="0.0">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="109" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/index_fr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.472727">
+          <caret line="172" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/base_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.576923">
+          <caret line="13" column="98" selection-start-line="13" selection-start-column="98" selection-end-line="13" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7741" column="16" selection-start-line="7741" selection-start-column="3" selection-end-line="7741" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.275862">
+          <caret line="4539" column="27" selection-start-line="4539" selection-start-column="27" selection-end-line="4539" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/tft_advanced_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/index_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="16.0">
+          <caret line="127" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/main_pages/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37972972">
-          <caret line="113" column="20" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+        <state vertical-scroll-proportion="-23.23077">
+          <caret line="152" column="37" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/products_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.090909">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.26923">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_large.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_med.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="87" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/include_parts/nav_en_small.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="91" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="26" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.214286">
+          <caret line="86" column="91" selection-start-line="86" selection-start-column="69" selection-end-line="86" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/lcd/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41407308">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
           <folding />
         </state>
       </provider>

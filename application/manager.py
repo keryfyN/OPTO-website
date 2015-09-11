@@ -72,7 +72,7 @@ def support():
 def tft():
     print(request.accept_languages)
     # Version en
-    return render_template('tft_/tft_landing_page.html', title='TFT | OPTO Logic TECHNOLOGY')
+    return render_template('main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html', title='TFT Displays | OPTO Logic TECHNOLOGY')
 
 @app.route('/contact/')
 def contact():
@@ -84,7 +84,7 @@ def contact():
 def lcd():
     print(request.accept_languages)
     # Version en
-    return render_template('lcd/lcd_landing_page_en.html', title='LCD | OPTO Logic TECHNOLOGY')
+    return render_template('main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html', title='Graphic LCD | OPTO Logic TECHNOLOGY')
 @app.route('/test/')
 def test():
     print(request.accept_languages)
