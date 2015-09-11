@@ -2,7 +2,6 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from .tft import Tft, tft
 from .lcd import Lcd, lcd
-from flask.ext.babel import Babel
 
 
 
@@ -11,7 +10,6 @@ from flask.ext.babel import Babel
 app = Flask(__name__)
 app.config.from_object('application.default_settings')
 app.config.from_envvar('PRODUCTION_SETTINGS', silent=True)
-babel = Babel(app)
 # from flask_debugtoolbar import DebugToolbarExtension
 
 

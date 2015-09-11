@@ -9,7 +9,8 @@ lcd = Blueprint('lcd', __name__, url_prefix='/lcd')
 # Landing
 @lcd.route('/')
 def lcd_landing():
-    return render_template('lcd/lcd_landing_page.html')
+    return render_template('main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html')
+
 
 
 # Details

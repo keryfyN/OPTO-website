@@ -3,13 +3,13 @@
 from flask import Blueprint, render_template
 # from .models import Tft
 
-tft = Blueprint('tft_', __name__, url_prefix='/products/tft_')
+tft = Blueprint('tft', __name__, url_prefix='/products/tft_')
 
 
 # Landing
 @tft.route('/')
 def tft_landing():
-    return render_template('tft_/solutions_landing_page.html')
+    return render_template('/templates/main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html')
 
 
 # Details

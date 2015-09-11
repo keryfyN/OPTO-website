@@ -68,12 +68,6 @@ def support():
     # Version en
     return render_template('main_pages/support/support_en.html', title='Support | OPTO Logic TECHNOLOGY')
 
-@app.route('/tft/')
-def tft():
-    print(request.accept_languages)
-    # Version en
-    return render_template('main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html', title='TFT Displays | OPTO Logic TECHNOLOGY')
-
 @app.route('/contact/')
 def contact():
     print(request.accept_languages)
