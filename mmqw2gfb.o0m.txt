@@ -1,0 +1,39 @@
+﻿Revert "v11092015"
+
+This reverts commit 64d154f2fa419761d19d7ab3bf0ccb2c4e7b1a10.
+
+Conflicts:
+	.idea/workspace.xml
+	application/manager.py
+	application/templates/structure/include_parts/nav_en_large.html
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch uikit2.2_topnav
+# Your branch is up-to-date with 'origin/uikit2.2_topnav'.
+#
+# You are currently reverting commit 64d154f.
+#
+# Changes to be committed:
+#	modified:   .idea/workspace.xml
+#	modified:   application/manager.py
+#	modified:   application/static/uikit-2.22.0/css/uikit_custom.css
+#	renamed:    application/templates/main_pages/products/displays/tft_displays/tft_advanced_search.html -> application/templates/lcd/lcd_advanced_search.html
+#	renamed:    application/templates/main_pages/products/displays/tft_displays/tft_details.html -> application/templates/lcd/lcd_details.html
+#	new file:   application/templates/lcd/lcd_landing_page.html
+#	renamed:    application/templates/main_pages/products/displays/tft_displays/tft_list.html -> application/templates/lcd/lcd_list.html
+#	modified:   application/templates/main_pages/index_en.html
+#	modified:   application/templates/main_pages/index_fr.html
+#	deleted:    application/templates/main_pages/products/displays/graphic_lcd/graphic_lcd_landing_en.html
+#	modified:   application/templates/main_pages/products/products_en.html
+#	modified:   application/templates/main_pages/test/test.html
+#	modified:   application/templates/structure/base_en.html
+#	modified:   application/templates/structure/include_parts/nav_en_large.html
+#	modified:   application/templates/structure/include_parts/nav_en_med.html
+#	modified:   application/templates/structure/include_parts/nav_en_small.html
+#	new file:   application/templates/tft_/tft_advanced_search.html
+#	new file:   application/templates/tft_/tft_details.html
+#	renamed:    application/templates/main_pages/products/displays/tft_displays/prod_tft_displays_landing_en.html -> application/templates/tft_/tft_landing_page.html
+#	new file:   application/templates/tft_/tft_list.html
+#
+
