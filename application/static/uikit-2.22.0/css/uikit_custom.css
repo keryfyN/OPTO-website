@@ -4445,8 +4445,6 @@ a.uk-thumbnail:focus {
 }
 .uk-overlay-background {
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-  padding: 5px 5px 5px 5px;
 }
 .uk-overlay-image {
   padding: 0;
@@ -4529,7 +4527,7 @@ a.uk-thumbnail:focus {
   filter: grayscale(0%);
 }
 [class*='uk-overlay-slide'] {
-  opacity: 100;
+  opacity: 0;
 }
 .uk-overlay-slide-top {
   -webkit-transform: translateY(-100%);
@@ -7463,9 +7461,9 @@ a.uk-datepicker-table-muted {
   padding-left: 1em;
   padding-top: 0px;
 }
-.uk-overlay-background-custom-1 {
+.uk-overlay-background {
   background: rgba(0,192,178, 0.5);
-  border-radius: 1px;
+  border-radius: 5px;
 }
 .uk-container {
   box-sizing: border-box;
