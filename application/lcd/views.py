@@ -29,4 +29,4 @@ def lcd_list():
 # Advanced search
 @lcd.route('/search')
 def advanced_search():
-    return render_template('lcd/lcd_advanced_search.html')
+    return render_template('lcd/cd_advanced_search.html')

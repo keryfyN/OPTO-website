@@ -69,25 +69,40 @@ def support():
     return render_template('main_pages/support/support_en.html', title='Support | OPTO Logic TECHNOLOGY')
 
 
+@app.route('/displays/')
+def displays():
+    print(request.accept_languages)
+    # Version en
+    #return render_template('main_pages/products', title='TFT | OPTO Logic TECHNOLOGY')
+    return render_template('/main_pages/products/displays/displays_landing_en.html' , title='Displays | OPTO Logic TECHNOLOGY')
+
 
 @app.route('/tft/')
 def tft():
     print(request.accept_languages)
     # Version en
-    return render_template('main_pages/products ', title='TFT | OPTO Logic TECHNOLOGY')
+    #return render_template('main_pages/products', title='TFT | OPTO Logic TECHNOLOGY')
+    return render_template('/main_pages/products/displays/tft/tft_displays_landing_en.html' , title='TFT | OPTO Logic TECHNOLOGY')
 
 
 @app.route('/contact/')
 def contact():
     print(request.accept_languages)
     # Version en
-    return render_template('main_pages/contact/contact_en.html', title='Contact | OPTO Logic TECHNOLOGY')
+    return render_template('/main_pages/contact/contact_en.html', title='Contact | OPTO Logic TECHNOLOGY')
 
-@app.route('/lcd/')
-def lcd():
+@app.route('/lcd_graphic/')
+def lcd_graphic():
     print(request.accept_languages)
     # Version en
-    return render_template('lcd/lcd_landing_page_en.html', title='LCD | OPTO Logic TECHNOLOGY')
+    return render_template('/main_pages/products/displays/lcd/lcd_graphic_landing_en.html', title='LCD Graphic | OPTO Logic TECHNOLOGY')
+
+@app.route('/lcd_segment/')
+def lcd_segment():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/displays/lcd/lcd_segment_landing_en.html', title='LCD Segment | OPTO Logic TECHNOLOGY')
+
 @app.route('/test/')
 def test():
     print(request.accept_languages)
@@ -98,4 +113,22 @@ def test2():
     print(request.accept_languages)
     # Version en
     return render_template('main_pages/test/test2.html', title='Test2 | OPTO Logic TECHNOLOGY')
+
+@app.route('/oled/')
+def oled():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/displays/oled/oled_landing_en.html' , title='OLED | OPTO Logic TECHNOLOGY')
+
+@app.route('/epaper/')
+def epaper():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/displays/epaper/epaper_landing_en.html' , title='ePAPER | OPTO Logic TECHNOLOGY')
+
+@app.route('/custom_displays/')
+def custom_displays():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/displays/custom_displays/custom_displays_landing_en.html' , title='Custom Displays | OPTO Logic TECHNOLOGY')
 

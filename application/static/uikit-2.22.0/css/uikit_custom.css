@@ -107,61 +107,10 @@ figure {
 * + figure {
   margin-top: 15px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 15px 0;
-  font-family: Verdana, Arial, sans-serif;
-  font-weight: normal;
-  color: #444444;
-  text-shadow: 1px 1px 0px #FFF;
-  text-transform: none;
-}
-* + h1,
-* + h2,
-* + h3,
-* + h4,
-* + h5,
-* + h6 {
-  margin-top: 25px;
-}
-h1,
-.uk-h1 {
-  font-size: 36px;
-  line-height: 42px;
-}
-h2,
-.uk-h2 {
-  font-size: 24px;
-  line-height: 30px;
-}
-h3,
-.uk-h3 {
-  font-size: 18px;
-  line-height: 24px;
-}
-h4,
-.uk-h4 {
-  font-size: 16px;
-  line-height: 22px;
-  color: #00c0b5;
-}
-h5,
-.uk-h5 {
-  font-size: 14px;
-  line-height: 20px;
-}
-h6,
-.uk-h6 {
-  font-size: 12px;
-  line-height: 18px;
-}
+
 ul,
 ol {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 ul > li > ul,
 ul > li > ol,
@@ -250,7 +199,7 @@ iframe {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   list-style: none;
 }
@@ -274,27 +223,27 @@ iframe {
   margin-bottom: 0;
 }
 .uk-grid {
-  margin-left: 25;
+  margin-left: 10px;
 }
 .uk-grid > * {
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .uk-grid + .uk-grid,
 .uk-grid-margin,
 .uk-grid > * > .uk-panel + .uk-panel {
-  margin-top: 25px;
+  margin-top: 0px;
 }
 @media (min-width: 1220px) {
   .uk-grid {
     margin-left: 0px;
   }
   .uk-grid > * {
-    padding-left: 35px;
+    padding-left: 10px;
   }
   .uk-grid + .uk-grid,
   .uk-grid-margin,
   .uk-grid > * > .uk-panel + .uk-panel {
-    margin-top: 35px;
+    margin-top: 0px;
   }
 }
 .uk-grid-collapse {
@@ -323,7 +272,7 @@ iframe {
   margin-left: -25px;
 }
 .uk-grid-medium > * {
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .uk-grid-medium + .uk-grid-medium,
 .uk-grid-medium > .uk-grid-margin,
@@ -335,8 +284,8 @@ iframe {
   margin-right: -25px;
 }
 .uk-grid-divider > * {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .uk-grid-divider > [class*='uk-width-1-']:not(.uk-width-1-1):nth-child(n+2),
 .uk-grid-divider > [class*='uk-width-2-']:nth-child(n+2),
@@ -5478,7 +5427,7 @@ a.uk-thumbnail:focus {
 /* Large screen and bigger */
 @media (min-width: 1220px) {
   .uk-container {
-    max-width: 1200px;
+    max-width: 1220px;
     padding: 0 0px;
     max-width:100%;
   }
@@ -5506,7 +5455,7 @@ a.uk-thumbnail:focus {
 }
 @media (min-width: 1220px) {
   .uk-container-1 {
-    max-width: 1200px;
+    max-width: 1220px;
     padding: 0 0px;
   }
 }
@@ -7466,10 +7415,29 @@ a.uk-datepicker-table-muted {
   border-radius: 5px;
 }
 .uk-container {
-  box-sizing: border-box;
-  max-width: 1500px;
-  padding: 0 20px;
+  max-width: 100%;
 }
+
+#displays_section_1,
+#displays_section_3,
+#displays_section_5,
+.bg-green{
+  background: #00c0b5;
+  color: #fff;
+  margin: 0 0;
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 20px;
+}
+#displays_section_2,
+#displays_section_4,
+#displays_section_6{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 20px;
+}
+
 /* ========================================================================
    Component: Text
  ========================================================================== */
@@ -7488,3 +7456,62 @@ a.uk-datepicker-table-muted {
   line-height: 24px;
   font-weight: normal;
 }
+/* Headings
+ ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #444444;
+  text-transform: none;
+}
+/*
+ * Margins
+ */
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 15px;
+}
+/*
+ * Sizes
+ */
+h1,
+.uk-h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+h2,
+.uk-h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+h3,
+.uk-h3 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+}
+h4,
+.uk-h4 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+h5,
+.uk-h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+h6,
+.uk-h6 {
+  font-size: 12px;
+  line-height: 18px;

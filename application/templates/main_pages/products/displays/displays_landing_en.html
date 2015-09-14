@@ -1,0 +1,142 @@
+{% extends "structure/base_en.html" %}
+{% block content %}
+
+
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                                  SlideShow                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
+    <ul class="uk-slideshow">
+        <!-- 1st image of the slideshow -->
+        <li class="uk-active uk-overlay">
+            <div class="uk-block uk-margin uk uk-block-center uk-block-middle uk-overlay-panel uk-text-center uk-animation-scale ">
+                <h1 class="uk-text">Products</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+            </div>
+            <img src="{{ url_for('static', filename='img/opto_pics/DSC08156.JPG') }}">
+        </li>
+        <!-- 2st image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
+        </li>
+        <!-- 3rd image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
+        </li>
+        <!-- 4th image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
+        </li>
+    </ul>
+    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href=""></a></li>
+        <li data-uk-slideshow-item="1"><a href=""></a></li>
+        <li data-uk-slideshow-item="2"><a href=""></a></li>
+        <li data-uk-slideshow-item="3"><a href=""></a></li>
+    </ul>
+</div><!-- end div slidshow -->
+
+<div class="uk-grid uk-margin-bottom uk-margin-top uk-grid-divider">
+    <div>
+        <ul class="uk-breadcrumb">
+            <li><a href="/index/">Home</a></li>
+            <li><a href="/products/">Products</a></li>
+            <li><a href="/displays/">Displays</a></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+</div>
+<div id="displays_section_1" >
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h3>TFT Displays</h3>
+            <p class="uk-text-justify">A thin-film-transistor liquid-crystal display (TFT LCD) is a variant of a liquid-crystal display (LCD)
+                that uses thin-film transistor (TFT) technology to improve image qualities such as addressability and
+                contrast. A TFT LCD is an active-matrix LCD, in contrast to passive-matrix LCDs or simple, direct-driven LCDs with a few segments.</p>
+            <h4>Application</h4>
+            <p class="uk-text-justify">The best known application of thin-film transistors is in TFT LCDs, an implementation of LCD technology. Transistors are embedded within the panel itself, reducing crosstalk between pixels and improving image stability.</p>
+            <p class="uk-text-justify">As of 2008, many color LCD TVs and monitors use this technology. TFT panels are frequently used in digital radiography applications in general radiography. A TFT is used in both direct and indirect capture[jargon] as a base for the image receptor in medical radiography.</p>
+            <a class="uk-button uk-button-primary" href="#">TFTs</a>
+        </div>
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_2">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>Heading</h1>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Subheading</h2>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_3">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h3>Heading</h3>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h4>Subheading</h4>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_4">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>Heading</h1>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Subheading</h2>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_5">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h3>Heading</h3>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h4>Subheading</h4>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_6">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>Heading</h1>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Subheading</h2>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
