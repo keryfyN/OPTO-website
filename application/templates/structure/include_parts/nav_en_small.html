@@ -13,23 +13,23 @@
                         <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
                             <!---- New product line ---->
                             <li aria-expanded="false" class="uk-parent">
-                                <a href="#" class="uk-text-small">Display</a>
+                                <a href="#">Displays</a>
                                 <ul class="uk-text-small">
                                     <li><a href="{{ url_for('tft') }}">TFT Displays</a></li>
                                     <li><a href="{{ url_for('lcd_graphic') }}">LCD Graphic</a></li>
                                     <li><a href="{{ url_for('lcd_segment') }}">LCD Segment</a></li>
                                     <li><a href="{{ url_for('oled') }}">OLED</a></li>
                                     <li><a href="{{ url_for('epaper') }}">ePAPER</a></li>
-                                    <li><a href="#">CUSTOM Displays</a></li>
-                                    <li><a href="#">All Displays</a></li>
+                                    <li><a href="{{ url_for('custom_displays') }}">CUSTOM Displays</a></li>
+
                                 </ul>
                             </li>
                             <!---- New product line ---->
                             <li aria-expanded="false" class="uk-parent">
                                 <a href="#" class="uk-text-small">Touch Panel</a>
                                 <ul class="uk-text-small">
-                                    <li><a href="#">PCAP</a></li>
-                                    <li><a href="#">RTP</a></li>
+                                    <li><a href="{{ url_for('pcap') }}">PCAP</a></li>
+                                    <li><a href="{{ url_for('rtp') }}">RTP</a></li>
                                 </ul>
                             </li>
                             <!---- New product line ---->

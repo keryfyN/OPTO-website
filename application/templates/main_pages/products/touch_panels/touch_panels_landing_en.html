@@ -1,0 +1,140 @@
+{% extends "structure/base_en.html" %}
+{% block content %}
+
+
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                                  SlideShow                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
+    <ul class="uk-slideshow">
+        <!-- 1st image of the slideshow -->
+        <li class="uk-active uk-overlay">
+            <div class="uk-block uk-margin uk uk-block-center uk-block-middle uk-overlay-panel uk-text-center uk-animation-scale ">
+                <h1 class="uk-text">Products</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+            </div>
+            <img src="{{ url_for('static', filename='img/opto_pics/DSC08156.JPG') }}">
+        </li>
+        <!-- 2st image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
+        </li>
+        <!-- 3rd image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
+        </li>
+        <!-- 4th image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
+        </li>
+    </ul>
+    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href=""></a></li>
+        <li data-uk-slideshow-item="1"><a href=""></a></li>
+        <li data-uk-slideshow-item="2"><a href=""></a></li>
+        <li data-uk-slideshow-item="3"><a href=""></a></li>
+    </ul>
+</div><!-- end div slidshow -->
+
+<div class="uk-grid uk-margin-bottom uk-margin-small-left uk-margin-top uk-grid-divider">
+    <div>
+        <ul class="uk-breadcrumb">
+            <li><a href="/index/">Home</a></li>
+            <li><a href="/products/">Products</a></li>
+            <li><a href="/displays/">Displays</a></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+</div>
+
+<div id="displays_section_1">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h3>TFT Displays</h3>
+            <p class="uk-text-justify">A thin-film-transistor liquid-crystal display (TFT LCD) is a variant of a liquid-crystal display (LCD)
+                that uses thin-film transistor (TFT) technology to improve image qualities such as addressability and
+                contrast. A TFT LCD is an active-matrix LCD, in contrast to passive-matrix LCDs or simple, direct-driven LCDs with a few segments.</p>
+            <h4>Application</h4>
+            <p class="uk-text-justify uk-text-middle">The best known application of thin-film transistors is in TFT LCDs, an implementation of LCD technology. Transistors are embedded within the panel itself, reducing crosstalk between pixels and improving image stability.</p>
+            <p class="uk-text-justify">As of 2008, many color LCD TVs and monitors use this technology. TFT panels are frequently used in digital radiography applications in general radiography. A TFT is used in both direct and indirect capture[jargon] as a base for the image receptor in medical radiography.</p>
+            <a class="uk-button uk-button-secondary" href="{{ url_for('tft') }}">Show Products</a>
+        </div>
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/display_page/pic001_tft.png') }}" alt="" height="" width="">
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_2">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2 ">
+            <img class="" src="{{ url_for('static', filename='img/display_page/pic002_graphic_lcd.JPG') }}" alt="" width="500">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>Graphic LCD</h1>
+            <p class="uk-text-justify">A Graphic LCD is an electronic visual display technology used in different gadgets and information-output sources, mostly in display screens of electronic devices. This technology employs manipulating tiny crystals of a contained liquid crystal solution through precise electronic signals to perform graphic display operations over a two-dimensional physical screen. LCD technology is considered the successor of conventional CRT (cathode ray tube) visual display technology, which uses electron-firing gun to produce a pixel-based display over monitor screens.</p>
+            <a class="uk-button uk-button-primary" href="{{ url_for('lcd_graphic') }}">More info</a>
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_3">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h3>LCD Segment</h3>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a class="uk-button uk-button-secondary" href="{{ url_for('lcd_segment') }}">More info</a>
+        </div>
+        <div class="uk-width-medium-1-2 ">
+            <img src="{{ url_for('static', filename='img/display_page/pic003_lcd_segment.JPG') }}" alt="" width="">
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_4">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/display_page/pic004_oled.JPG') }}" alt="" width="">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>OLED</h1>
+            <p class="uk-text-justify">An organic light-emitting diode (OLED) is a light-emitting diode (LED) in which the emissive electroluminescent layer is a film of organic compound which emits light in response to an electric current. This layer of organic semiconductor is situated between two electrodes; typically, at least one of these electrodes is transparent. OLEDs are used to create digital displays in devices such as television screens, computer monitors, portable systems such as mobile phones, handheld game consoles and PDAs. A major area of research is the development of white OLED devices for use in solid-state lighting applications</p>
+            <p class="uk-text-justify">There are two main families of OLED: those based on small molecules and those employing polymers. Adding mobile ions to an OLED creates a light-emitting electrochemical cell (LEC) which has a slightly different mode of operation. OLED displays can use either passive-matrix (PMOLED) or active-matrix addressing schemes. Active-matrix OLEDs (AMOLED) require a thin-film transistor backplane to switch each individual pixel on or off, but allow for higher resolution and larger display sizes.</p>
+            <p class="uk-text-justify">An OLED display works without a backlight; thus, it can display deep black levels and can be thinner and lighter than a liquid crystal display (LCD). In low ambient light conditions (such as a dark room), an OLED screen can achieve a higher contrast ratio than an LCD, regardless of whether the LCD uses cold cathode fluorescent lamps or an LED backlight.</p>
+
+            <a class="uk-button uk-button-primary" href="{{ url_for('oled') }}">More info</a>
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_5">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h3>ePAPER</h3>
+            <p class="uk-text-justify">Electronic paper, e-paper and electronic ink are display technologies that mimic the appearance of ordinary ink on paper. Unlike conventional backlit flat panel displays that emit light, electronic paper displays reflect light like paper. This may make them more comfortable to read, and provide a wider viewing angle than most light-emitting displays. The contrast ratio in electronic displays available as of 2008 approaches newspaper, and newly developed displays are slightly better. An ideal e-paper display can be read in direct sunlight without the image appearing to fade.</p>
+            <p class="uk-text-justify">Many electronic paper technologies hold static text and images indefinitely without electricity. Flexible electronic paper uses plastic substrates and plastic electronics for the display backplane. There is ongoing competition among manufacturers to provide full-color ability.</p>
+            <p class="uk-text-justify">Applications of electronic visual displays include electronic pricing labels in retail shops, and digital signage, time tables at bus stations, electronic billboards, mobile phone displays, and e-readers able to display digital versions of books and e-paper magazines.</p>
+
+            <a class="uk-button uk-button-secondary" href="{{ url_for('oled') }}">More info</a>
+        </div>
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/display_page/pic005_epaper.jpg') }}" alt="" height="">
+        </div>
+    </div>
+</div>
+
+<div id="displays_section_6">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/display_page/pic006_custom.jpg') }}" alt="" height="" width="">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>Custom Display</h1>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="{{ url_for('custom_displays') }}">More Info</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

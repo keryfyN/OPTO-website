@@ -132,3 +132,34 @@ def custom_displays():
     # Version en
     return render_template('/main_pages/products/displays/custom_displays/custom_displays_landing_en.html' , title='Custom Displays | OPTO Logic TECHNOLOGY')
 
+@app.route('/touch_panels/')
+def touch_panels():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/touch_panels/touch_panels_landing_en.html' , title='Touch Panels | OPTO Logic TECHNOLOGY')
+
+@app.route('/computers/')
+def computers():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/computers/computers_landing_en.html' , title='Computers | OPTO Logic TECHNOLOGY')
+
+@app.route('/others/')
+def others():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/others/others_landing_en.html' , title='Others | OPTO Logic TECHNOLOGY')
+
+@app.route('/pcap/')
+def pcap():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/touch_panels/pcap_landing_en.html' , title='PCAP | OPTO Logic TECHNOLOGY')
+
+@app.route('/rtp/')
+def rtp():
+    print(request.accept_languages)
+    # Version en
+    return render_template('/main_pages/products/touch_panels/rtp_landing_en.html' , title='RTP | OPTO Logic TECHNOLOGY')
+
+

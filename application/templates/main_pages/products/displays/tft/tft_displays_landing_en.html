@@ -2,77 +2,232 @@
 {% block content %}
 
 <div class="uk-panel">&nbsp;</div>
-<div class="uk-grid uk-margin-small-right uk-margin-small-left">
+
+<div class="uk-panel">&nbsp;</div>
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                                  SlideShow                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
+    <ul class="uk-slideshow">
+        <!-- 1st image of the slideshow -->
+        <li class="uk-active uk-overlay">
+            <div class="uk-block uk-margin uk uk-block-center uk-block-middle uk-overlay-panel uk-text-center uk-animation-scale ">
+                <h1 class="uk-text">Products</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+            </div>
+            <img src="{{ url_for('static', filename='img/opto_pics/DSC08156.JPG') }}">
+        </li>
+        <!-- 2st image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
+        </li>
+        <!-- 3rd image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
+        </li>
+        <!-- 4th image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
+        </li>
+    </ul>
+    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href=""></a></li>
+        <li data-uk-slideshow-item="1"><a href=""></a></li>
+        <li data-uk-slideshow-item="2"><a href=""></a></li>
+        <li data-uk-slideshow-item="3"><a href=""></a></li>
+    </ul>
+</div><!-- end div slidshow -->
+
+<!-- BREAD CRUMBS -->
+<div class="uk-grid uk-margin-bottom uk-margin-small-left uk-margin-top uk-grid-divider">
     <div>
         <ul class="uk-breadcrumb">
             <li><a href="/index/">Home</a></li>
             <li><a href="/products/">Products</a></li>
             <li><a href="/displays/">Displays</a></li>
             <li><a href="/tft/">TFT</a></li>
-            <li><span></span></li>
         </ul>
     </div>
 </div>
-<div class="uk-panel">&nbsp;</div>
-<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
-    <ul class="uk-slideshow uk-overlay-active">
-        <li style="height: 411px;" class="uk-active" aria-hidden="false">
-            <img style="" src="{{ url_for('static', filename='img/lorempixel_000.jpg') }}">
-            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
-                <div>
-                    <h3>AFFS TFT Display</h3>
-                    <p>Lorem <a href="#">AFFS TFT Display</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                    <a href="#"><button class="uk-button uk-button-primary">Learn more</button></a>
-                </div>
+
+<div class="uk-grid ">
+    <div class="uk-width-1-2">
+        <div class="uk-block uk-block-primary uk-margin-2em-left">
+            <div class="uk-text-justify">
+                <h1>TFT Graphic</h1>
+                <p>To communicate information and to manage datas, colour pictures and high rendering TFT displays are very fashionables.
+                    We have the following sizes: from 2.4&quot; to 15&quot; or more. The available resolutions may vary from 160 x 240 to 1024 x 768.
+                    For reading the text, the sense of reading may be in Landscape or Portrait versions.
+                    For the Backlight type we dispose of different techniques: LED, CCFL.
+                    We dispose of all kinds of Digital or Analog TFT from our standard lists and of special dedicated solutions with broad temperature range, high luminosity, integrated touch panel, for example.</p>
+                    <p>Please contact us for advice.</p>
             </div>
-        </li>
-        <li>
-            <img src="{{ url_for('static', filename='img/lorempixel_001.jpg') }}">
-            <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">Hello 2</div>
-        </li>
-        <li>
-            <img src="{{ url_for('static', filename='img/lorempixel_002.jpg') }}">
-            <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">Hello 3</div>
-        </li>
-    </ul>
-    <a href="" data-uk-slideshow-item="previous"></a>
-    <a href="" data-uk-slideshow-item="next"></a>
-</div>
-<div class="uk-grid uk-margin-small-right uk-margin-small-left">
-  <div class="uk-width-1-2">
-    <div>
-        <br><br><br>
-            <ul id="picture_switcher" class="uk-switcher">
-                <li><img class="uk-margin-large-top" src="{{ url_for('static', filename='img/tft_landing_pic000.jpg') }}"></li>
-                <li><img class="uk-margin-large-top" src="{{ url_for('static', filename='img/tft_landing_pic001.jpg') }}"></li>
-                <li><img class="uk-margin-large-top" src="{{ url_for('static', filename='img/tft_landing_pic002.jpg') }}"></li>
-            </ul>
-    </div>
-  </div>
-  <div class="uk-width-1-2">
-    <div class="row">
-      <div class="uk-block uk-block-primary">
-        <div class="uk-text-left"><h1>TFT Graphic</h1>
         </div>
-        <div><!-- SWITCHER DIV -->
-            <!-- This is the nav containing the toggling elements -->
-            <ul data-uk-switcher="{connect:'#text_switcher, #picture_switcher'}" class="uk-nav uk-nav-side">
-                <li class="uk-active"><a href="">TFT0</a></li>
-                <li><a href="">TFT1</a></li>
-                <li><a href="">TFT2</a></li>
-            </ul>
-
-            <!-- These are the containers of the content items -->
-            <ul id="text_switcher" class="uk-switcher">
-                <li>This is a TFT0 Diplays that you'll need.</li>
-                <li>This is a TFT1 Diplays that you'll need.</li>
-                <li>This is a TFT2 Diplays that you'll need.</li>
-            </ul>
-        </div> <!-- END SWITCHER DIV -->
-      </div>
     </div>
-  </div>
+    <div class="uk-width-1-2">
+        <a>
+            <img src="{{ url_for('static', filename='img/display_page/pic001_tft.png') }}" alt="" height="" width="">
+        </a>
+    </div>
 </div>
 
+<hr>
 
+<div class="uk-grid">
+    <div class="uk-width-1-5"></div>
+
+
+    <div class="uk-width-3-5">
+        <div class="uk-grid">
+            <div class="uk-width-1-5">
+                <form class="uk-form uk-form-stacked  uk-margin-2em-left">
+                    <fieldset>
+
+                        <label class="uk-form-label">Size</label>
+                        <select class="uk-text-center">
+                            <option value="">-</option>
+                            <option value="1">2.36</option>
+                            <option value="2">3.5</option>
+                            <option value="3">4.0</option>
+                            <option value="4">4.2</option>
+                            <option value="5">4.3</option>
+                            <option value="6">5.0</option>
+                            <option value="7">5.7</option>
+                            <option value="8">6.4</option>
+                            <option value="9">6.5</option>
+                            <option value="10">6.95</option>
+                            <option value="11">7.0</option>
+                            <option value="12">8.0</option>
+                            <option value="13">9.0</option>
+                            <option value="14">10.0</option>
+                            <option value="15">10.2</option>
+                            <option value="16">10.4</option>
+                            <option value="17">12.1</option>
+                            <option value="18">15</option>
+                            <option value="19">15.0</option>
+                            <option value="20">17.0</option>
+                            <option value="21">19.0</option>
+                        </select>
+
+                    </fieldset>
+
+                </form>
+            </div>
+
+            <div class="uk-width-1-5">
+                <form class="uk-form uk-form-stacked  uk-margin-2em-left">
+                    <fieldset>
+                        <label class="uk-form-label">Width</label>
+                        <select class="uk-text-center">
+                            <option value="">-</option>
+                            <option value="1">96</option>
+                            <option value="2">160</option>
+                            <option value="3">240</option>
+                            <option value="4">320</option>
+                            <option value="5">480</option>
+                            <option value="6">640</option>
+                            <option value="7">800</option>
+                            <option value="8">1024</option>
+                            <option value="9">1280</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="uk-width-1-5">
+                <form class="uk-form uk-form-stacked  uk-margin-2em-left">
+                    <fieldset>
+                        <label class="uk-form-label">Height</label>
+                        <select class="uk-text-center">
+                            <option value="">-</option>
+                            <option value="1">96</option>
+                            <option value="2">234</option>
+                            <option value="3">240</option>
+                            <option value="4">272</option>
+                            <option value="5">320</option>
+                            <option value="6">432</option>
+                            <option value="7">480</option>
+                            <option value="8">600</option>
+                            <option value="9">768</option>
+                            <option value="10">800</option>
+                            <option value="11">1024</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="uk-width-1-5">
+                <form class="uk-form uk-form-stacked  uk-margin-2em-left ">
+                    <fieldset>
+                        <label class="uk-form-label">Touch Panel</label>
+                        <select class="uk-text-center">
+                            <option value="">-</option>
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                            <option value="3">Optional</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="uk-width-1-5">
+                <form class="uk-form uk-form-stacked  uk-margin-2em-left">
+                    <fieldset>
+                        <label class="uk-form-label">Sunlight Readable</label>
+                        <select class="uk-text-center">
+                            <option value="">-</option>
+                            <option value="1">No</option>
+                            <option value="2">Yes</option>
+                            <option value="3">Optional</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-5"></div>
+</div>
+<hr>
+<div class="uk-grid">
+<table class="uk-table">
+    <caption>...</caption>
+    <thead>
+        <tr>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Footer</td>
+        </tr>
+    </tfoot>
+    <tbody>
+
+    <tr>
+        <td>sdfefd1</td>
+        <td>gffgfg2</td>
+        <td>fgfgfgfg3</td>
+        <td>fgfgfgfg4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+    </tr>
+    <tr>
+            <td>3</td>
+        </tr>
+    <tr>
+            <td>3</td>
+        </tr>
+    <tr>
+            <td>3</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div>
 {% endblock %}
