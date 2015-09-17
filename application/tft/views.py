@@ -24,6 +24,12 @@ def tft_details(tft_id):
 def tft_list():
     return render_template('tft_list.html')
 
+# List size
+@tft.route('/list/<string:tft_size>/size')
+def tft_list_size():
+    # liste get.tft_size == tft_size
+    return render_template('tft_list.html')
+
 
 # Advanced search
 @tft.route("/tft_advanced_search")
