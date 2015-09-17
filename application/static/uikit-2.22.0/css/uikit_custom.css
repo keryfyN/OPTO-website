@@ -223,10 +223,12 @@ iframe {
   margin-bottom: 0;
 }
 .uk-grid {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .uk-grid > * {
   padding-left: 10px;
+  padding-top: 10px;
+}
 }
 .uk-grid + .uk-grid,
 .uk-grid-margin,
@@ -239,6 +241,8 @@ iframe {
   }
   .uk-grid > * {
     padding-left: 10px;
+    padding-top: 10px;
+}
   }
   .uk-grid + .uk-grid,
   .uk-grid-margin,
@@ -6844,7 +6848,7 @@ a.uk-datepicker-table-muted {
   top: 0;
   left: 0;
   width: 100%;
-  height:30em;
+  height: 47em;
   opacity: 0;
 }
 .uk-slideshow > .uk-active {
