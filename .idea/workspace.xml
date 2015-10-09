@@ -2,84 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccba586c-0516-4c31-a8c7-dac36f972912" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/company/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/frontend/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/test/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/structure/footer_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/frontend/froms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/structure/nav_en_large.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/test/tuto.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/tfts/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/frontend/views.py" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\displays_landing_en.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\tft\tft_displays_advanced_search.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\tft\tft_displays_landing_en.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\tft\tft_displays_list.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\test\test.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\footer_en.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\nav_en_large.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\tft\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\mmqw2gfb.o0m.txt" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\company\company_de.html" afterPath="$PROJECT_DIR$/application/templates/company/company_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\company\company_en.html" afterPath="$PROJECT_DIR$/application/templates/company/company_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\company\company_fr.html" afterPath="$PROJECT_DIR$/application/templates/company/company_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\company\company_it.html" afterPath="$PROJECT_DIR$/application/templates/company/company_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\contact\contact_de.html" afterPath="$PROJECT_DIR$/application/templates/frontend/contact_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\contact\contact_en.html" afterPath="$PROJECT_DIR$/application/templates/frontend/contact_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\contact\contact_fr.html" afterPath="$PROJECT_DIR$/application/templates/frontend/contact_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\contact\contact_it.html" afterPath="$PROJECT_DIR$/application/templates/frontend/contact_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\index_de.html" afterPath="$PROJECT_DIR$/application/templates/frontend/index_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\index_en.html" afterPath="$PROJECT_DIR$/application/templates/frontend/index_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\index_fr.html" afterPath="$PROJECT_DIR$/application/templates/frontend/index_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\index_it.html" afterPath="$PROJECT_DIR$/application/templates/frontend/index_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\partners\partners_de.html" afterPath="$PROJECT_DIR$/application/templates/partners/partners_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\partners\partners_en.html" afterPath="$PROJECT_DIR$/application/templates/partners/partners_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\partners\partners_fr.html" afterPath="$PROJECT_DIR$/application/templates/partners/partners_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\partners\partners_it.html" afterPath="$PROJECT_DIR$/application/templates/partners/partners_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\custom_displays\custom_displays_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/custom_displays/custom_displays_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\ePAPER\ePAPER_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/ePAPER/ePAPER_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\lcd\lcd_advanced_search.html" afterPath="$PROJECT_DIR$/application/templates/lcd/lcd_advanced_search.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\lcd\lcd_details.html" afterPath="$PROJECT_DIR$/application/templates/lcd/lcd_details.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\lcd\lcd_graphic_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/lcd/lcd_graphic_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\lcd\lcd_list.html" afterPath="$PROJECT_DIR$/application/templates/lcd/lcd_list.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\lcd\lcd_segment_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/lcd/lcd_segment_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\oled\oled_advanced_search.html" afterPath="$PROJECT_DIR$/application/templates/oled/oled_advanced_search.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\oled\oled_details.html" afterPath="$PROJECT_DIR$/application/templates/oled/oled_details.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\oled\oled_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/oled/oled_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\oled\oled_list.html" afterPath="$PROJECT_DIR$/application/templates/oled/oled_list.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\displays\tft\tft_displays_details.html" afterPath="$PROJECT_DIR$/application/templates/tfts/tft_displays_details.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\products_de.html" afterPath="$PROJECT_DIR$/application/templates/products/products_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\products_en.html" afterPath="$PROJECT_DIR$/application/templates/products/products_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\products_fr.html" afterPath="$PROJECT_DIR$/application/templates/products/products_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\products_it.html" afterPath="$PROJECT_DIR$/application/templates/products/products_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\touch_panels\pcap_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/products/touch_panels/pcap_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\touch_panels\rtp_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/products/touch_panels/rtp_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\products\touch_panels\touch_panels_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/products/touch_panels/touch_panels_landing_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\solutions\solution_de.html" afterPath="$PROJECT_DIR$/application/templates/solutions/solution_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\solutions\solutions_en.html" afterPath="$PROJECT_DIR$/application/templates/solutions/solutions_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\solutions\solutions_fr.html" afterPath="$PROJECT_DIR$/application/templates/solutions/solutions_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\solutions\solutions_it.html" afterPath="$PROJECT_DIR$/application/templates/solutions/solutions_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\support\support_de.html" afterPath="$PROJECT_DIR$/application/templates/support/support_de.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\support\support_en.html" afterPath="$PROJECT_DIR$/application/templates/support/support_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\support\support_fr.html" afterPath="$PROJECT_DIR$/application/templates/support/support_fr.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\support\support_it.html" afterPath="$PROJECT_DIR$/application/templates/support/support_it.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\main_pages\test\test2.html" afterPath="$PROJECT_DIR$/application/templates/test/test2.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\header_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/header_en.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\nav_en_med.html" afterPath="$PROJECT_DIR$/application/templates/structure/nav_en_med.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\include_parts\nav_en_small.html" afterPath="$PROJECT_DIR$/application/templates/structure/nav_en_small.html" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\tft\__init__.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\tft\constants.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/constants.py" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\tft\forms.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/forms.py" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\tft\models.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/404.html" afterPath="$PROJECT_DIR$/application/templates/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/__init__.py" afterPath="$PROJECT_DIR$/application/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/base_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/base_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/manager.py" afterPath="$PROJECT_DIR$/application/manager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/default_settings.py" afterPath="$PROJECT_DIR$/application/default_settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/blueprints/tfts/models.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OPTO-website.iws" />
@@ -105,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/application/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -113,44 +38,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tft_displays_landing_en.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.653846">
-              <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
+                <element signature="e#25#121#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/manager.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_en.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/templates/frontend/index_en.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.461538">
-              <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,46 +72,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uikit.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
+      <file leaf-file-name="tft_displays_landing_en.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="329" column="2" selection-start-line="329" selection-start-column="2" selection-end-line="329" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.4016227">
+              <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uikit_custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.275862">
-              <caret line="6290" column="8" selection-start-line="6290" selection-start-column="8" selection-end-line="6290" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14834206">
-              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-              <folding>
-                <element signature="e#25#121#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/utils.py">
+      <file leaf-file-name="default_settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/default_settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#83#92#0" expanded="true" />
-              </folding>
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -264,10 +147,11 @@
         <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css" />
         <option value="$PROJECT_DIR$/application/templates/test/test.html" />
         <option value="$PROJECT_DIR$/application/templates/structure/header_en.html" />
-        <option value="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
         <option value="$PROJECT_DIR$/application/blueprints/tfts/views.py" />
+        <option value="$PROJECT_DIR$/application/default_settings.py" />
         <option value="$PROJECT_DIR$/application/__init__.py" />
         <option value="$PROJECT_DIR$/application/blueprints/tfts/models.py" />
+        <option value="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
       </list>
     </option>
   </component>
@@ -275,10 +159,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="x" value="693" />
+    <option name="y" value="6" />
+    <option name="width" value="1265" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -322,6 +206,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,10 +244,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OPTO-website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tfts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,17 +451,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1040" extended-state="6" />
-    <editor active="false" />
+    <frame x="693" y="6" width="1265" height="1024" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27742448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28443357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39822024" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40484428" sideWeight="0.49789253" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3193658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33564013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -588,13 +512,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/templates/oled/oled_landing_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18106508">
-          <caret line="9" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/lcd/lcd_segment_landing_en.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1408284">
@@ -740,31 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/production.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22796935">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/frontend/froms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/default_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -807,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4162436">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.028764805">
           <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,15 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,15 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8274112">
           <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="329" column="2" selection-start-line="329" selection-start-column="2" selection-end-line="329" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,23 +766,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.275862">
           <caret line="6290" column="8" selection-start-line="6290" selection-start-column="8" selection-end-line="6290" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="329" column="2" selection-start-line="329" selection-start-column="2" selection-end-line="329" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.504363">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/frontend/index_en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.461538">
+        <state vertical-scroll-proportion="0.9250457">
           <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.2582897">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/db/app_dev.sqlite">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2319688">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.099415205">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/default_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,59 +872,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.653846">
-          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4016227">
+          <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#83#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/blueprints/tfts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14834206">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <element signature="e#25#121#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

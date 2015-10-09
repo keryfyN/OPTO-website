@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from sqlalchemy import Column, Integer, String, DateTime, Float, ForeignKey, func, create_engine
-from sqlalchemy.orm import relationship, backref
+from sqlalchemy.orm import relationship, backref, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from ..utils import get_current_time, STRING_LEN
+from ...utils import get_current_time, STRING_LEN
+
+session1=sessionmaker()
 
 
 Base = declarative_base()
-
 
 class TftSize(Base):
     __tablename__ = 'tft_size'
@@ -15,6 +16,13 @@ class TftSize(Base):
     id = Column(Integer, primary_key=True)
     size_inch = Column(Float)
     size_mm = Column(Float)
+
+    def __init__(self, size_inch):
+        self.size_inch = size_inch
+        self.size_mm = self.size_inch * 25.4
+
+    def __repr__(self):
+        return '<TftSize %s [inch]>' % str(self.size_inch)
 
 
 class TftResolution(Base):
@@ -24,11 +32,19 @@ class TftResolution(Base):
     resolution_x = Column(Integer)
     resolution_y = Column(Integer)
 
+    def __init__(self, resolution_x, resolution_y):
+        self.resolution_x = resolution_x
+        self.resolution_y = resolution_y
+
+    def __repr__(self):
+        return '<TftResolution %s x %s [px]>' % (str(self.resolution_x), str(self.resolution_y))
+
 
 class Tft(Base):
     __tablename__ = 'tft_table'
 
     id = Column(Integer, primary_key=True)
+
     name_customer = Column(String(STRING_LEN), nullable=False, unique=True)
     name_supplier = Column(String(STRING_LEN), nullable=False, unique=True)
     article_number_opto = Column(String(11))
@@ -40,12 +56,21 @@ class Tft(Base):
     # Some parameters, ....
 
     # ================================================================
-    # One-to-one (uselist=False) relationship between users and user_details.
+    # External links
     tft_size_id = Column(Integer, ForeignKey("tft_size.id"))
+    tft_size = relationship(TftSize, backref=backref('tfts', uselist=True, cascade='delete,all'))
+
     tft_resolution_id = Column(Integer, ForeignKey("tft_resolution.id"))
+    tft_resolution = relationship(TftResolution, backref=backref('tfts', uselist=True, cascade='delete,all'))
 
     # ================================================================
     # Class methods
 
-#make a new session object
-s= session()
+    def __init__(self, name_customer, name_supplier, article_number_opto, article_number_supplier):
+        self.name_customer = name_customer
+        self.name_supplier = name_supplier
+        self.article_number_opto = article_number_opto
+        self.article_number_supplier = article_number_supplier
+
+    def __repr__(self):
+        return '<Tft %s >' % self.article_number_opto
