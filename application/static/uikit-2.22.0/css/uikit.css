@@ -446,10 +446,10 @@ iframe {
  */
 /* Horizontal */
 .uk-grid {
-  margin-left: -25px;
+  margin-left: 0px;
 }
 .uk-grid > * {
-  padding-left: 25px;
+  padding-left: 0px;
 }
 /* Vertical */
 .uk-grid + .uk-grid,
@@ -461,10 +461,10 @@ iframe {
 @media (min-width: 1220px) {
   /* Horizontal */
   .uk-grid {
-    margin-left: -35px;
+    margin-left: 0px;
   }
   .uk-grid > * {
-    padding-left: 35px;
+    padding-left: 0px;
   }
   /* Vertical */
   .uk-grid + .uk-grid,
@@ -494,10 +494,10 @@ iframe {
  */
 /* Horizontal */
 .uk-grid-small {
-  margin-left: -10px;
+  margin-left: 0px;
 }
 .uk-grid-small > * {
-  padding-left: 10px;
+  padding-left: 0px;
 }
 /* Vertical */
 .uk-grid-small + .uk-grid-small,
@@ -510,10 +510,10 @@ iframe {
  */
 /* Horizontal */
 .uk-grid-medium {
-  margin-left: -25px;
+  margin-left: 0px;
 }
 .uk-grid-medium > * {
-  padding-left: 25px;
+  padding-left: 0px;
 }
 /* Vertical */
 .uk-grid-medium + .uk-grid-medium,
@@ -529,12 +529,12 @@ iframe {
  * Does not work with `uk-push-*`, `uk-pull-*` and not if the columns float into the next row.
  */
 .uk-grid-divider:not(:empty) {
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .uk-grid-divider > * {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .uk-grid-divider > [class*='uk-width-1-']:not(.uk-width-1-1):nth-child(n+2),
 .uk-grid-divider > [class*='uk-width-2-']:nth-child(n+2),
@@ -565,16 +565,16 @@ iframe {
      * Large gutter
      */
   .uk-grid-divider:not(:empty) {
-    margin-left: -35px;
-    margin-right: -35px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .uk-grid-divider > * {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .uk-grid-divider:empty {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 /*

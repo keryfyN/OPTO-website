@@ -1,8 +1,8 @@
 from flask import Flask, render_template
+from flask_debugtoolbar import DebugToolbarExtension
 from flask_sqlalchemy import SQLAlchemy
-from .tft import Tft, tft
-from .lcd import Lcd, lcd
-
+from .blueprints.tfts import tft
+from .frontend import frontend
 
 
 # Create the app and configuration
@@ -10,15 +10,17 @@ from .lcd import Lcd, lcd
 app = Flask(__name__)
 app.config.from_object('application.default_settings')
 app.config.from_envvar('PRODUCTION_SETTINGS', silent=True)
-# from flask_debugtoolbar import DebugToolbarExtension
 
 
 # Register the following plugins(blueprints)
+app.register_blueprint(frontend)
 app.register_blueprint(tft)
-app.register_blueprint(lcd)
+
 
 # Connect to database with sqlalchemy.
 db = SQLAlchemy(app)
+
+# Connect utility
 #toolbar = DebugToolbarExtension(app)
 
 
