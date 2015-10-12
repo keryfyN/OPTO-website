@@ -13,18 +13,16 @@
                             <ul class="uk-nav uk-nav-dropdown uk-panel">
                                 <!-- new sub -->
                                 <li class="uk-panel">
-                                    <a href="#" style="padding:0; margin:0">
+                                    <a href="#">
                                         <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
                                     </a>
                                 </li>
                                 <li><a href="{{ url_for('tfts.tft_landing_en')}}">TFT Displays</a></li>
-
-                                <li><a href="#">LCD Graphic</a></li>
-                                <li><a href="#">LCD Segment</a></li>
-                                <li><a href="#">OLED</a></li>
-                                <li><a href="#">ePAPER</a></li>
-                                <li><a href="#">CUSTOM Displays</a></li>
-
+                                <li><a href="{{ url_for('lcd.lcd_graphic')}}">LCD Graphic</a></li>
+                                <li><a href="{{ url_for('lcd.lcd_segment')}}">LCD Segment</a></li>
+                                <li><a href="{{ url_for('oled.oled_landing_en')}}">OLED</a></li>
+                                <li><a href="{{ url_for('epaper.epaper_landing_en')}}">ePAPER</a></li>
+                                <li><a href="{{ url_for('custom_displays.custom_displays_landing_en')}}">CUSTOM Displays</a></li>
 
                                 <!-- new sub -->
                                 <li class="uk-panel">

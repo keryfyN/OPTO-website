@@ -2,6 +2,10 @@ from flask import Flask, render_template
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_sqlalchemy import SQLAlchemy
 from .blueprints.tfts import tft
+from .blueprints.lcd import lcd
+from .blueprints.oled import oled
+from .blueprints.epaper import epaper
+from .blueprints.custom_displays import custom_displays
 from .frontend import frontend
 
 
@@ -15,6 +19,10 @@ app.config.from_envvar('PRODUCTION_SETTINGS', silent=True)
 # Register the following plugins(blueprints)
 app.register_blueprint(frontend)
 app.register_blueprint(tft)
+app.register_blueprint(lcd)
+app.register_blueprint(oled)
+app.register_blueprint(epaper)
+app.register_blueprint(custom_displays)
 
 
 # Connect to database with sqlalchemy.
@@ -39,4 +47,3 @@ def server_error(error):
     return render_template('500.html', title=title), 500
 
 
-import application.manager

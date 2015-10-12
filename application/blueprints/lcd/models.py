@@ -2,7 +2,7 @@
 
 from sqlalchemy import Column, Integer, String, DateTime, Float, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from ..utils import get_current_time, STRING_LEN
+from application.utils import get_current_time, STRING_LEN
 
 
 Base = declarative_base()
