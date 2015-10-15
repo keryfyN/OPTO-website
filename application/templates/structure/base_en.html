@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/uikit.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/uikit_custom.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/components/dotnav.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='hover-master/css/hover.css') }}" />
+
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/uikit.min.js') }}"></script>
@@ -30,7 +32,6 @@
   <body>
     <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
       {% include '/structure/nav_en_large.html' %}
-      {% include '/structure/nav_en_med.html' %}
       {% include '/structure/nav_en_small.html' %}
     </div>
 

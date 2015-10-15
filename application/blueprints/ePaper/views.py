@@ -8,7 +8,7 @@ epaper = Blueprint('epaper', __name__, url_prefix='/products/displays/epaper')
 @epaper.route('/')
 def epaper_landing_en():
     #print(request.accept_languages)
-    return render_template('/epaper/epaper_displays_landing_en.html' , title='EPAPER | OPTO Logic TECHNOLOGY')
+    return render_template('/epaper/epaper_landing_en.html' , title='EPAPER | OPTO Logic TECHNOLOGY')
 
 # Details
 @epaper.route('/<int:epaper_id>/details')

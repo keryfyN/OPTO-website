@@ -4,6 +4,8 @@
       <w>dropdown</w>
       <w>epaper</w>
       <w>oled</w>
+      <w>pcap</w>
+      <w>slideshow</w>
     </words>
   </dictionary>
 </component>

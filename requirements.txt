@@ -1,1 +1,2 @@
+blueprints
 -r requirements/production.txt

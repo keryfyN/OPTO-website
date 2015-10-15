@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from .models import Tft
+from .models import TftSize
 from .views import tft
