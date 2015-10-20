@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_debugtoolbar import DebugToolbarExtension
 
 from .database import db
-from .blueprints.tfts.models import TftSize
+from .blueprints.tfts.models import TftSize, TftResolution, Tft, TftPort
 from .blueprints.touch_panels.models import TouchPanelSize
+from .blueprints.thermal_printers.models import ThermalPrintersSize
+from .blueprints.computers.models import Computer
+from .blueprints.others.models import Others
+
 
 
 # ------------------------------- #
@@ -48,6 +52,18 @@ def create_app():
     # products/touch panels blueprints
     from .blueprints.touch_panels import touch_panels
     app.register_blueprint(touch_panels)
+
+    # products/thermal_printers blueprints
+    from .blueprints.thermal_printers import thermal_printers
+    app.register_blueprint(thermal_printers)
+
+    # products/computers blueprints
+    from .blueprints.computers import computers
+    app.register_blueprint(computers)
+
+    # products/others blueprints
+    from .blueprints.others import others
+    app.register_blueprint(others)
 
     # 404 page not found "route"
     @app.errorhandler(404)

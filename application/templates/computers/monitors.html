@@ -47,8 +47,8 @@
         <ul class="uk-breadcrumb">
             <li><a href="/index/">Home</a></li>
             <li><a href="/products/">Products</a></li>
-            <li><a href="/displays/">Displays</a></li>
-            <li><a href="/tft/">TFT</a></li>
+            <li><a href="/displays/">Thermal Printers</a></li>
+            <li><a href="/tft/">Panel Printers</a></li>
         </ul>
     </div>
     <!-- SECTION 1 VISIBILITY LARGE/MEDIUM -->
@@ -153,6 +153,7 @@
                 </div>
             </div>
             <hr>
+
             <!-- interface -->
             <div class="uk-grid">
                 <div class="uk-width-1-10">Interface</div>
@@ -173,15 +174,15 @@
             <ul data-uk-switcher="{connect:'#list_switcher'}" class="uk-tab" data-uk-tab>
                 <!-- All models -->
                 <li class="uk-active">
-                    <a href=""><div>All models ({{tft_list_all_count}})</div></a>
+                    <a href=""><div>All models (?)</div></a>
                 </li>
                 <!-- In Production -->
                 <li>
-                    <a href=""><div>In Production ({{tft_list_prod_count}})</div></a>
+                    <a href=""><div>In Production (?)</div></a>
                 </li>
                 <!-- Discontinued -->
                 <li>
-                    <a href=""><div>Discontinued ({{tft_list_old_count}})</div></a>
+                    <a href=""><div>Discontinued (?)</div></a>
                 </li>
             </ul>
             <!-- LIST VISIBLE ALL MODELS -->
@@ -194,26 +195,81 @@
                                 <th>Size &quot;</th>
                                 <th>Resolution</th>
                                 <th>Brightness</th>
+                                <th>C/R</th>
+                                <th>Colors</th>
+                                <th>Backlight</th>
                                 <th>Interface</th>
-                                <th>Touch</th>
-                                <th>Operating Temp</th>
-                                <th>Viewing Angle</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody class="">
-                            {% for tft in tft_list_all %}
                             <tr>
-                                <td>{{ tft.article_number_supplier }}</td>
-                                <td>{{ tft.tft_size.size_inch }} </td>
-                                <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} {{ tft.tft_resolution.resolution_text }}</td>
-                                <td>{{ tft.tft_brightness }} </td>
-                                <td>{{ tft.tft_port.port_type }} </td>
-                                <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
-                                <td>Between {{ tft.tft_operating_temperature_min}} and {{ tft.tft_operating_temperature_max}}</td>
-                                <td>left{{tft.tft_viewing_angle_l}}&deg;, right{{tft.tft_viewing_angle_r}}&deg;, up{{tft.tft_viewing_angle_u}}&deg;, down{{tft.tft_viewing_angle_d}}&deg;  </td>
-                                <a href="{{ tft.id }}"></a>
+                                <td><a href="#">FG0507FSSDFFSSfddf45</a></td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                                <td>400</td>
+                                <td>800:1</td>
+                                <td>16.7M</td>
+                                <td>WLED</td>
+                                <td>LVDS</td>
+                                <td><a href="#"><i class="uk-icon-file-pdf-o"></i></a></td>
                             </tr>
-                            {% endfor %}
+                            <tr>
+                                <td><a href="#">FG0507FSSDFFSSfddf45</a></td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                                <td>400</td>
+                                <td>800:1</td>
+                                <td>16.7M</td>
+                                <td>WLED</td>
+                                <td>LVDS</td>
+                                <td><a href="#"><i class="uk-icon-file-pdf-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">FG0507FSSDFFSSfddf45</a></td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                                <td>400</td>
+                                <td>800:1</td>
+                                <td>16.7M</td>
+                                <td>WLED</td>
+                                <td>LVDS</td>
+                                <td><a href="#"><i class="uk-icon-file-pdf-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">FG0507FSSDFFSSfddf45</a></td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                                <td>400</td>
+                                <td>800:1</td>
+                                <td>16.7M</td>
+                                <td>WLED</td>
+                                <td>LVDS</td>
+                                <td><a href="#"><i class="uk-icon-file-pdf-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">FG0507FSSDFFSSfddf45</a></td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                                <td>400</td>
+                                <td>800:1</td>
+                                <td>16.7M</td>
+                                <td>WLED</td>
+                                <td>LVDS</td>
+                                <td><a href="#"><i class="uk-icon-file-pdf-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">FG0507FSSDFFSSfddf45</a></td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                                <td>400</td>
+                                <td>800:1</td>
+                                <td>16.7M</td>
+                                <td>WLED</td>
+                                <td>LVDS</td>
+                                <td><a href="#"><i class="uk-icon-file-pdf-o"></i></a></td>
+                            </tr>
+
                         </tbody>
                         <tfoot>
                             <tr>
@@ -222,41 +278,33 @@
                     </table>
                 </li>
                 <li>
-                    <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed">
-                        <thead class="">
-                            <tr>
-                                <th>Panel model</th>
-                                <th>Size &quot;</th>
-                                <th>Resolution</th>
-                                <th>Brightness</th>
-                                <th>Interface</th>
-                                <th>Touch</th>
-                                <th>Operating Temp</th>
-                                <th>Viewing Angle</th>
-                            </tr>
-                        </thead>
+                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed">
+                    <thead class="">
+                        <tr>
+                            <th>Panel model</th>
+                            <th>Size &quot;</th>
+                            <th>Resolution</th>
+                        </tr>
+                    </thead>
 
-                        <tbody class="">
-                            {% for tft in tft_list_prod %}
-                            <tr>
-                                <td>{{ tft.article_number_supplier }}</td>
-                                <td>{{ tft.tft_size.size_inch }} </td>
-                                <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} {{ tft.tft_resolution.resolution_text }}</td>
-                                <td>{{ tft.tft_brightness }} </td>
-                                <td>{{ tft.tft_port.port_type }} </td>
-                                <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
-                                <td>Between {{ tft.tft_operating_temperature_min}} and {{ tft.tft_operating_temperature_max}}</td>
-                                <td>left{{tft.tft_viewing_angle_l}}&deg;, right{{tft.tft_viewing_angle_r}}&deg;, up{{tft.tft_viewing_angle_u}}&deg;, down{{tft.tft_viewing_angle_d}}&deg;  </td>
-                                <a href="{{ tft.id }}"></a>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </li>
+                    <tbody class="">
+                        <tr>
+                            <td>FG0507FSSDFFSSfddf45</td>
+                            <td>5&quot;</td>
+                            <td>800x600 XGA</td>
+                        </tr>
+                        <tr>
+                            <td>FG0507FSSDFFSSfddf45</td>
+                            <td>5&quot;</td>
+                            <td>800x600 XGA</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        </tr>
+                    </tfoot>
+                </table>
+            </li>
                 <li>
                     <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed">
                         <thead class="">
@@ -264,28 +312,30 @@
                                 <th>Panel model</th>
                                 <th>Size &quot;</th>
                                 <th>Resolution</th>
-                                <th>Brightness</th>
-                                <th>Interface</th>
-                                <th>Touch</th>
-                                <th>Operating Temp</th>
-                                <th>Viewing Angle</th>
                             </tr>
                         </thead>
 
                         <tbody class="">
-                            {% for tft in tft_list_old %}
                             <tr>
-                                <td>{{ tft.article_number_supplier }}</td>
-                                <td>{{ tft.tft_size.size_inch }} </td>
-                                <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} {{ tft.tft_resolution.resolution_text }}</td>
-                                <td>{{ tft.tft_brightness }} </td>
-                                <td>{{ tft.tft_port.port_type }} </td>
-                                <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
-                                <td>Between {{ tft.tft_operating_temperature_min}} and {{ tft.tft_operating_temperature_max}}</td>
-                                <td>left{{tft.tft_viewing_angle_l}}&deg;, right{{tft.tft_viewing_angle_r}}&deg;, up{{tft.tft_viewing_angle_u}}&deg;, down{{tft.tft_viewing_angle_d}}&deg;  </td>
-                                <a href="{{ tft.id }}"></a>
+                                <td>FG0507FSSDFFSSfddf45</td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
                             </tr>
-                            {% endfor %}
+                            <tr>
+                                <td>FG0507FSSDFFSSfddf45</td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                            </tr>
+                            <tr>
+                                <td>FG0507FSSDFFSSfddf45</td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                            </tr>
+                            <tr>
+                                <td>FG0507FSSDFFSSfddf45</td>
+                                <td>5&quot;</td>
+                                <td>800x600 XGA</td>
+                            </tr>
                         </tbody>
 
                         <tfoot>

@@ -23,3 +23,4 @@ def index():
     # DEFAULT Version EN
     return render_template('/frontend/index_en.html', title='OPTO Logic TECHNOLOGY')
 
+
