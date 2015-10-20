@@ -12,6 +12,7 @@ from .blueprints.others.models import Others
 
 
 
+
 # ------------------------------- #
 #           App Factory           #
 # ------------------------------- #
