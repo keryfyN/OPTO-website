@@ -1,0 +1,172 @@
+{% extends "structure/base_en.html" %}
+{% block content %}
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                                  SlideShow                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
+    <ul class="uk-slideshow">
+        <!-- 1st image of the slideshow -->
+        <li class="uk-active uk-overlay">
+            <div class="uk-block uk-margin uk uk-block-center uk-block-middle uk-overlay-panel uk-text-center uk-animation-scale ">
+                <h1 class="uk-text">Products</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+            </div>
+            <img src="{{ url_for('static', filename='img/opto_pics/DSC08156.JPG') }}">
+        </li>
+        <!-- 2st image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
+        </li>
+        <!-- 3rd image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
+        </li>
+        <!-- 4th image of the slideshow -->
+        <li>
+            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
+        </li>
+    </ul>
+    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+        <li data-uk-slideshow-item="0"><a href=""></a></li>
+        <li data-uk-slideshow-item="1"><a href=""></a></li>
+        <li data-uk-slideshow-item="2"><a href=""></a></li>
+        <li data-uk-slideshow-item="3"><a href=""></a></li>
+    </ul>
+</div><!-- end div slidshow -->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                            START SECTION 1                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div id="1st_section">
+    <hr class="uk-grid-divider">
+    <div class="uk-grid" data-uk-grid-margin="">
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/OPTO_PICS/DSC08158.JPG') }}" alt="" height="400" width="660">
+        </div>
+        <div class="uk-width-medium-1-2">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Subheading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+        <a href="#top" class="uk-icon-chevron-up uk-container-center uk-align-center uk-icon-large" data-uk-smooth-scroll></a>
+    </div>
+</div>
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                            START SECTION 2                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div id="2nd_section">
+        <div id="parallax-box" class="bg-parallax-1" data-uk-parallax="{bg: '-500'}">
+             <div class="uk-hidden-small uk-contrast uk-overlay-background uk-width-small-2-2 uk-panel uk-panel-box-parallax  uk-width-medium-2-3 uk-width-large-2-3  ul-float-left" data-uk-parallax="{target:'#parallax-box',yp: '120', velocity: '0.7', viewport: '0.5'}" >
+                <h2 > Our revolutionating Displays</h2>
+                 <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                    fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                    Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                    Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                    ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
+                 </p>
+            </div>
+            <div class="uk-visible-small uk-contrast uk-overlay-background uk-width-small-1-1 uk-panel uk-panel-box-parallax ul-float-left" data-uk-parallax="{target:'#parallax-box',yp: '50', velocity: '0.7', viewport: '0.5'}" >
+                <h2 > Our revolutionating Displays</h2>
+                 <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                    fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                    Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                    Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                    ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
+                 </p>
+            </div>
+        </div>
+        <a href="#top" class="uk-icon-chevron-up uk-fload-center uk-align-center uk-icon-large" data-uk-smooth-scroll></a>
+</div>
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                            START SECTION 3                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div id="3rd_section">
+    <div class="uk-grid">
+        <div class="uk-width-medium-1-2">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Subheading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="uk-button uk-button-primary" href="#">Button</a>
+        </div>
+
+        <div class="uk-width-medium-1-2">
+            <img src="{{ url_for('static', filename='img/opto_pics/DSC08185.JPG') }}" alt="" height="400" width="660">
+        </div>
+        <a href="#top" class="uk-icon-chevron-up uk-container-center uk-align-center uk-icon-large" data-uk-smooth-scroll></a>
+    </div>
+</div>
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<!----------                            START SECTION 4                                                      ---------->
+<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
+<div id="4th_section">
+    <div class="uk-grid">
+        <div class="uk-hidden-small bg-parallax-2" data-uk-parallax="{bg: '-150'}">
+            <div class=" uk-float-right uk-width-medium-1-2 uk-contrast " data-uk-parallax="{yp:'150'}"> <!--data-uk-parallax="{viewport: '0.4', opacity:0}"-->
+                <div class="uk-margin-left uk-margin-right">
+                <h2> Our revolutionating Displays</h2>
+                <p > Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-visible-small bg-parallax-2" data-uk-parallax="{bg: '-150'}">
+            <div class=" uk-float-right uk-contrast " data-uk-parallax="{yp:'25'}"> <!--data-uk-parallax="{viewport: '0.4', opacity:0}"-->
+                <div class="uk-margin-left uk-margin-right">
+                <h2> Our revolutionating Displays</h2>
+                <p > Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
+                fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
+                Maecenas malesuada tortor augue, at auctor dolor vestibulum a. Sed sit amet fermentum mauris.
+                Phasellus posuere auctor nisi, id molestie sem blandit id. Vestibulum a luctus dui. Aliquam
+                ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
+                </p>
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="uk-icon-chevron-up uk-container-center uk-align-center uk-icon-large" data-uk-smooth-scroll></a>
+    </div>
+</div>
+<div id="5th_section">
+    <div class="uk-grid">
+        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+            <figure class="uk-overlay uk-overlay-hover">
+                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                    <p>Your Title Here.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+            <figure class="uk-overlay uk-overlay-hover">
+                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                    <p>Your Title Here.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+            <figure class="uk-overlay uk-overlay-hover">
+                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                    <p>Your Title Here.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="uk-width-small-1-2 uk-width-medium-1-4 uk-width-large-1-4">
+            <figure class="uk-overlay uk-overlay-hover">
+                <img class="uk-overlay-spin" src="{{ url_for('static', filename='img/opto_pics/filling_pic00.png') }}" alt="Image" height="400" width="600">
+                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                    <p>Your Title Here.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <a href="#top" class="uk-icon-chevron-up uk-container-center uk-align-center uk-icon-large" data-uk-smooth-scroll></a>
+    </div><!-- end 3rd_products -->
+</div>
+
+{% endblock %}

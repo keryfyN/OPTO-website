@@ -1,0 +1,89 @@
+{% extends "structure/base_en.html" %}
+{% block content %}
+
+<div class="uk-panel">&nbsp;</div>
+<div class="uk-grid">
+    <div>
+        <ul class="uk-breadcrumb">
+            <li><a href="/index/">Home</a></li>
+            <li><a href="/products/">Products</a></li>
+            <li><a href="/displays/">Displays</a></li>
+            <li><a href="/lcd_segment/">LCD Segment</a></li>
+            <li><span></span></li>
+        </ul>
+    </div>
+</div>
+<div class="uk-panel">&nbsp;</div>
+<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
+    <ul class="uk-slideshow uk-overlay-active">
+        <li style="height: 411px;" class="uk-active" aria-hidden="false">
+            <img style="" src="{{ url_for('static', filename='img/lorempixel_000.jpg') }}">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                <div>
+                    <h3>AFFS LCD Graphic</h3>
+                    <p>Lorem <a href="#">AFFS TFT Display</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <a href="#"><button class="uk-button uk-button-primary">Learn more</button></a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/lorempixel_001.jpg') }}">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">Hello 2</div>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/lorempixel_002.jpg') }}">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">Hello 3</div>
+        </li>
+    </ul>
+    <a href="" data-uk-slideshow-item="previous"></a>
+    <a href="" data-uk-slideshow-item="next"></a>
+</div>
+<div class="uk-grid uk-margin-small-left uk-margin-small-right">
+  <div class="uk-grid " data-uk-grid-match="">
+    <div class="uk-width-1-2">
+      <div class="row">
+        <div class="uk-block uk-block-primary">
+          <div class="uk-text-center">
+            <h1>LCD Graphic</h1>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper cursus dui, ut accumsan
+              lacus semper finibus. Sed vel tortor ultrices quam vehicula dictum. Aliquam eget leo sapien. Mauris
+              eget eros eu dui laoreet volutpat at eu dolor. In ultricies semper neque. Curabitur auctor rhoncus
+              maximus. Duis vehicula rutrum massa. Proin facilisis maximus turpis, vitae vehicula dolor auctor vel.
+              Ut ante dolor, vestibulum ac placerat lobortis, iaculis eget magna.
+            </p>
+            <p class="uk-hidden-small">
+              Integer hendrerit facilisis nulla, eu laoreet velit fermentum vitae. Sed aliquet porttitor libero
+              vel maximus. Donec eu mauris tellus. Donec consequat convallis mattis. Donec euismod augue sit amet
+              elit hendrerit, non euismod velit dignissim. Etiam a felis tincidunt, porttitor dolor eget, volutpat
+              leo. Phasellus molestie iaculis ex, non porta mauris dapibus ut. Curabitur pellentesque, ante id
+              scelerisque ultrices, eros quam laoreet ex, in molestie lectus magna id dolor. Nam laoreet semper elit,
+              at ultrices libero posuere ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Maecenas id pharetra erat. Sed ultrices augue sed eros dignissim vestibulum. Aenean
+              urna quam, placerat sit amet pretium eu, blandit vitae neque. Aenean vitae consequat lacus. Aliquam
+              in bibendum libero. Donec gravida diam a pulvinar accumsan.
+            </p>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eros
+              ligula, aliquet non pellentesque varius, pretium sed augue. Nam sit amet viverra quam. Mauris eu mi
+              sollicitudin, elementum massa in, hendrerit ligula. Vivamus fermentum eu nisi vitae scelerisque. Vivamus
+              tortor ligula, tempus eget lectus sit amet, malesuada ornare felis. Mauris eleifend vulputate lacinia.
+              Pellentesque tristique aliquam turpis, eu pulvinar est ornare vel. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Quisque sodales, eros sed finibus accumsan, nunc
+              purus fringilla est, at porta nisl nulla non tellus. Cras pulvinar dignissim laoreet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uk-width-1-2">
+      <div>
+        <br><br><br><br><br><br><br><br>
+        <img src="{{ url_for('static', filename='img/tft_landing_pic.jpg') }}">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

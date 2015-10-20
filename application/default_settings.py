@@ -6,4 +6,7 @@ _basedir = os.path.abspath(os.path.dirname(__file__))
 DEBUG = True
 RELOAD = True
 SECRET_KEY = 'mysecretkeyvalue'
-SQLALCHEMY_DATABASE_URI = 'sqlite:////' + os.path.join(_basedir, 'db/app_dev.db')
+
+
+PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + _basedir + '/db/db.sqlite'

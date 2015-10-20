@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  {% if title %}
-    <title>{{title}}</title>
-  {% else %}
-    <title>OPTO Logic TECHNOLOGY S.A.</title>
-  {% endif %}
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit.min.css') }}" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/uikit.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/uikit.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideshow-fx.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/sticky.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/sticky.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideset.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slideset.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slider.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/slider.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/parallax.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/parallax.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/core/scrollspy.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/core/scrollspy.js') }}"></script>
-  <script src="{{ url_for('static', filename='uikit-2.21.0/js/components/test-parallax.js') }}"></script>
-  <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/test-parallax.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.21.0/css/uikit_custom.css') }}" />
+<html content="width=device-width, initial-scale=1" lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+      <title>{{title}}</title>
+    {% else %}
+      <title>OPTO Logic TECHNOLOGY S.A.</title>
+    {% endif %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/uikit.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/uikit_custom.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/components/dotnav.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='hover-master/css/hover.css') }}" />
 
-</head>
-<body>
-  <div id="wrap">
-    {% include '/structure/include_parts/header_en.html' %}
-     <div class="container">
-    {% block content %}{% endblock %}
-     </div> <!-- container-fluid -->
-    <div id="push"></div>
-  </div> <!-- wrap id -->
 
-  {% include '/structure/include_parts/footer_en.html' %}
-</body>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/uikit.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slideshow.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slideshow-fx.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slideset.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/scrollspy.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/core/scrollspy.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/parallax.js') }}"></script>
+
+
+  </head>
+  <body>
+    <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+      {% include '/structure/nav_en_large.html' %}
+      {% include '/structure/nav_en_small.html' %}
+    </div>
+
+          {% block content %}{% endblock %}
+          {% include '/structure/footer_en.html' %}
+
+
+  </body>
 </html>
