@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ff888e-dde9-41f1-b4d9-23de782d2668" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/computers/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/others/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/computers/computers_details.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/computers/computers_landing_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/others/constants.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/others/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/computers/industrial_pcs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/others/laser_diodes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/thermal_printers/mechanism_printers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/thermal_printers/mobile_printers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/computers/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/others/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/thermal_printers/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/computers/monitors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/thermal_printers/panel_printers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/thermal_printers/pos_printers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/others/pos_systems.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/computers/som_system_on_module.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/thermal_printers/thermal_printers_details.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/templates/thermal_printers/thermal_printers_landing_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/computers/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/others/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/blueprints/thermal_printers/views.py" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\.idea\dictionaries\da.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\.idea\inspectionProfiles\Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\db\db.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\templates\structure\nav_en_med.html" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\da\PycharmProjects\OPTO-website\application\blueprints\__init__.py" afterPath="$PROJECT_DIR$/application/blueprints/thermal_printers/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Documentation/LogBook.xlsx" afterPath="$PROJECT_DIR$/Documentation/LogBook.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/__init__.py" afterPath="$PROJECT_DIR$/application/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/blueprints/tfts/__init__.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/blueprints/tfts/models.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/nav_en_large.html" afterPath="$PROJECT_DIR$/application/templates/structure/nav_en_large.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/nav_en_small.html" afterPath="$PROJECT_DIR$/application/templates/structure/nav_en_small.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shell.py" afterPath="$PROJECT_DIR$/shell.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/blueprints/frontend/views.py" afterPath="$PROJECT_DIR$/application/blueprints/frontend/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/blueprints/tfts/views.py" afterPath="$PROJECT_DIR$/application/blueprints/tfts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="67ff888e-dde9-41f1-b4d9-23de782d2668" name="Default" comment="" />
     <ignored path="OPTO-website.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
