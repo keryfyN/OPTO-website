@@ -5,11 +5,15 @@ from .models import Tft, TftSize, TftResolution, TftPort
 
 tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 
-
 # Landing
-@tft.route('/')
-def tft_landing_en():
+@tft.route('/', defaults = {'tft_size_link':'All'})
+@tft.route('/<tft_size_link>')
+def tft_landing_en(tft_size_link):
     # tft
+    #
+    # todo les clefs de tri size/resolution/port
+
+    global dic_position
     tft_list_all = Tft.query.all()
     tft_list_prod = Tft.query.filter_by(tft_in_production=True)
     tft_list_old = Tft.query.filter_by(tft_in_production=False)
@@ -17,14 +21,28 @@ def tft_landing_en():
     tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
     tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
-    # tft_size
+    # tft_size list and quantity ##############################################
+    #
+    # todo filtre en fct de la requete pour le lien actif
     tft_list_size = TftSize.query.all()
-    tft_list_size_count = []
-    tft_list_size_count.append(len(tft_list_size))
+    tft_list_size_and_count = []
 
-    for tft_list_size_one in tft_list_size:
+    # first position in the list of dictionaries
+    dic_all = dict([('size', 'All'), ('qty', tft_list_all_count), ('active', True), ('url', '')])
+    tft_list_size_and_count.append(dic_all)
 
-        tft_list_size_count.append(len(tft_list_size_one.tfts))
+    # next positions in the list of dictionaries
+    for tft_list_size_item in tft_list_size:
+        qty = len(tft_list_size_item.tfts)
+        dic_position = dict([('size', str(tft_list_size_item.size_inch)), ('qty', qty), ('active', False), ('url', str(tft_list_size_item.size_inch))])
+        tft_list_size_and_count.append(dic_position)
+
+    for tft_list_size_and_count_item in tft_list_size_and_count:
+        tft_list_size_and_count_item['active'] = tft_list_size_and_count_item['size'] == tft_size_link
+
+    # END tft_size list and quantity ##############################################
+
+
 
 
 
@@ -33,6 +51,7 @@ def tft_landing_en():
     tft_list_reso_x = TftResolution.resolution_x
     tft_list_reso_y = TftResolution.resolution_y
     tft_list_title = TftResolution.resolution_text
+
     # tft_port
     tft_list_port = TftPort.query.all()
 
@@ -43,13 +62,12 @@ def tft_landing_en():
                            tft_list_all_count=tft_list_all_count,
                            tft_list_prod_count=tft_list_prod_count,
                            tft_list_old_count=tft_list_old_count,
-                           tft_list_size=tft_list_size,
                            tft_list_reso_x=tft_list_reso_x,
                            tft_list_reso_y=tft_list_reso_y,
                            tft_list_title=tft_list_title,
                            tft_list_reso=tft_list_reso,
                            tft_list_port=tft_list_port,
-                           tft_list_size_count=tft_list_size_count
+                           tft_list_size_and_count=tft_list_size_and_count
                            )
 
 
