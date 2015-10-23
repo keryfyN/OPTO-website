@@ -93,9 +93,9 @@
     </div>
 
     <!-- SECTION LIST -->
-    <div id='list_displays' class="uk-panel">
+    <div class="uk-panel">
         <div class="uk-margin-bottom">
-            <h1 class="uk-margin-bottom-remove">List of displays</h1>
+            <h1 id="goto-list" class="uk-margin-bottom-remove">List of displays</h1>
         </div>
         <!-- list displays SIZE -->
         <div class="uk-panel uk-text-medium">
@@ -104,24 +104,22 @@
                 <div class="uk-width-1-10">Size</div>
                 <div class="uk-width-9-10">
                     <ul class="uk-flex uk-subnav uk-subnav-pill">
-                        {% for tft_list_size_and_count_item in tft_list_size_and_count %}
-                            {% if tft_list_size_and_count_item['active'] %}
+                        {% for size_count_item in size_count_list %}
+                            {% if size_count_item['active'] %}
                             <li class="uk-active">
                             {% else %}
-                            <li class=>
+                            <li class="">
                             {% endif %}
-
-                                <a href="{{ url_for('tfts.tft_landing_en')}}{{tft_list_size_and_count_item['url']}}">
-                                    {% if tft_list_size_and_count_item['size']== 'All' %}
-                                    {{ tft_list_size_and_count_item['size'] }}
+                                <a href="{{ url_for('tfts.tft_landing_en')}}{{size_count_item['url']}}">
+                                    {% if size_count_item['size']== 'All' and resolution %}
+                                    {{ size_count_item['size'] }}
                                     {% else %}
-                                    {{ tft_list_size_and_count_item['size'] }}&quot;
+                                    {{ size_count_item['size'] }}&quot;
                                     {% endif %}
 
-                                    ({{tft_list_size_and_count_item['qty']}})
+                                    ({{size_count_item['qty']}})
                                 </a>
                             </li>
-                            <li><a href="{{ tft_list_size_and_count_item }}"></a></li> <!---->
                         {% endfor %}
                     </ul>
 
@@ -130,15 +128,24 @@
             <hr>
             <!-- Resolution panel-->
             <div class="uk-grid">
-                <div class="uk-width-1-10">Resolution</div>
+                <div class="uk-width-1-10">Size</div>
                 <div class="uk-width-9-10">
                     <ul class="uk-flex uk-subnav uk-subnav-pill">
-                        <li class="uk-active"><a href="#">All({{tft_list_all_count}})</a></li>
-                        {% for tft_resolution in tft_list_reso %}
-                            <li class=""><a href="#">{{ tft_resolution.resolution_x}}x{{ tft_resolution.resolution_y}} : {{ tft_resolution.resolution_text}}</a></li>
-                            <li><a href="{{ tft_resolution.id }}"></a></li>
+                        {% for resolution_count_item in resolution_count_list %}
+                            {% if resolution_count_item['active'] %}
+                            <li class="uk-active">
+                            {% else %}
+                            <li class="">
+                            {% endif %}
+
+                                <a href="{{ url_for('tfts.tft_landing_en')}}{{resolution_count_item['url']}}">
+                                    {{ resolution_count_item['resolution'] }}
+                                    ({{resolution_count_item['qty']}})
+                                </a>
+                            </li>
                         {% endfor %}
                     </ul>
+
                 </div>
             </div>
             <hr>

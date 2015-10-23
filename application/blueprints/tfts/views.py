@@ -6,14 +6,14 @@ from .models import Tft, TftSize, TftResolution, TftPort
 tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 
 # Landing
-@tft.route('/', defaults = {'tft_size_link':'All'})
-@tft.route('/<tft_size_link>')
-def tft_landing_en(tft_size_link):
+@tft.route('/', defaults=dict(tft_size_link='All', tft_resolution_link='All'))
+@tft.route('/<tft_size_link>/<tft_resolution_link>')
+def tft_landing_en(tft_size_link, tft_resolution_link):
     # tft
     #
     # todo les clefs de tri size/resolution/port
 
-    global dic_position
+    global size_count_dic_item
     tft_list_all = Tft.query.all()
     tft_list_prod = Tft.query.filter_by(tft_in_production=True)
     tft_list_old = Tft.query.filter_by(tft_in_production=False)
@@ -21,28 +21,63 @@ def tft_landing_en(tft_size_link):
     tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
     tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
-    # tft_size list and quantity ##############################################
-    #
+    # Size tft list and quantity ##################################################
+    # #############################################################################
+
     # todo filtre en fct de la requete pour le lien actif
-    tft_list_size = TftSize.query.all()
-    tft_list_size_and_count = []
+
+    size_list = TftSize.query.all()
+    size_count_list = []
 
     # first position in the list of dictionaries
-    dic_all = dict([('size', 'All'), ('qty', tft_list_all_count), ('active', True), ('url', '')])
-    tft_list_size_and_count.append(dic_all)
+    size_count_dic_all_item = dict([('size', 'All'), ('qty', tft_list_all_count), ('active', True), ('url', '')])
+    size_count_list.append(size_count_dic_all_item)
 
     # next positions in the list of dictionaries
-    for tft_list_size_item in tft_list_size:
-        qty = len(tft_list_size_item.tfts)
-        dic_position = dict([('size', str(tft_list_size_item.size_inch)), ('qty', qty), ('active', False), ('url', str(tft_list_size_item.size_inch))])
-        tft_list_size_and_count.append(dic_position)
+    for size_item in size_list:
+        qty = len(size_item.tfts)
+        size_count_dic_item = dict([('size', str(size_item.size_inch)), ('qty', qty), ('active', False),
+                             ('url', str(size_item.size_inch))])
+        size_count_list.append(size_count_dic_item)
 
-    for tft_list_size_and_count_item in tft_list_size_and_count:
-        tft_list_size_and_count_item['active'] = tft_list_size_and_count_item['size'] == tft_size_link
+    # Scan to activate the link
+    for size_count_item in size_count_list:
+        size_count_item['active'] = size_count_item['size'] == tft_size_link
 
+    # #############################################################################
     # END tft_size list and quantity ##############################################
 
 
+    # Resolution tft list and quantity ############################################
+    # #############################################################################
+
+    # todo filtre en fct de la requete pour le lien actif
+
+    resolution_list = TftResolution.query.all()
+    resolution_count_list = []
+
+    # first position in the list of dictionaries
+    url_txt_all = '{0}/{1}'.format(tft_size_link, tft_resolution_link)
+    resolution_count_dic_all_item = dict([('resolution', 'All'), ('qty', tft_list_all_count), ('active', True), ('url', url_txt_all)])
+    resolution_count_list.append(resolution_count_dic_all_item)
+    print(resolution_count_list)
+
+    # next positions in the list of dictionaries
+    for resolution_item in resolution_list:
+        qty = len(resolution_item.tfts)
+        resolution_txt = '{0}x{1} : {2}'.format(str(resolution_item.resolution_x), str(resolution_item.resolution_y), str(resolution_item.resolution_text))
+        url_txt = '{0}x{1}'.format(str(resolution_item.resolution_x), str(resolution_item.resolution_y))
+        resolution_count_dic_item = dict([('resolution', resolution_txt), ('qty', qty), ('active', False),
+                             ('url', url_txt)])
+        resolution_count_list.append(resolution_count_dic_item)
+
+    # Scan to activate the link
+    for resolution_count_item in resolution_count_list:
+        resolution_count_item['active'] = resolution_count_item['url'] == tft_resolution_link
+    print(resolution_count_list)
+    print(tft_resolution_link)
+    # #############################################################################
+    # END tft_size list and quantity ##############################################
 
 
 
@@ -56,18 +91,17 @@ def tft_landing_en(tft_size_link):
     tft_list_port = TftPort.query.all()
 
     return render_template('/tfts/tft_displays_landing_en.html', title='TFT | OPTO Logic TECHNOLOGY',
+                           size_count_list=size_count_list,
+                           resolution_count_list=resolution_count_list,
+
                            tft_list_all=tft_list_all,
                            tft_list_prod=tft_list_prod,
                            tft_list_old=tft_list_old,
                            tft_list_all_count=tft_list_all_count,
                            tft_list_prod_count=tft_list_prod_count,
                            tft_list_old_count=tft_list_old_count,
-                           tft_list_reso_x=tft_list_reso_x,
-                           tft_list_reso_y=tft_list_reso_y,
                            tft_list_title=tft_list_title,
-                           tft_list_reso=tft_list_reso,
-                           tft_list_port=tft_list_port,
-                           tft_list_size_and_count=tft_list_size_and_count
+                           tft_list_port=tft_list_port
                            )
 
 
