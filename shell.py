@@ -43,8 +43,8 @@ def init_db():
             db.session.commit()
 
             tp_1 = TftPort('LVDS')
-            tp_2 = TftPort('CPU RGB SPI')
-            tp_3 = TftPort('Serial Parallel')
+            tp_2 = TftPort('RGB')
+            tp_3 = TftPort('Serial')
             tp_4 = TftPort('TTL')
             tp_5 = TftPort('SPI')
 

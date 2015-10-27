@@ -13,7 +13,7 @@ class TftPort(db.Model):
         self.port_type = port_type
 
     def __repr__(self):
-        return '< TftPort >' % self.port_type
+        return '< TftPort %s >' % self.port_type
 
 
 class TftSize(db.Model):

@@ -128,16 +128,15 @@
             <hr>
             <!-- Resolution panel-->
             <div class="uk-grid">
-                <div class="uk-width-1-10">Size</div>
+                <div class="uk-width-1-10">Resolution</div>
                 <div class="uk-width-9-10">
                     <ul class="uk-flex uk-subnav uk-subnav-pill">
                         {% for resolution_count_item in resolution_count_list %}
                             {% if resolution_count_item['active'] %}
-                            <li class="uk-active">
+                                <li class="uk-active">
                             {% else %}
                             <li class="">
                             {% endif %}
-
                                 <a href="{{ url_for('tfts.tft_landing_en')}}{{resolution_count_item['url']}}">
                                     {{ resolution_count_item['resolution'] }}
                                     ({{resolution_count_item['qty']}})
@@ -149,17 +148,25 @@
                 </div>
             </div>
             <hr>
-            <!-- interface -->
+            <!-- port -->
             <div class="uk-grid">
                 <div class="uk-width-1-10">Interface</div>
                 <div class="uk-width-9-10">
                     <ul class="uk-flex uk-subnav uk-subnav-pill">
-                        <li class="uk-active"><a href="#">All({{tft_list_all_count}})</a></li>
-                        {% for tft_port in tft_list_port %}
-                            <li class=""><a href="#">{{ tft_port.port_type }}</a></li>
-                            <li><a href="{{ tft_port.id }}"></a></li>
+                        {% for port_count_item in port_count_list %}
+                            {% if port_count_item['active'] %}
+                                <li class="uk-active">
+                            {% else %}
+                            <li class="">
+                            {% endif %}
+                                <a href="{{ url_for('tfts.tft_landing_en')}}{{port_count_item['url']}}">
+                                    {{ port_count_item['port'] }}
+                                    ({{port_count_item['qty']}})
+                                </a>
+                            </li>
                         {% endfor %}
                     </ul>
+
                 </div>
             </div>
 
