@@ -17,17 +17,16 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
     global tft_list_prod_count
     global tft_list_old_count
 
-    tft_list_prod_count = Tft.query.filter_by(tft_in_production=True).count()
-    tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
-    tft_list_all_count = tft_list_prod_count + tft_list_old_count
-    tft_all_list = Tft.query.filter_by(tft_in_productgion=True).count() + Tft.query.filter_by(tft_in_production=False).count()
-
     # ##########
     if tft_size_link == 'All' and tft_resolution_link == 'All' and tft_port_link == 'All':
         print('0-0-0')
         tft_list_all = Tft.query.all()
         tft_list_prod = Tft.query.filter_by(tft_in_production=True)
         tft_list_old = Tft.query.filter_by(tft_in_production=False)
+
+        tft_list_prod_count = Tft.query.filter_by(tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
 
 
@@ -131,20 +130,10 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
         tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
 
-        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
-                                           tft_port_id=tft_port.id)
-        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
-                                            tft_port_id=tft_port.id, tft_in_production=True)
-        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
-                                           tft_port_id=tft_port.id, tft_in_production=False)
-
-
-
+        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id, tft_port_id=tft_port.id)
+        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id, tft_port_id=tft_port.id, tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id, tft_port_id=tft_port.id, tft_in_production=False)
     # #######
-
-    # tft_list_prod_count = Tft.query.filter_by(tft_in_production=True).count()
-    # tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
-    # tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
 
     # ############## dont touch below!!!
@@ -158,14 +147,13 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
     # first position in the list of dictionaries
     url = 'All/{0}/{1}'.format(tft_resolution_link, tft_port_link)
-    size_count_dic_all_item = dict([('size', 'All'), ('qty', tft_list_all_count), ('active', True), ('url', url)])
+    size_count_dic_all_item = dict([('size', 'All'), ('active', True), ('url', url)])
     size_count_list.append(size_count_dic_all_item)
 
     # next positions in the list of dictionaries
     for size_item in size_list:
-        qty = len(size_item.tfts)
         url = '{0}/{1}/{2}'.format(str(size_item.size_inch), tft_resolution_link, tft_port_link)
-        size_count_dic_item = dict([('size', str(size_item.size_inch)), ('qty', qty), ('active', False), ('url', url)])
+        size_count_dic_item = dict([('size', str(size_item.size_inch)), ('active', False), ('url', url)])
         size_count_list.append(size_count_dic_item)
 
     # Scan to activate the link
@@ -185,7 +173,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
     # first position in the list of dictionaries
     url = '{0}/All/{1}'.format(tft_size_link, tft_port_link)
     shortcut_url = 'All'
-    resolution_count_dic_all_item = dict([('resolution', 'All'), ('qty', tft_list_all_count), ('active', True),
+    resolution_count_dic_all_item = dict([('resolution', 'All'), ('active', True),
                                           ('url', url), ('shortcut_url', shortcut_url)])
     resolution_count_list.append(resolution_count_dic_all_item)
 
@@ -196,7 +184,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
                                                 str(resolution_item.resolution_text))
         url_txt = '{0}x{1}'.format(str(resolution_item.resolution_x), str(resolution_item.resolution_y))
         url = '{0}/{1}/{2}'.format(tft_size_link, url_txt, tft_port_link)
-        resolution_count_dic_item = dict([('resolution', resolution_txt), ('qty', qty), ('active', False),
+        resolution_count_dic_item = dict([('resolution', resolution_txt), ('active', False),
                                           ('url', url), ('shortcut_url', url_txt)])
         resolution_count_list.append(resolution_count_dic_item)
 
@@ -215,14 +203,14 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
     # first position in the list of dictionaries
     url = '{0}/{1}/All'.format(tft_size_link, tft_resolution_link)
-    port_count_dic_all_item = dict([('port', 'All'), ('qty', tft_list_all_count), ('active', True), ('url', url)])
+    port_count_dic_all_item = dict([('port', 'All'), ('active', True), ('url', url)])
     port_count_list.append(port_count_dic_all_item)
 
     # next positions in the list of dictionaries
     for port_item in port_list:
         qty = len(port_item.tfts)
         url = '{0}/{1}/{2}'.format(tft_size_link, tft_resolution_link, port_item.port_type)
-        port_count_dic_item = dict([('port', port_item.port_type), ('qty', qty), ('active', False), ('url', url)])
+        port_count_dic_item = dict([('port', port_item.port_type), ('active', False), ('url', url)])
         port_count_list.append(port_count_dic_item)
 
     # Scan to activate the link
@@ -253,5 +241,6 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
 # Details
 @tft.route('/<int:tft_id>/details')
-def tft_details(tft_id):
-    return render_template('/tfts/tft_displays_details.html', tft_id=tft_id)
+def tft_details(tft_id=1):
+    tft_details = Tft.query.filter_by(id=tft_id).first()
+    return render_template('/tfts/tft_displays_details.html', tft_details=tft_details)

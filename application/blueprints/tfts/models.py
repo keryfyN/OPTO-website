@@ -64,10 +64,10 @@ class Tft(db.Model):
     tft_contrast = db.Column(db.String(STRING_LEN))
     tft_color_amount = db.Column(db.String(STRING_LEN))
     tft_backlight = db.Column(db.Boolean)
-    tft_viewing_angle_u = db.Column(db.Float)
-    tft_viewing_angle_d = db.Column(db.Float)
-    tft_viewing_angle_l = db.Column(db.Float)
-    tft_viewing_angle_r = db.Column(db.Float)
+    tft_viewing_angle_u = db.Column(db.Integer)
+    tft_viewing_angle_d = db.Column(db.Integer)
+    tft_viewing_angle_l = db.Column(db.Integer)
+    tft_viewing_angle_r = db.Column(db.Integer)
     tft_operating_temperature_min = db.Column(db.Float)
     tft_operating_temperature_max = db.Column(db.Float)
 
@@ -122,3 +122,4 @@ class Tft(db.Model):
 
     def __repr__(self):
         return '<Tft %s >' % self.article_number_opto
+

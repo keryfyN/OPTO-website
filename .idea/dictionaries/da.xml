@@ -2,10 +2,13 @@
   <dictionary name="da">
     <words>
       <w>conv</w>
+      <w>dotnav</w>
       <w>endblock</w>
       <w>goto</w>
       <w>reso</w>
+      <w>slideset</w>
       <w>subnav</w>
+      <w>uikit</w>
     </words>
   </dictionary>
 </component>

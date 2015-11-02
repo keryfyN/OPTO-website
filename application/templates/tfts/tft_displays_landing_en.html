@@ -95,10 +95,10 @@
     <!-- SECTION LIST -->
     <div class="uk-panel">
         <div class="uk-margin-bottom">
-            <h1 id="goto-list" class="uk-margin-bottom-remove">List of displays</h1>
+            <h1 class="uk-margin-bottom-remove">List of displays</h1>
         </div>
         <!-- list displays SIZE -->
-        <div class="uk-panel uk-text-medium">
+        <div id="GoToList" class="uk-panel uk-text-medium">
             <!-- Size panel-->
             <div class="uk-grid">
                 <!-- displaying size count -->
@@ -111,14 +111,12 @@
                             {% else %}
                             <li class="">
                             {% endif %}
-                            <a href="{{ url_for('tfts.tft_landing_en')}}{{size_count_item['url']}}">
+                            <a href="{{ url_for('tfts.tft_landing_en')}}{{size_count_item['url']}}" class="scroll-link" data-id="GoToList">
                             {% if size_count_item['size']== 'All'  %}
                             {{ size_count_item['size'] }}
                             {% else %}
                             {{ size_count_item['size'] }}&quot;
                             {% endif %}
-
-                            ({{size_count_item['qty']}})
                             </a>
                             </li>
                         {% endfor %}
@@ -140,7 +138,6 @@
                             {% endif %}
                                 <a href="{{ url_for('tfts.tft_landing_en')}}{{resolution_count_item['url']}}">
                                     {{ resolution_count_item['resolution'] }}
-                                    ({{resolution_count_item['qty']}})
                                 </a>
                             </li>
                         {% endfor %}
@@ -160,9 +157,8 @@
                             {% else %}
                             <li class="">
                             {% endif %}
-                                <a href="{{ url_for('tfts.tft_landing_en')}}{{port_count_item['url']}}">
+                                <a href="{{ url_for('tfts.tft_landing_en')}}{{port_count_item['url']}}" class="scroll-link" data-id="GoToList">
                                     {{ port_count_item['port'] }}
-                                    ({{port_count_item['qty']}})
                                 </a>
                             </li>
                         {% endfor %}
@@ -200,21 +196,25 @@
                                 <th>Brightness</th>
                                 <th>Interface</th>
                                 <th>Touch</th>
-                                <th>Operating Temp</th>
-                                <th>Viewing Angle</th>
+                                <th>Operating Temp [&deg;C]</th>
+                                <th>Viewing Angle [&deg;] (L-R-U-D)</th>
                             </tr>
                         </thead>
                         <tbody class="">
                             {% for tft in tft_list_all %}
                             <tr>
-                                <td>{{ tft.article_number_supplier }}</td>
+                                <td>
+                                    <a href="{{ url_for('tfts.tft_details', tft_id=tft.id) }}">
+                                        {{ tft.article_number_supplier }}
+                                    </a>
+                                </td>
                                 <td>{{ tft.tft_size.size_inch }} </td>
                                 <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} {{ tft.tft_resolution.resolution_text }}</td>
                                 <td>{{ tft.tft_brightness }} </td>
                                 <td>{{ tft.tft_port.port_type }} </td>
                                 <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
-                                <td>Between {{ tft.tft_operating_temperature_min}} and {{ tft.tft_operating_temperature_max}}</td>
-                                <td>left{{tft.tft_viewing_angle_l}}&deg;, right{{tft.tft_viewing_angle_r}}&deg;, up{{tft.tft_viewing_angle_u}}&deg;, down{{tft.tft_viewing_angle_d}}&deg;  </td>
+                                <td>{{ tft.tft_operating_temperature_min}} to {{ tft.tft_operating_temperature_max}}</td>
+                                <td>{{tft.tft_viewing_angle_l}}/{{tft.tft_viewing_angle_r}}/{{tft.tft_viewing_angle_u}}/{{tft.tft_viewing_angle_d}} </td>
                                 <a href="{{ tft.id }}"></a>
                             </tr>
                             {% endfor %}

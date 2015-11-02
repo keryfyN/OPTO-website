@@ -1,9 +1,55 @@
-{% extends "base.html" %}
+{% extends "structure/base_en.html" %}
 {% block content %}
 
 <div class="row">
-  <div class="centered">
-    <h1>TFT details (ID {{tft_id}})</h1>
+    <h1>TFT details (ID {{tft_details.id}})</h1>
+    <div class="uk-grid">
+        <div class="uk-margin-left uk-width-1-10">
+          Brand <br>
+          Opto Art. number OPTO<br>
+          Supplier Art. number<br>
+          Panel Size<br>
+          Resolution<br>
+          Brightness<br>
+          Contrast<br>
+          Color<br>
+          Backlight<br>
+          Viewing Angle<br>
+          Operating Temperatures <br>
+          Touch Panel <br>
+          In production<br>
+
+        </div>
+        <div class="uk-width-7-10">
+          <!-- brand -->
+          ... <br>
+          <!-- opto article number-->
+          {{tft_details.article_number_opto}} <br>
+          <!-- supplier article number-->
+          {{tft_details.article_number_supplier}} <br>
+          <!-- panel size -->
+          {{tft_details.tft_size_inch}}<br>
+          <!-- resolution -->
+          {{tft_details.tft_resolution_x}}:{{tft_details.tft_resolution_y}} : {{tft_details.tft_resolution_text}}<br>
+          <!-- brightness -->
+          {{tft_details.tft_brightness}} <br>
+          <!-- contrast -->
+          {{tft_details.tft_contrast}} <br>
+          <!-- color -->
+          {{tft_details.tft_color_amount }} <br>
+          <!-- backlight -->
+          {{tft_details.tft_backlight}} <br>
+          <!-- lrud -->
+          {{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D) <br>
+          <!-- operating temperature -->
+          {{tft_details.tft_operating_temperature_min}}c/{{tft_details.tft_operating_temperature_max}}c <br>
+          <!-- touch panel -->
+          {{tft_details.tft_touch_panel}} <br>
+          <!-- in prod -->
+          {{tft_details.tft_in_production}} <br>
+
+        </div>
+
   </div>
 </div>
 
