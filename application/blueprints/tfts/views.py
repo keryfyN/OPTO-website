@@ -11,14 +11,16 @@ tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
     # tft
     #
-    # todo les clefs de tri size/resolution/port
 
     global size_count_dic_item
-    # tft_list_all = Tft.query.all()
-    # tft_list_prod = Tft.query.filter_by(tft_in_production=True)
-    tft_list_old = [] #Tft.query.filter_by(tft_in_production=False)
-    tft_list_prod = []
+    global tft_list_all_count
+    global tft_list_prod_count
+    global tft_list_old_count
 
+    tft_list_prod_count = Tft.query.filter_by(tft_in_production=True).count()
+    tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
+    tft_list_all_count = tft_list_prod_count + tft_list_old_count
+    tft_all_list = Tft.query.filter_by(tft_in_productgion=True).count() + Tft.query.filter_by(tft_in_production=False).count()
 
     # ##########
     if tft_size_link == 'All' and tft_resolution_link == 'All' and tft_port_link == 'All':
@@ -27,6 +29,8 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         tft_list_prod = Tft.query.filter_by(tft_in_production=True)
         tft_list_old = Tft.query.filter_by(tft_in_production=False)
 
+
+
     elif tft_size_link == 'All' and tft_resolution_link == 'All' and not tft_port_link == 'All':
         print('0-0-1')
         tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
@@ -34,40 +38,113 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         tft_list_prod = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=True)
         tft_list_old = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=False)
 
+        tft_list_prod_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
     elif tft_size_link == 'All' and not tft_resolution_link == 'All' and tft_port_link == 'All':
         print('0-1-0')
-        tft_resolution = TftResolution.query.filter_by(resolution_text = tft_resolution_link).first()
-        tft_list_prod = Tft.query.filter_by(tft_resolution_id = tft_resolution.id, tft_in_production=True)
-        tft_list_old = Tft.query.filter_by(tft_resolution_id = tft_resolution.id, tft_in_production=False)
+        reso_xy = tft_resolution_link.split('x')
+        tft_resolution = TftResolution.query.filter_by(resolution_x=reso_xy[0], resolution_y=reso_xy[1]).first()
+        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id)
+        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_in_production=False)
+
+        tft_list_prod_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
     elif tft_size_link == 'All' and not tft_resolution_link == 'All' and not tft_port_link == 'All':
         print('0-1-1')
+        tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
+        reso_xy = tft_resolution_link.split('x')
+        tft_resolution = TftResolution.query.filter_by(resolution_x=reso_xy[0], resolution_y=reso_xy[1]).first()
+        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id)
+        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+                                            tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+                                           tft_in_production=False)
+
+        tft_list_prod_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+                                                  tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+                                                 tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
+
+        print(tft_list_all_count)
+        print(tft_list_prod_count)
+        print(tft_list_old_count)
 
     elif not tft_size_link == 'All' and tft_resolution_link == 'All' and tft_port_link == 'All':
         print('1-0-0')
+        size_conv = float(tft_size_link)
+        tft_size = TftSize.query.filter_by(size_inch=size_conv).first()
+        tft_list_all = Tft.query.filter_by(tft_size_id=tft_size.id)
+        tft_list_prod = Tft.query.filter_by(tft_size_id=tft_size.id, tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_size_id=tft_size.id, tft_in_production=False)
+
+        tft_list_prod_count = Tft.query.filter_by(tft_size_id=tft_size.id, tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_size_id=tft_size.id, tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
     elif not tft_size_link == 'All' and tft_resolution_link == 'All' and not tft_port_link == 'All':
         print('1-0-1')
+        # size_conv = float(tft_size_link)
+        tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
+        tft_size = TftSize.query.filter_by(size_inch=tft_size_link).first()
+        tft_list_all = Tft.query.filter_by(tft_size_id=tft_size.id, tft_port_id=tft_port.id)
+        tft_list_prod = Tft.query.filter_by(tft_size_id=tft_size.id, tft_port_id=tft_port.id, tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_size_id=tft_size.id, tft_port_id=tft_port.id, tft_in_production=False)
+
+        tft_list_prod_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_size_id=tft_size.id,
+                                                  tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_size_id=tft_size.id,
+                                                 tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
     elif not tft_size_link == 'All' and not tft_resolution_link == 'All' and tft_port_link == 'All':
         print('1-1-0')
+        size_conv = float(tft_size_link)
+        tft_size = TftSize.query.filter_by(size_inch=size_conv).first()
+
+        reso_xy = tft_resolution_link.split('x')
+        tft_resolution = TftResolution.query.filter_by(resolution_x=reso_xy[0], resolution_y=reso_xy[1]).first()
+        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id)
+        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                            tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                           tft_in_production=False)
+
+        tft_list_prod_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                                  tft_in_production=True).count()
+        tft_list_old_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                                 tft_in_production=False).count()
+        tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
     elif not tft_size_link == 'All' and not tft_resolution_link == 'All' and not tft_port_link == 'All':
         print('1-1-1')
+        size_conv = float(tft_size_link)
+        tft_size = TftSize.query.filter_by(size_inch=size_conv).first()
+
+        reso_xy = tft_resolution_link.split('x')
+        tft_resolution = TftResolution.query.filter_by(resolution_x=reso_xy[0], resolution_y=reso_xy[1]).first()
+
+        tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
+
+        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                           tft_port_id=tft_port.id)
+        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                            tft_port_id=tft_port.id, tft_in_production=True)
+        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_size_id=tft_size.id,
+                                           tft_port_id=tft_port.id, tft_in_production=False)
 
 
 
-    if tft_size_link == 'All':
-        tft_list_all = Tft.query.all()
-    else:
-        tft_size = TftSize.query.filter_by(size_inch=tft_size_link).first()
-        tft_list_all = Tft.query.filter_by(tft_size_id=tft_size.id)
     # #######
 
-    tft_list_prod_count = Tft.query.filter_by(tft_in_production=True).count()
-    tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
-    tft_list_all_count = tft_list_prod_count + tft_list_old_count
+    # tft_list_prod_count = Tft.query.filter_by(tft_in_production=True).count()
+    # tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
+    # tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
 
     # ############## dont touch below!!!
@@ -77,6 +154,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
     size_list = TftSize.query.all()
     size_count_list = []
+
 
     # first position in the list of dictionaries
     url = 'All/{0}/{1}'.format(tft_resolution_link, tft_port_link)
@@ -111,20 +189,15 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
                                           ('url', url), ('shortcut_url', shortcut_url)])
     resolution_count_list.append(resolution_count_dic_all_item)
 
-    if tft_resolution_link == 'All':
-        tft_list_all = Tft.query.all()
-    else:
-        tft_resolution = TftResolution.query.filter_by(resolution_text=tft_resolution_link).first()
-        # tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id)
-
     # next positions in the list of dictionaries
     for resolution_item in resolution_list:
         qty = len(resolution_item.tfts)
-        resolution_txt = '{0}x{1} : {2}'.format(str(resolution_item.resolution_x), str(resolution_item.resolution_y), str(resolution_item.resolution_text))
+        resolution_txt = '{0}x{1} : {2}'.format(str(resolution_item.resolution_x), str(resolution_item.resolution_y),
+                                                str(resolution_item.resolution_text))
         url_txt = '{0}x{1}'.format(str(resolution_item.resolution_x), str(resolution_item.resolution_y))
         url = '{0}/{1}/{2}'.format(tft_size_link, url_txt, tft_port_link)
         resolution_count_dic_item = dict([('resolution', resolution_txt), ('qty', qty), ('active', False),
-                             ('url', url), ('shortcut_url', url_txt)])
+                                          ('url', url), ('shortcut_url', url_txt)])
         resolution_count_list.append(resolution_count_dic_item)
 
     # Scan to activate the link
@@ -148,7 +221,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
     # next positions in the list of dictionaries
     for port_item in port_list:
         qty = len(port_item.tfts)
-        url = '{0}/{1}/{2}'.format(tft_size_link, tft_resolution_link, port_item.port_type )
+        url = '{0}/{1}/{2}'.format(tft_size_link, tft_resolution_link, port_item.port_type)
         port_count_dic_item = dict([('port', port_item.port_type), ('qty', qty), ('active', False), ('url', url)])
         port_count_list.append(port_count_dic_item)
 
@@ -165,17 +238,17 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
 
     return render_template('/tfts/tft_displays_landing_en.html', title='TFT | OPTO Logic TECHNOLOGY',
-                           size_count_list = size_count_list,
-                           resolution_count_list = resolution_count_list,
-                           port_count_list = port_count_list,
+                           size_count_list=size_count_list,
+                           resolution_count_list=resolution_count_list,
+                           port_count_list=port_count_list,
 
-                           tft_list_all = tft_list_all,
-                           tft_list_prod = tft_list_prod,
-                           tft_list_old = tft_list_old,
+                           tft_list_all=tft_list_all,
+                           tft_list_prod=tft_list_prod,
+                           tft_list_old=tft_list_old,
 
-                           tft_list_all_count = tft_list_all_count,
-                           tft_list_prod_count = tft_list_prod_count,
-                           tft_list_old_count = tft_list_old_count)
+                           tft_list_all_count=tft_list_all_count,
+                           tft_list_prod_count=tft_list_prod_count,
+                           tft_list_old_count=tft_list_old_count)
 
 
 # Details

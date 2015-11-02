@@ -90,6 +90,7 @@ class Tft(db.Model):
     tft_port_id = db.Column(db.Integer, db.ForeignKey("tft_port.id"))
     tft_port = db.relationship(TftPort, backref=db.backref('tfts', uselist=True, cascade='delete,all'))
 
+
     # ================================================================
     # Class methods
 

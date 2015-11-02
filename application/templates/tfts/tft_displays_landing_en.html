@@ -101,6 +101,7 @@
         <div class="uk-panel uk-text-medium">
             <!-- Size panel-->
             <div class="uk-grid">
+                <!-- displaying size count -->
                 <div class="uk-width-1-10">Size</div>
                 <div class="uk-width-9-10">
                     <ul class="uk-flex uk-subnav uk-subnav-pill">
@@ -110,15 +111,15 @@
                             {% else %}
                             <li class="">
                             {% endif %}
-                                <a href="{{ url_for('tfts.tft_landing_en')}}{{size_count_item['url']}}">
-                                    {% if size_count_item['size']== 'All' and resolution %}
-                                    {{ size_count_item['size'] }}
-                                    {% else %}
-                                    {{ size_count_item['size'] }}&quot;
-                                    {% endif %}
+                            <a href="{{ url_for('tfts.tft_landing_en')}}{{size_count_item['url']}}">
+                            {% if size_count_item['size']== 'All'  %}
+                            {{ size_count_item['size'] }}
+                            {% else %}
+                            {{ size_count_item['size'] }}&quot;
+                            {% endif %}
 
-                                    ({{size_count_item['qty']}})
-                                </a>
+                            ({{size_count_item['qty']}})
+                            </a>
                             </li>
                         {% endfor %}
                     </ul>
