@@ -1,38 +1,11 @@
-{% extends "structure/base_en.html" %}
+{% extends "structure/_base.html" %}
+
+{% block slideshow %}
+  {% include 'frontend/_slideshow_index_en.html' %}
+{% endblock %}
+
 {% block content %}
-<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
-<!----------                                  SlideShow                                                      ---------->
-<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
-<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
-    <ul class="uk-slideshow">
-        <!-- 1st image of the slideshow -->
-        <li class="uk-active uk-overlay">
-            <div class="uk-block uk-margin uk uk-block-center uk-block-middle uk-overlay-panel uk-text-center uk-animation-scale ">
-                <h1 class="uk-text">Products</h1>
-                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
-            </div>
-            <img src="{{ url_for('static', filename='img/opto_pics/DSC08156.JPG') }}">
-        </li>
-        <!-- 2st image of the slideshow -->
-        <li>
-            <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
-        </li>
-        <!-- 3rd image of the slideshow -->
-        <li>
-            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
-        </li>
-        <!-- 4th image of the slideshow -->
-        <li>
-            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
-        </li>
-    </ul>
-    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-        <li data-uk-slideshow-item="0"><a href=""></a></li>
-        <li data-uk-slideshow-item="1"><a href=""></a></li>
-        <li data-uk-slideshow-item="2"><a href=""></a></li>
-        <li data-uk-slideshow-item="3"><a href=""></a></li>
-    </ul>
-</div><!-- end div slidshow -->
+
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
 <!----------                            START SECTION 1                                                      ---------->
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
@@ -57,7 +30,7 @@
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
 <div id="2nd_section">
         <div id="parallax-box" class="bg-parallax-1" data-uk-parallax="{bg: '-500'}">
-             <div class="uk-hidden-small uk-contrast uk-overlay-background uk-width-small-2-2 uk-panel uk-panel-box-parallax  uk-width-medium-2-3 uk-width-large-2-3  ul-float-left" data-uk-parallax="{target:'#parallax-box',yp: '120', velocity: '0.7', viewport: '0.5'}" >
+             <div class="uk-hidden-small uk-contrast uk-overlay-background uk-width-small-2-2 uk-panel   uk-width-medium-2-3 uk-width-large-2-3  ul-float-left" data-uk-parallax="{target:'#parallax-box',yp: '120', velocity: '0.7', viewport: '0.5'}" >
                 <h2 > Our revolutionating Displays</h2>
                  <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
                     fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.
@@ -66,7 +39,7 @@
                     ullamcorper quam maximus rhoncus gravida. Fusce accumsan lectus nec tristique sollicitudi
                  </p>
             </div>
-            <div class="uk-visible-small uk-contrast uk-overlay-background uk-width-small-1-1 uk-panel uk-panel-box-parallax ul-float-left" data-uk-parallax="{target:'#parallax-box',yp: '50', velocity: '0.7', viewport: '0.5'}" >
+            <div class="uk-visible-small uk-contrast uk-overlay-background uk-width-small-1-1 uk-panel  ul-float-left" data-uk-parallax="{target:'#parallax-box',yp: '50', velocity: '0.7', viewport: '0.5'}" >
                 <h2 > Our revolutionating Displays</h2>
                  <p>Donec non laoreet lectus, sed pulvinar neque. Sed et porttitor dui. Phasellus nec mauris rhoncus,
                     fringilla dolor sed, fringilla orci. Aenean in felis auctor, eleifend nunc vel, vulputate sem.

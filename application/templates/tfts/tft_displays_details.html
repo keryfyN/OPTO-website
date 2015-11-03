@@ -1,56 +1,58 @@
 {% extends "structure/base_en.html" %}
 {% block content %}
 
-<div class="row">
+<div class="uk-margin-left uk-margin-top">
     <h1>TFT details (ID {{tft_details.id}})</h1>
     <div class="uk-grid">
-        <div class="uk-margin-left uk-width-1-10">
-          Brand <br>
-          Opto Art. number OPTO<br>
-          Supplier Art. number<br>
-          Panel Size<br>
-          Resolution<br>
-          Brightness<br>
-          Contrast<br>
-          Color<br>
-          Backlight<br>
-          Viewing Angle<br>
-          Operating Temperatures <br>
-          Touch Panel <br>
-          In production<br>
+        <ul class="uk-width-1-5 uk-list uk-list-striped">
+          <li>Brand:</li>
+          <li>Opto Art. number OPTO :</li>
+          <li>Supplier Art. number :</li>
+          <li>Panel Size :</li>
+          <li>Resolution :</li>
+          <li>Display Mode :</li>
+          <li>Brightness :</li>
+          <li>Contrast :</li>
+          <li>Color :</li>
+          <li>Backlight :</li>
+          <li>Viewing Angle :</li>
+          <li>Operating Temperatures :</li>
+          <li>Touch Panel :</li>
+          <li>In production :</li>
+        </ul>
 
-        </div>
-        <div class="uk-width-7-10">
+        <ul class="uk-width-4-5 uk-list uk-list-striped">
           <!-- brand -->
-          ... <br>
+          <li>...</li>
           <!-- opto article number-->
-          {{tft_details.article_number_opto}} <br>
+          <li>{{tft_details.article_number_opto}}</li>
           <!-- supplier article number-->
-          {{tft_details.article_number_supplier}} <br>
+          <li>{{tft_details.article_number_supplier}}</li>
           <!-- panel size -->
-          {{tft_details.tft_size_inch}}<br>
+          <li>{{tft_details.tft_size.size_inch}}&quot;</li>
           <!-- resolution -->
-          {{tft_details.tft_resolution_x}}:{{tft_details.tft_resolution_y}} : {{tft_details.tft_resolution_text}}<br>
+          <li>{{tft_details.tft_resolution.resolution_x}}x{{tft_details.tft_resolution.resolution_y}}:{{tft_details.tft_resolution.resolution_text}}</li>
+          <!-- Display mode -->
+          <li>...</li>
           <!-- brightness -->
-          {{tft_details.tft_brightness}} <br>
+          <li>{{tft_details.tft_brightness}}</li>
           <!-- contrast -->
-          {{tft_details.tft_contrast}} <br>
+          <li>{{tft_details.tft_contrast}}</li>
           <!-- color -->
-          {{tft_details.tft_color_amount }} <br>
+          <li>{{tft_details.tft_color_amount }}</li>
           <!-- backlight -->
-          {{tft_details.tft_backlight}} <br>
+          <li>{{tft_details.tft_backlight}}</li>
           <!-- lrud -->
-          {{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D) <br>
+          <li>{{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D)</li>
           <!-- operating temperature -->
-          {{tft_details.tft_operating_temperature_min}}c/{{tft_details.tft_operating_temperature_max}}c <br>
+          <li>{{tft_details.tft_operating_temperature_min}}c/{{tft_details.tft_operating_temperature_max}}c</li>
           <!-- touch panel -->
-          {{tft_details.tft_touch_panel}} <br>
+          <li>{{tft_details.tft_touch_panel}}</li>
           <!-- in prod -->
-          {{tft_details.tft_in_production}} <br>
-
-        </div>
-
+          <li>{{tft_details.tft_in_production}}</li>
+        </ul>
   </div>
+
 </div>
 
 {% endblock %}

@@ -1,5 +1,5 @@
     <nav class="uk-navbar uk-hidden-small">
-        <a href="#" class="uk-navbar-brand">
+        <a href="{{ url_for('frontend.index') }}" class="uk-navbar-brand">
           <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
         </a>
         <ul class="uk-navbar-nav uk-navbar-flip ">
@@ -61,11 +61,11 @@
                         <!-- Column 3 -->
                         <div class="uk-width-1-3">
                             <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                                                <li>
+                                <li>
                                     <a href="#" style="padding:0; margin:0">
                                         <figure class="uk-overlay">
                                             <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:8px; padding-top:8px">
+                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
                                                 Computers
                                             </figcaption>
                                         </figure>
@@ -73,12 +73,12 @@
                                 </li>
                                 <li><a href="#"><p>Industrial PCs</p></a></li>
                                 <li><a href="#"><p>Monitors</p></a></li>
-                                <li><a href="#"><p>SOM System On Module</p></a></li>
+                                <li><a href="#"><p>SOM</p></a></li>
                                 <!-- new sub -->
                                 <li><a href="#" style="padding:0; margin:0">
                                         <figure class="uk-overlay">
                                             <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:8px; padding-top:8px">
+                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
                                                 Others
                                             </figcaption>
                                         </figure>

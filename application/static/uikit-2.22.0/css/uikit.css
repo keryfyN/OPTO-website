@@ -391,7 +391,7 @@ iframe {
 /*
  * 1. Makes grid more robust so that it can be used with other block elements like lists
  */
-.uk-grid {
+.dropdown {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;

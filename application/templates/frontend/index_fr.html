@@ -1,38 +1,11 @@
-{% extends "structure/base_en.html" %}
+{% extends "structure/_base.html" %}
+
+{% block slideshow %}
+  {% include 'frontend/_slideshow_index_fr.html' %}
+{% endblock %}
+
 {% block content %}
-<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
-<!----------                                  SlideShow                                                      ---------->
-<!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
-<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
-    <ul class="uk-slideshow">
-        <!-- 1st image of the slideshow -->
-        <li class="uk-active uk-overlay">
-            <div class="uk-block uk-margin uk uk-block-center uk-block-middle uk-overlay-panel uk-text-center uk-animation-scale ">
-                <h1 class="uk-text">Products</h1>
-                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
-            </div>
-            <img src="{{ url_for('static', filename='img/opto_pics/DSC08156.JPG') }}">
-        </li>
-        <!-- 2st image of the slideshow -->
-        <li>
-            <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
-        </li>
-        <!-- 3rd image of the slideshow -->
-        <li>
-            <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
-        </li>
-        <!-- 4th image of the slideshow -->
-        <li>
-            <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
-        </li>
-    </ul>
-    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-        <li data-uk-slideshow-item="0"><a href=""></a></li>
-        <li data-uk-slideshow-item="1"><a href=""></a></li>
-        <li data-uk-slideshow-item="2"><a href=""></a></li>
-        <li data-uk-slideshow-item="3"><a href=""></a></li>
-    </ul>
-</div><!-- end div slidshow -->
+
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
 <!----------                            START SECTION 1                                                      ---------->
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
