@@ -4715,7 +4715,7 @@ a.uk-thumbnail:focus {
   padding: 50px 10px 50px;
 }
 .bg-parallax-2{
-  background-image: url(../../img/test/printer_BG.png);
+  background-image: url(../../img/BG_OPTO1.png);
   margin: 0 auto;
   max-width: 100%;
   height:30em;
@@ -4923,7 +4923,7 @@ h6,
     margin-left: 0px;
   }
   .uk-grid > * {
-    padding-left: 0;
+    padding-left: 0px  ;
   }
   /* Vertical */
   .uk-grid + .uk-grid,
