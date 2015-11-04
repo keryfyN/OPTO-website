@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Blueprint, render_template
-from .models import Tft, TftSize, TftResolution, TftPort
+from .models import Tft, TftSize, TftResolution, TftPort, port_tft_rel
 
 tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 
@@ -28,18 +28,18 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         tft_list_old_count = Tft.query.filter_by(tft_in_production=False).count()
         tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
-
-
     elif tft_size_link == 'All' and tft_resolution_link == 'All' and not tft_port_link == 'All':
+        # Filter by port ########################
         print('0-0-1')
-        tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
-        tft_list_all = Tft.query.filter_by(tft_port_id=tft_port.id)
-        tft_list_prod = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=True)
-        tft_list_old = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=False)
-
-        tft_list_prod_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=True).count()
-        tft_list_old_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_in_production=False).count()
-        tft_list_all_count = tft_list_prod_count + tft_list_old_count
+        # List all tfts with this port_type for example LVDS
+        tft_list_all = Tft.query.filter(Tft.tfts.any(TftPort.port_type==tft_port_link)).all()
+        tft_list_all_count = len(tft_list_all)
+        # List all tfts with this port_type for example LVDS and in production
+        tft_list_prod = Tft.query.filter_by(tft_in_production=True).filter(Tft.tfts.any(TftPort.port_type==tft_port_link)).all()
+        tft_list_prod_count = len(tft_list_prod)
+        # List all tfts with this port_type for example LVDS and not in production
+        tft_list_old = Tft.query.filter_by(tft_in_production=False).filter(Tft.tfts.any(TftPort.port_type==tft_port_link)).all()
+        tft_list_old_count = len(tft_list_old)
 
     elif tft_size_link == 'All' and not tft_resolution_link == 'All' and tft_port_link == 'All':
         print('0-1-0')
@@ -58,15 +58,15 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
         reso_xy = tft_resolution_link.split('x')
         tft_resolution = TftResolution.query.filter_by(resolution_x=reso_xy[0], resolution_y=reso_xy[1]).first()
-        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id)
-        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+        tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tfts=tft_port.id)
+        tft_list_prod = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tfts=tft_port.id,
                                             tft_in_production=True)
-        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+        tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tfts=tft_port.id,
                                            tft_in_production=False)
 
-        tft_list_prod_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+        tft_list_prod_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tfts=tft_port.id,
                                                   tft_in_production=True).count()
-        tft_list_old_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_port_id=tft_port.id,
+        tft_list_old_count = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tfts=tft_port.id,
                                                  tft_in_production=False).count()
         tft_list_all_count = tft_list_prod_count + tft_list_old_count
 
@@ -208,7 +208,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 
     # next positions in the list of dictionaries
     for port_item in port_list:
-        qty = len(port_item.tfts)
+        qty = 5 # len(port_item.tfts)
         url = '{0}/{1}/{2}'.format(tft_size_link, tft_resolution_link, port_item.port_type)
         port_count_dic_item = dict([('port', port_item.port_type), ('active', False), ('url', url)])
         port_count_list.append(port_count_dic_item)

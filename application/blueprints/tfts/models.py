@@ -2,15 +2,22 @@
 from application import db
 from ...utils import STRING_LEN, get_current_time
 
+port_tft_rel = db.Table('tft_port_rel',
+                     db.Column('tft.id', db.Integer(), db.ForeignKey('tft_port.id')),
+                     db.Column('tft_port.id', db.Integer(), db.ForeignKey('tft.id')))
+
 
 class TftPort(db.Model):
     __tablename__ = 'tft_port'
 
     id = db.Column(db.Integer, primary_key=True)
     port_type = db.Column(db.String(STRING_LEN))
+    port_tfts = db.relationship('Tft', secondary=port_tft_rel,
+                            backref=db.backref('tfts', lazy='dynamic'))
 
-    def __init__(self, port_type):
+    def __init__(self, port_type, port_tfts):
         self.port_type = port_type
+        self.port_tfts = port_tfts
 
     def __repr__(self):
         return '< TftPort %s >' % self.port_type
@@ -87,9 +94,6 @@ class Tft(db.Model):
     tft_resolution_id = db.Column(db.Integer, db.ForeignKey("tft_resolution.id"))
     tft_resolution = db.relationship(TftResolution, backref=db.backref('tfts', uselist=True, cascade='delete,all'))
 
-    tft_port_id = db.Column(db.Integer, db.ForeignKey("tft_port.id"))
-    tft_port = db.relationship(TftPort, backref=db.backref('tfts', uselist=True, cascade='delete,all'))
-
 
     # ================================================================
     # Class methods
@@ -97,7 +101,7 @@ class Tft(db.Model):
     def __init__(self, article_number_opto, article_number_supplier, tft_brightness, tft_contrast, tft_color_amount,
                  tft_backlight, tft_viewing_angle_u, tft_viewing_angle_d, tft_viewing_angle_l, tft_viewing_angle_r,
                  tft_operating_temperature_min, tft_operating_temperature_max, tft_in_production, tft_touch_panel,
-                 tft_size_id, tft_resolution_id, tft_port_id):
+                 tft_size_id, tft_resolution_id):
         self.article_number_opto = article_number_opto
         self.article_number_supplier = article_number_supplier
         self.tft_brightness = tft_brightness
@@ -118,8 +122,6 @@ class Tft(db.Model):
 
         self.tft_size_id = tft_size_id
         self.tft_resolution_id = tft_resolution_id
-        self.tft_port_id = tft_port_id
 
     def __repr__(self):
         return '<Tft %s >' % self.article_number_opto
-

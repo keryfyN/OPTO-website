@@ -117,7 +117,11 @@
                             <td>{{ tft.tft_size.size_inch }}&quot; </td>
                             <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} : {{ tft.tft_resolution.resolution_text }}</td>
                             <td>{{ tft.tft_brightness }} </td>
-                            <td>{{ tft.tft_port.port_type }} </td>
+                            <td>
+                                {% for port in tft.tfts %}
+                                    {{ port.port_type }}
+                                {% endfor %}
+                            </td>
                             <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
                             <td>{{ tft.tft_operating_temperature_min}} to {{ tft.tft_operating_temperature_max}}</td>
                             <td>{{tft.tft_viewing_angle_l}}/{{tft.tft_viewing_angle_r}}/{{tft.tft_viewing_angle_u}}/{{tft.tft_viewing_angle_d}} </td>
@@ -153,7 +157,11 @@
                             <td>{{ tft.tft_size.size_inch }}&quot; </td>
                             <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} : {{ tft.tft_resolution.resolution_text }}</td>
                             <td>{{ tft.tft_brightness }} </td>
-                            <td>{{ tft.tft_port.port_type }} </td>
+                            <td>
+                                {% for port in tft.tfts %}
+                                    {{ port.port_type }}
+                                {% endfor %}
+                            </td>
                             <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
                             <td>{{ tft.tft_operating_temperature_min}} to {{ tft.tft_operating_temperature_max}}</td>
                             <td>{{tft.tft_viewing_angle_l}}/{{tft.tft_viewing_angle_r}}/{{tft.tft_viewing_angle_u}}/{{tft.tft_viewing_angle_d}} </td>
@@ -189,7 +197,11 @@
                             <td>{{ tft.tft_size.size_inch }}&quot;</td>
                             <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} : {{ tft.tft_resolution.resolution_text }}</td>
                             <td>{{ tft.tft_brightness }} </td>
-                            <td>{{ tft.tft_port.port_type }} </td>
+                            <td>
+                                {% for port in tft.tfts %}
+                                    {{ port.port_type }}
+                                {% endfor %}
+                            </td>
                             <td>{% if tft.tft_touch_panel %}yes{% else %}no{% endif %}</td>
                             <td>{{ tft.tft_operating_temperature_min}} to {{ tft.tft_operating_temperature_max}}</td>
                             <td>{{tft.tft_viewing_angle_l}}/{{tft.tft_viewing_angle_r}}/{{tft.tft_viewing_angle_u}}/{{tft.tft_viewing_angle_d}} </td>
