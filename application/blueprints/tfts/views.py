@@ -10,8 +10,8 @@ tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 @tft.route('/<tft_size_link>/<tft_resolution_link>/<tft_port_link>')
 def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
     # tft
-    #
 
+    #variable
     global size_count_dic_item
     global tft_list_all_count
     global tft_list_prod_count
@@ -85,11 +85,10 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
     elif not tft_size_link == 'All' and tft_resolution_link == 'All' and not tft_port_link == 'All':
         print('1-0-1')
 
-
         size_conv = float(tft_size_link)
         tft_size = TftSize.query.filter_by(size_inch=size_conv).first()
 
-        # List all tfts with this port_type AND RESOLUTION for example LVDS AND 1024X768
+        # List all tfts with this port_type for example 5.7 AND LVDS
         tft_list_all = Tft.query.filter_by(tft_size_id=tft_size.id).filter(Tft.tfts.any(TftPort.port_type==tft_port_link)).all()
         tft_list_all_count = len(tft_list_all)
         # lIKE UPPER BUT WITH in production
@@ -100,19 +99,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         tft_list_old_count = len(tft_list_old)
 
 
-        # -----------------------------------------------------------------------------------------------------------\o/
-        '''# size_conv = float(tft_size_link)
-        tft_port = TftPort.query.filter_by(port_type=tft_port_link).first()
-        tft_size = TftSize.query.filter_by(size_inch=tft_size_link).first()
-        tft_list_all = Tft.query.filter_by(tft_size_id=tft_size.id, tft_port_id=tft_port.id)
-        tft_list_prod = Tft.query.filter_by(tft_size_id=tft_size.id, tft_port_id=tft_port.id, tft_in_production=True)
-        tft_list_old = Tft.query.filter_by(tft_size_id=tft_size.id, tft_port_id=tft_port.id, tft_in_production=False)
 
-        tft_list_prod_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_size_id=tft_size.id,
-                                                  tft_in_production=True).count()
-        tft_list_old_count = Tft.query.filter_by(tft_port_id=tft_port.id, tft_size_id=tft_size.id,
-                                                 tft_in_production=False).count()
-        tft_list_all_count = tft_list_prod_count + tft_list_old_count'''
 
     elif not tft_size_link == 'All' and not tft_resolution_link == 'All' and tft_port_link == 'All':
         print('1-1-0')
@@ -141,7 +128,7 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         reso_xy = tft_resolution_link.split('x')
         tft_resolution = TftResolution.query.filter_by(resolution_x=reso_xy[0], resolution_y=reso_xy[1]).first()
 
-        # List all tfts with this port_type AND RESOLUTION for example LVDS AND 1024X768
+        # List all tfts with this port_type, size AND RESOLUTION for example 5.7 LVDS AND 1024X768
         tft_list_all = Tft.query.filter_by(tft_resolution_id=tft_resolution.id).filter_by( tft_size_id=tft_size.id).filter(Tft.tfts.any(TftPort.port_type==tft_port_link)).all()
         tft_list_all_count = len(tft_list_all)
         # lIKE UPPER BUT WITH in production
@@ -150,9 +137,6 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
         # lIKE UPPER BUT WITH NOT in production
         tft_list_old = Tft.query.filter_by(tft_resolution_id=tft_resolution.id, tft_in_production=False, tft_size_id=tft_size.id).filter(Tft.tfts.any(TftPort.port_type==tft_port_link)).all()
         tft_list_old_count = len(tft_list_old)
-
-
-    # #######
 
 
     # ############## dont touch below!!!
