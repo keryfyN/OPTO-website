@@ -186,6 +186,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   color: #ffffff;
 }
 .uk-navbar {
+  position: center;
   background: #00c0b5;
   color: #eeeeee;
   height:60px;
@@ -4154,6 +4155,7 @@ a.uk-thumbnail:focus {
   list-style: none;
   overflow: hidden;
   touch-action: pan-y;
+
 }
 .uk-slideshow > li {
   position: absolute;
@@ -4161,7 +4163,7 @@ a.uk-thumbnail:focus {
   left: 0;
   width: 100%;
   opacity: 0;
-  height: 64.5em;
+  height: 94vh;
 
 }
 .uk-slideshow > .uk-active {

@@ -1,9 +1,10 @@
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
 <!----------                                  SlideShow                                                      ---------->
 <!---------- ----------><!---------- ----------><!---------- ----------><!---------- ----------><!---------- ---------->
-<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}"  >
-    <ul class="uk-slideshow">
+<div class="uk-slidenav-position " data-uk-slideshow="{kenburns:true, autoplay:true}"  >
+    <ul class="uk-slideshow uk-height-viewport">
         <!-- 1st image of the slideshow -->
+
         <li class="uk-grid uk-active uk-overlay uk-vertical-align">
             <div class="uk-block uk-overlay-panel uk-text-center uk-animation-scale  uk-vertical-align-middle">
                 <h1 class="uk-text">Products EN</h1>
@@ -18,19 +19,47 @@
         </li>
         <!-- 2st image of the slideshow -->
         <li>
+            <div class="uk-block uk-overlay-panel uk-text-center uk-animation-scale  uk-vertical-align-middle">
+                <h1 class="uk-text">Products EN</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+                <div class="uk-grid">
+                    <div class=" uk-container-center">
+                        <a href="#goto-1st" class="uk-position-bottom uk-icon-large uk-icon-chevron-circle-down " data-uk-smooth-scroll=""></a>
+                    </div>
+                </div>
+            </div>
             <img src="{{ url_for('static', filename='img/large_001.jpg') }}">
         </li>
         <!-- 3rd image of the slideshow -->
         <li>
+            <div class="uk-block uk-overlay-panel uk-text-center uk-animation-scale  uk-vertical-align-middle">
+                <h1 class="uk-text">Products EN</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+                <div class="uk-grid">
+                    <div class=" uk-container-center">
+                        <a href="#goto-1st" class="uk-position-bottom uk-icon-large uk-icon-chevron-circle-down " data-uk-smooth-scroll=""></a>
+                    </div>
+                </div>
+            </div>
             <img src="{{ url_for('static', filename='img/large_002.jpg') }}">
         </li>
         <!-- 4th image of the slideshow -->
+
         <li>
+            <div class="uk-block uk-overlay-panel uk-text-center uk-animation-scale  uk-vertical-align-middle">
+                <h1 class="uk-text">Products EN</h1>
+                <p class="uk-text-large">You can find our new  <a href="#">products</a></p>
+                <div class="uk-grid">
+                    <div class=" uk-container-center">
+                        <a href="#goto-1st" class="uk-position-bottom uk-icon-large uk-icon-chevron-circle-down " data-uk-smooth-scroll=""></a>
+                    </div>
+                </div>
+            </div>
             <img src="{{ url_for('static', filename='img/large_004.jpg') }}">
         </li>
     </ul>
+        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 
-    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 
 </div><!-- end div slidshow -->
