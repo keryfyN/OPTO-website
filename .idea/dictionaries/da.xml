@@ -5,10 +5,12 @@
       <w>dotnav</w>
       <w>endblock</w>
       <w>goto</w>
+      <w>lrud</w>
       <w>reso</w>
       <w>slideset</w>
       <w>subnav</w>
       <w>uikit</w>
+      <w>wmtb</w>
     </words>
   </dictionary>
 </component>

@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 from flask_debugtoolbar import DebugToolbarExtension
 
 from .database import db
-from .blueprints.tfts.models import TftSize, TftResolution, Tft, TftPort
+from .blueprints.tfts.models import TftSize, TftResolution, Tft, TftPort, TftBrand
 from .blueprints.touch_panels.models import TouchPanelSize
 from .blueprints.thermal_printers.models import ThermalPrintersSize
 from .blueprints.computers.models import Computer

@@ -4741,7 +4741,7 @@ a.uk-thumbnail:focus {
   border-radius: 5px;
 }
 .uk-container {
-  max-width: 85%;
+  max-width: 100%;
 }
 
 #displays_section_1,
@@ -4756,16 +4756,6 @@ a.uk-thumbnail:focus {
   padding-left:2em;
   padding-right:2em;
 }
-
-#displays_section_2,
-#displays_section_4,
-#displays_section_6{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left:2em;
-  padding-right:2em;
-}
-
 /* ========================================================================
    Component: Text
  ========================================================================== */

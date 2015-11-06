@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Blueprint, render_template
-from .models import Tft, TftSize, TftResolution, TftPort, port_tft_rel
+from .models import Tft, TftSize, TftResolution, TftPort
 
 tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 
