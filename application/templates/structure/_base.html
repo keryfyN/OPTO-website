@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/uikit.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/uikit_custom.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/components/dotnav.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/animate.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='hover-master/css/hover.css') }}" />
 
 
@@ -23,11 +24,34 @@
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slider.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/core/smooth-scroll.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/parallax.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/notify.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/addons/midnight.jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/addons/wow.js') }}"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      // Start midnight
+      $(document).ready(function(){
+      // Change this to the correct selector for your nav.
+      $('nav.fixed').midnight();
+      });
+    </script>
+
   </head>
   <body>
     <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
       {% include '/structure/nav_en_large.html' %}
       {% include '/structure/nav_en_small.html' %}
+    </div>
+    <div class="uk-notify uk-notify-bottom-right">
+      <div class="uk-grid">
+        <div class="uk-width-1-5 uk-align-right" data-uk-scrollspy="{cls:'uk-animation-fade', repeat:true}">
+          <a href="#top" class="uk-icon-chevron-up uk-icon-large" data-uk-smooth-scroll></a>
+        </div>
+      </div>
     </div>
     {% block slideshow %}{% endblock %}
     {% block content %}{% endblock %}
