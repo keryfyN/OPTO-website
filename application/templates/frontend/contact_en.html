@@ -1,42 +1,75 @@
-{% extends "/structure/base_en.html" %}
+{% extends "/structure/_base.html" %}
 {% block content %}
-<div class="uk-panel">&nbsp;</div>
-<div class="uk-grid">
-    <div>
+
+<div id="map">
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var myLatLng = new google.maps.LatLng(46.523445, 6.899624)
+            var mapOptions = {center: myLatLng, zoom: 18, mapTypeId: google.maps.MapTypeId.SATELLITE}
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            label:
+            title: 'Opto Logic Technology S.A.'
+            });
+
+        }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</div>
+<div class="uk-container uk-container-center">
+    <!-- BREAD CRUMBS -->
+    <div id="goto-1st" class="uk-grid uk-margin-bottom uk-margin-top ">
         <ul class="uk-breadcrumb">
-            <li><a href="/index/">Home</a></li>
-            <li><a href="/contact/">Contact</a></li>
-            <li><span></span></li>
+            <li><a href="{{ url_for('frontend.index') }}">Home</a></li>
+            <li class="uk-active">Contact</li>
         </ul>
     </div>
-</div>
-<div class="uk-panel">&nbsp;</div>
-<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
-    <ul class="uk-slideshow uk-overlay-active">
-        <li style="height: 411px;" class="uk-active" aria-hidden="false">
-            <img style="" src="{{ url_for('static', filename='img/lorempixel_000.jpg') }}">
-            <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
-                <div>
-                    <h3>Contact</h3>
-                    <p>Lorem <a href="#">Partners</a> sit amet, consetetur sadipscing elitr,<br>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                    <a href="#"><button class="uk-button uk-button-primary">Learn more</button></a>
+    <div class="uk-grid ">
+        <div class="uk-width-1-2 uk-container-center ">
+            <h1 class="">Let&prime;s talk. Or meet in person.</h1>
+            <p class="">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="uk-width-1-2 uk-container-center ">
+            <h1>OPTO Logic TECHNOLOGY S.A.</h1>
+            <address class="uk-grid " >
+                <div class="">
+                    Route de Vevey 105<br>
+                    CH-1618 Chatel-St-Denis<br>
+                    <a href="tel:+41219482080"><i class="uk-icon-phone"></i>  +41 21 948 20 80</a>  <br>
+                    <a href="tel:+41219482088"><i class="uk-icon-fax"></i> +41 21 948 20 88</a> <br><br>
                 </div>
-            </div>
-        </li>
-        <li>
-            <img src="{{ url_for('static', filename='img/lorempixel_001.jpg') }}">
-            <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">Hello 2</div>
-        </li>
-        <li>
-            <img src="{{ url_for('static', filename='img/lorempixel_002.jpg') }}">
-            <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">Hello 3</div>
-        </li>
-    </ul>
-    <a href="" data-uk-slideshow-item="previous"></a>
-    <a href="" data-uk-slideshow-item="next"></a>
-</div>
-<h1>Contact page EN</h1>
-<div>
+            </address>
+        </div>
+
+    </div>
 
 </div>
+<div style="background-color: aef3ee" class="">
+    <br>
+    <div class="uk-container uk-container-center ">
+        <div class="uk-grid">
+            <form class="uk-form" method="get">
+            <fieldset data-uk-margin class="">
+                <legend class="uk-text-center"><h1>Write to us</h1></legend>
+                <input class="uk-form-width-large" name="Fname" type="text" placeholder="Insert your name.">
+                <input class="uk-form-width-large" name="Femail" type="text" placeholder="Insert your email address.">
+                <input class="uk-form-width-large" name="Fsubject" type="text" placeholder="Insert your subject."><br>
+                <textarea class="" cols="" rows="" type="textarea" placeholder="Insert your message here."></textarea>
+                <button class="uk-button">SEND MESSAGE</button>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}

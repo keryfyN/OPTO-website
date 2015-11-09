@@ -7,11 +7,14 @@ a:hover {
   outline: 0;
 }
 a,
+a1,
+a2,
 .uk-link {
   color: #00c0b5;
   text-decoration: none;
   cursor: pointer;
 }
+a1,.uk-ling{color: #00736a}
 a:hover,
 .uk-link:hover {
   color: #00736a;
@@ -831,6 +834,10 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-radius: 0;
   font: inherit;
   color: inherit;
+}
+.uk-form textarea{
+  min-width: 100%;
+  min-height:400px;
 }
 .uk-form select {
   text-transform: none;
@@ -4740,10 +4747,46 @@ a.uk-thumbnail:focus {
   background: rgba(0,192,178, 0.5);
   border-radius: 5px;
 }
-.uk-container {
-  max-width: 100%;
+/* ========================================================================
+   Component: Utility
+ ========================================================================== */
+/* Container
+ ========================================================================== */
+.uk-container,
+.uk-container_1,
+.uk-container_2{
+  box-sizing: border-box;
+  max-width: 80%;
+  padding: 0 25px;
+}
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+  .uk-container {
+    max-width: 85%;
+    padding: 0 35px;
+  }
+}
+/*
+ * Micro clearfix
+ */
+.uk-container:before,
+.uk-container:after {
+  content: "";
+  display: table;
+}
+.uk-container:after {
+  clear: both;
+}
+/*
+ * Center container
+ */
+.uk-container-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.uk-container_1{
+}
 #displays_section_1,
 #displays_section_3,
 #displays_section_5,
@@ -4897,10 +4940,10 @@ h6,
  */
 /* Horizontal */
 .uk-grid {
-  margin-left: 15px;
+  margin-left: -25px;
 }
 .uk-grid > * {
-  padding-left: 15px;
+  padding-left: 25px;
 }
 /* Vertical */
 .uk-grid + .uk-grid,
@@ -4912,10 +4955,10 @@ h6,
 @media (min-width: 1220px) {
   /* Horizontal */
   .uk-grid {
-    margin-left: 0px;
+    margin-left: -35px;
   }
   .uk-grid > * {
-    padding-left: 0px  ;
+    padding-left: 35px  ;
   }
   /* Vertical */
   .uk-grid + .uk-grid,
@@ -4954,6 +4997,8 @@ h6,
   padding-right: 0px;
   }
 }
+
+
 /* MARGIN!!!!!!!!!! */
 /*
  * Margins
@@ -5001,6 +5046,6 @@ figure {
     margin-bottom: 0px;
 }
 #map {
-  width: 400px;
-  height: 200px;
+  width: viewport;
+  height: 44em;
 }

@@ -6,7 +6,7 @@ frontend = Blueprint('frontend', __name__)
 
 @frontend.route('/contact/')
 def contact():
-    return render_template('/contact/contact_en.html', title='Contact | OPTO Logic TECHNOLOGY')
+    return render_template('/frontend/contact_en.html', title='Contact | OPTO Logic TECHNOLOGY')
 
 @frontend.route('/')
 @frontend.route('/index/')
