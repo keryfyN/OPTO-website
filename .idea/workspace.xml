@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04c09089-d166-4a9a-9cf6-0caa526ec5e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/js/addons/midnight.jquery.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/_base.html" afterPath="$PROJECT_DIR$/application/templates/structure/_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/frontend/_index_section_3.html" afterPath="$PROJECT_DIR$/application/templates/frontend/_index_section_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/frontend/_index_section_4_parallax.html" afterPath="$PROJECT_DIR$/application/templates/frontend/_index_section_4_parallax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/frontend/_index_section_tft.html" afterPath="$PROJECT_DIR$/application/templates/frontend/_index_section_tft.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/frontend/_slideshow_index_en.html" afterPath="$PROJECT_DIR$/application/templates/frontend/_slideshow_index_en.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/da.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/da.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/structure/footer_en.html" afterPath="$PROJECT_DIR$/application/templates/structure/footer_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" afterPath="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" afterPath="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -57,8 +50,8 @@
       <file leaf-file-name="_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.076923">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="54" selection-end-column="10" />
+            <state vertical-scroll-proportion="-19.923077">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -67,8 +60,8 @@
       <file leaf-file-name="header_en.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/header_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            <state vertical-scroll-proportion="3.2692308">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -87,8 +80,8 @@
       <file leaf-file-name="footer_en.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/templates/structure/footer_en.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.307971">
-              <caret line="10" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5124283">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -117,8 +110,8 @@
       <file leaf-file-name="uikit_custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3793104">
-              <caret line="4688" column="12" selection-start-line="4688" selection-start-column="12" selection-end-line="4688" selection-end-column="12" />
+            <state vertical-scroll-proportion="-14.24138">
+              <caret line="5004" column="13" selection-start-line="5004" selection-start-column="13" selection-end-line="5004" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -174,10 +167,10 @@
         <option value="$PROJECT_DIR$/application/templates/frontend/_index_section_tft.html" />
         <option value="$PROJECT_DIR$/application/templates/frontend/_index_section_4_parallax.html" />
         <option value="$PROJECT_DIR$/application/templates/frontend/_slideshow_index_en.html" />
-        <option value="$PROJECT_DIR$/application/templates/structure/_base.html" />
         <option value="$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html" />
-        <option value="$PROJECT_DIR$/application/templates/structure/footer_en.html" />
+        <option value="$PROJECT_DIR$/application/templates/structure/_base.html" />
         <option value="$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css" />
+        <option value="$PROJECT_DIR$/application/templates/structure/footer_en.html" />
       </list>
     </option>
   </component>
@@ -966,22 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/frontend/_index_section_4_parallax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.076923">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="54" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/tfts/tft_displays_landing_en.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
@@ -998,26 +975,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/templates/structure/header_en.html">
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        <state vertical-scroll-proportion="-19.923077">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/frontend/_index_section_4_parallax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/static/uikit-2.22.0/css/uikit_custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3793104">
-          <caret line="4688" column="12" selection-start-line="4688" selection-start-column="12" selection-end-line="4688" selection-end-column="12" />
+        <state vertical-scroll-proportion="-14.24138">
+          <caret line="5004" column="13" selection-start-line="5004" selection-start-column="13" selection-end-line="5004" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/structure/header_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.2692308">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/templates/structure/footer_en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.307971">
-          <caret line="10" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5124283">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding />
         </state>
       </provider>

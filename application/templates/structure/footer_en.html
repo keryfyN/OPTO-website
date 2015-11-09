@@ -3,12 +3,27 @@
         <div class="uk-grid uk-margin-top">
             <div class="uk-width-2-6">
                 <address>
-                    <h4>OPTO Logic TECHNOLOGY S.A.</h4>
-                    Route de Vevey 105 <br>
-                    CH-1618 Chatel-St-Denis <br>
-                     <a href="tel:+41219482080" class="uk-contrast"><i class="uk-icon-phone"></i> +41 21 948 20 80</a>  <br>
-                    <a href="tel:+41219482088" class="uk-contrast"><i class="uk-icon-fax"></i> +41 21 948 20 88</a> <br><br>
+                    <div class="uk-contrast">
+                        <h4>OPTO Logic TECHNOLOGY S.A.</h4>
+                        Route de Vevey 105<br>
+                        CH-1618 Chatel-St-Denis<br>
+                        <a href="tel:+41219482080" class="uk-contrast"><i class="uk-icon-phone"></i> +41 21 948 20 80</a>  <br>
+                        <a href="tel:+41219482088" class="uk-contrast"><i class="uk-icon-fax"></i> +41 21 948 20 88</a> <br><br>
+                    </div>
                 </address>
+                <div id="map">
+                    <script>
+                      function initialize() {
+                        var mapCanvas = document.getElementById('map');
+                        var myLatLng = new google.maps.LatLng(46.523577, 6.899761)
+                        var mapOptions = {center: myLatLng, zoom: 18, mapTypeId: google.maps.MapTypeId.SATELLITE}
+                        var map = new google.maps.Map(mapCanvas, mapOptions);
+                      }
+                      google.maps.event.addDomListener(window, 'load', initialize);
+                    </script>
+                </div>
+                                    <br>
+
                 <a href="{{ url_for('frontend.contact') }}" class="uk-button">
                     <i class="uk-icon-envelope-o"></i>
                     Contact us

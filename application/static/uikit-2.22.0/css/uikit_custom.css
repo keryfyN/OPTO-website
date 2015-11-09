@@ -5000,3 +5000,7 @@ figure {
     display: block;
     margin-bottom: 0px;
 }
+#map {
+  width: 400px;
+  height: 200px;
+}
