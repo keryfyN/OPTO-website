@@ -5047,5 +5047,9 @@ figure {
 }
 #map {
   width: viewport;
-  height: 44em;
+  height: 63%;
+}
+div.gm-style-iw {
+    max-height:150px;
+    overflow:scroll;
 }

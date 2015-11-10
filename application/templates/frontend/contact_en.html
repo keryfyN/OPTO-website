@@ -1,23 +1,44 @@
 {% extends "/structure/_base.html" %}
 {% block content %}
 
+
+
 <div id="map">
     <script>
         function initialize() {
-            var mapCanvas = document.getElementById('map');
-            var myLatLng = new google.maps.LatLng(46.523445, 6.899624)
-            var mapOptions = {center: myLatLng, zoom: 18, mapTypeId: google.maps.MapTypeId.SATELLITE}
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-
-            var marker = new google.maps.Marker({
+        var mapCanvas = document.getElementById('map');
+        var myLatLng = new google.maps.LatLng(46.523445, 6.899624);
+        var mapOptions = {center: myLatLng, zoom: 18, mapTypeId: google.maps.MapTypeId.SATELLITE};
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            label:
             title: 'Opto Logic Technology S.A.'
             });
-
+        var contentString =
+            '<div id="content" class=uk-panel>'+
+                '<a id="firstHeading" class="firstHeading"><img src="{{ url_for('static', filename='img/logo_opto_250x51.png') }}"></a>'+
+                '<div id="bodyContent">'+
+                    '<address class="" >'+
+                        '<br>'+
+                        '<div class="">'+
+                            'Route de Vevey 105<br>'+
+                            'CH-1618 Chatel-St-Denis<br>'+
+                            '<a href="tel:+41219482080"><i class="uk-icon-phone"></i>  +41 21 948 20 80</a>  <br>'+
+                            '<a href="tel:+41219482088"><i class="uk-icon-fax"></i> +41 21 948 20 88</a> <br><br>'+
+                        '</div>'+
+                    '</address>'+
+                '</div>'+
+            '</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+            });
+        infowindow.open(map,marker);
         }
-      google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </div>
 <div class="uk-container uk-container-center">
@@ -57,11 +78,15 @@
     <br>
     <div class="uk-container uk-container-center ">
         <div class="uk-grid">
-            <form class="uk-form" method="get">
+            <form class="uk-form" method="post">
             <fieldset data-uk-margin class="">
                 <legend class="uk-text-center"><h1>Write to us</h1></legend>
-                <input class="uk-form-width-large" name="Fname" type="text" placeholder="Insert your name.">
-                <input class="uk-form-width-large" name="Femail" type="text" placeholder="Insert your email address.">
+                {{ form.name.label }} {{ form.name }} <br>
+                {{ form.subject.label }} {{ form.subject }} <br>
+                {{ form.email.label }} {{ form.email }} <br>
+                -----
+                <input class="uk-form-width-large" name="name" type="text" placeholder="Insert your name.">
+                <input class="uk-form-width-large" name="email" type="text" placeholder="Insert your email address.">
                 <input class="uk-form-width-large" name="Fsubject" type="text" placeholder="Insert your subject."><br>
                 <textarea class="" cols="" rows="" type="textarea" placeholder="Insert your message here."></textarea>
                 <button class="uk-button">SEND MESSAGE</button>

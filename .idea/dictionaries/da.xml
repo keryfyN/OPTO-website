@@ -5,12 +5,17 @@
       <w>conv</w>
       <w>dotnav</w>
       <w>endblock</w>
+      <w>femail</w>
+      <w>fname</w>
+      <w>fsubject</w>
       <w>googleapis</w>
       <w>goto</w>
+      <w>infowindow</w>
       <w>lrud</w>
       <w>reso</w>
       <w>slideset</w>
       <w>subnav</w>
+      <w>textarea</w>
       <w>uikit</w>
       <w>wmtb</w>
     </words>

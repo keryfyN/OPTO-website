@@ -1,12 +1,23 @@
 # -*- coding: utf-8 -*-
 
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect, url_for
+from .forms import ContactForm
+
 
 frontend = Blueprint('frontend', __name__)
 
-@frontend.route('/contact/')
+@frontend.route('/contact/', methods=['GET', 'POST'])
 def contact():
-    return render_template('/frontend/contact_en.html', title='Contact | OPTO Logic TECHNOLOGY')
+    form = ContactForm(request.form)
+    if request.method == 'POST' and form.validate():
+        print('Form subject : %s' %form.subject)
+        print('Form name : %s' %form.name)
+        print('Form email : %s' %form.email)
+        print('Form message : %s' %form.message)
+        return redirect(url_for('frontend.index'))
+    return render_template('/frontend/contact_en.html', title='Contact | OPTO Logic TECHNOLOGY', form=form)
+
+
 
 @frontend.route('/')
 @frontend.route('/index/')

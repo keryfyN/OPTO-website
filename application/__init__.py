@@ -23,12 +23,15 @@ def create_app():
     app.config.from_object('application.default_settings')
 
     db.init_app(app)
+
     toolbar = DebugToolbarExtension()
     toolbar.init_app(app)
 
     ## ------------------------------- ##
     #     initializing blueprints       #
     ## ------------------------------- ##
+    # forms blueprints
+    from .blueprints.frontend.forms import Form
 
     # frontend blueprints
     from .blueprints.frontend import frontend
