@@ -1,130 +1,166 @@
 {% extends "structure/_base.html" %}
 {% block content %}
 
-<div class="uk-margin-large-left uk-margin-large-top  uk-margin-large-bottom">
+<div class=" uk-margin-large-top  uk-margin-large-bottom">
     <div class="uk-container uk-container-center uk-hidden-small">
-        <h1>{{tft_details.article_number_supplier}}</h1>
-        <div class="uk-grid">
-            <ul class="uk-width-1-5 uk-list uk-list-striped">
-                <li>Brand:</li>
-                <li>Opto Art. number OPTO :</li>
-                <li>Supplier Art. number :</li>
-                <li>Panel Size :</li>
-                <li>Resolution :</li>
-                <li>Outline Dimensions :</li>
-                <li>Active Area :</li>
-                <li>Port :</li>
-                <li>Brightness :</li>
-                <li>Contrast :</li>
-                <li>Color :</li>
-                <li>Backlight :</li>
-                <li>Viewing Angle :</li>
-                <li>Operating Temperatures :</li>
-                <li>Storage Temperatures :</li>
-                <li>Touch Panel :</li>
-                <li>In production :</li>
-            </ul>
-            <ul class="uk-width-1-5 uk-list uk-list-striped">
-                <!-- brand -->
-                <li>{{tft_details.tft_brand.brand_name}}</li>
-                <!-- opto article number-->
-                <li>{{tft_details.article_number_opto}}</li>
-                <!-- supplier article number-->
-                <li>{{tft_details.article_number_supplier}}</li>
-                <!-- panel size -->
-                <li>{{tft_details.tft_size.size_inch}}&quot;</li>
-                <!-- resolution -->
-                <li>{{tft_details.tft_resolution.resolution_x}}x{{tft_details.tft_resolution.resolution_y}}:{{tft_details.tft_resolution.resolution_text}}</li>
-                <!-- outline dims -->
-                <li>{{tft_details.tft_outline_h_mm}}mm/ {{tft_details.tft_outline_v_mm}}mm {{tft_details.tft_outline_d_mm}}mm</li>
-                <!-- active area -->
-                <li>V:{{tft_details.tft_active_area_h_mm}}mm / H{{tft_details.tft_active_area_v_mm}}mm</li>
-                <!-- port -->
-                <li>{{tft_details.port_type}}...</li>
-                <!-- brightness -->
-                <li>{{tft_details.tft_brightness}} cd/m&sup2;</li>
-                <!-- contrast -->
-                <li>{{tft_details.tft_contrast}}</li>
-                <!-- color -->
-                <li>{{tft_details.tft_color_amount }}</li>
-                <!-- backlight -->
-                <li>{{tft_details.tft_backlight}}</li>
-                <!-- lrud -->
-                <li>{{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D)</li>
-                <!-- operating temperature -->
-                <li>{{tft_details.tft_operating_temperature_min}}c&ordm;/{{tft_details.tft_operating_temperature_max}}c&ordm;</li>
-                <!-- storage temperature -->
-                <li>{{tft_details.tft_storage_temperature_min}}c&ordm;/{{tft_details.tft_storage_temperature_max}}c&ordm;</li>
-                <!-- touch panel -->
-                <li>{{tft_details.tft_touch_panel}}</li>
-                <!-- in prod -->
-                <li>{{tft_details.tft_in_production}}</li>
-            </ul>
-            <div class="uk-panel-teaser uk-margin-left uk-width-2-5">
+        <div class="uk-grid uk-center">
+            <div class=" uk-width-1-2">
+                <table class="uk-table uk-table-hover uk-table-striped">
+                    <caption><h1>{{tft_details.article_number_supplier}}</h1></caption>
+                    <tbody>
+                        <tr>
+                            <td class="uk-width-3-6">Brand :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_brand.brand_name}}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Supplier Art. number :</td>
+                            <td class="uk-width-3-6">{{tft_details.article_number_supplier}}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Panel Size :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_size.size_inch}}&quot;</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Resolution :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_resolution.resolution_x}}x{{tft_details.tft_resolution.resolution_y}}:{{tft_details.tft_resolution.resolution_text}}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Outline Dimensions :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_outline_h_mm}}mm/ {{tft_details.tft_outline_v_mm}}mm {{tft_details.tft_outline_d_mm}}mm</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Active Area :</td>
+                            <td class="uk-width-3-6">V:{{tft_details.tft_active_area_h_mm}}mm / H{{tft_details.tft_active_area_v_mm}}mm</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Port :</td>
+                            <td class="uk-width-3-6">
+                                {% for port in tft_details.ports %}
+                                {{ port.port_type }}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Brightness :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_brightness}} cd/m&sup2;</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Contrast :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_contrast}}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Color :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_color_amount }}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Viewing angles :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D)</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Operating Temperatures :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_operating_temperature_min}}c&ordm;/{{tft_details.tft_operating_temperature_max}}c&ordm;</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Storage Temperatures :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_storage_temperature_min}}c&ordm;/{{tft_details.tft_storage_temperature_max}}c&ordm;</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">Touch Panel :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_touch_panel}}</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-width-3-6">In production :</td>
+                            <td class="uk-width-3-6">{{tft_details.tft_in_production}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="uk-panel-teaser uk-margin-large-top uk-width-1-2">
+                <br>
+                <br>
                 <img class="uk-border-rounded" src="{{ url_for('static', filename='img/tft_displays_details/rezised_tft.png')}}">
             </div>
         </div>
     </div>
     <!-----------------------------------------VISIBILITY SMALL ----------------------------------------------->
-    <div class="uk-container-center uk-visible-small">
-        <h1>{{tft_details.article_number_supplier}}</h1>
-        <div class="uk-grid">
-            <ul class="uk-width-2-5 uk-list uk-list-striped">
-                <li>Brand:</li>
-                <li>Opto Art. number OPTO :</li>
-                <li>Supplier Art. number :</li>
-                <li>Panel Size :</li>
-                <li>Resolution :</li>
-                <li>Outline Dimensions :</li>
-                <li>Active Area :</li>
-                <li>Port :</li>
-                <li>Brightness :</li>
-                <li>Contrast :</li>
-                <li>Color :</li>
-                <li>Backlight :</li>
-                <li>Viewing Angle :</li>
-                <li>Operating Temperatures :</li>
-                <li>Storage Temperatures :</li>
-                <li>Touch Panel :</li>
-                <li>In production :</li>
-            </ul>
-            <ul class="uk-width-2-5 uk-list uk-list-striped">
-                <!-- brand -->
-                <li>{{tft_details.tft_brand.brand_name}}</li>
-                <!-- opto article number-->
-                <li>{{tft_details.article_number_opto}}</li>
-                <!-- supplier article number-->
-                <li>{{tft_details.article_number_supplier}}</li>
-                <!-- panel size -->
-                <li>{{tft_details.tft_size.size_inch}}&quot;</li>
-                <!-- resolution -->
-                <li>{{tft_details.tft_resolution.resolution_x}}x{{tft_details.tft_resolution.resolution_y}}:{{tft_details.tft_resolution.resolution_text}}</li>
-                <!-- outline dims -->
-                <li>{{tft_details.tft_outline_h_mm}}mm/ {{tft_details.tft_outline_v_mm}}mm {{tft_details.tft_outline_d_mm}}mm</li>
-                <!-- active area -->
-                <li>V:{{tft_details.tft_active_area_h_mm}}mm / H{{tft_details.tft_active_area_v_mm}}mm</li>
-                <!-- port -->
-                <li>{{tft_details.tft_port_rel}}...</li>
-                <!-- brightness -->
-                <li>{{tft_details.tft_brightness}} cd/m&sup2;</li>
-                <!-- contrast -->
-                <li>{{tft_details.tft_contrast}}</li>
-                <!-- color -->
-                <li>{{tft_details.tft_color_amount }}</li>
-                <!-- backlight -->
-                <li>{{tft_details.tft_backlight}}</li>
-                <!-- lrud -->
-                <li>{{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D)</li>
-                <!-- operating temperature -->
-                <li>{{tft_details.tft_operating_temperature_min}}c&ordm;/{{tft_details.tft_operating_temperature_max}}c&ordm;</li>
-                <!-- storage temperature -->
-                <li>{{tft_details.tft_storage_temperature_min}}c&ordm;/{{tft_details.tft_storage_temperature_max}}c&ordm;</li>
-                <!-- touch panel -->
-                <li>{{tft_details.tft_touch_panel}}</li>
-                <!-- in prod -->
-                <li>{{tft_details.tft_in_production}}</li>
-            </ul>
-
+    <div class="uk-container uk-container-center uk-visible-small">
+        <div class="uk-grid uk-center">
+            <table class="uk-table uk-table-hover uk-table-striped">
+                <caption><h1>{{tft_details.article_number_supplier}}</h1></caption>
+                <tbody>
+                    <tr>
+                        <td class="uk-width-3-6">Brand :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_brand.brand_name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Supplier Art. number :</td>
+                        <td class="uk-width-3-6">{{tft_details.article_number_supplier}}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Panel Size :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_size.size_inch}}&quot;</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Resolution :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_resolution.resolution_x}}x{{tft_details.tft_resolution.resolution_y}}:{{tft_details.tft_resolution.resolution_text}}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Outline Dimensions :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_outline_h_mm}}mm/ {{tft_details.tft_outline_v_mm}}mm {{tft_details.tft_outline_d_mm}}mm</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Active Area :</td>
+                        <td class="uk-width-3-6">V:{{tft_details.tft_active_area_h_mm}}mm / H{{tft_details.tft_active_area_v_mm}}mm</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Port :</td>
+                        <td class="uk-width-3-6">{% for port_count_item in port_count_list %}
+                            {% if port_count_item['active'] %}
+                                <li class="uk-active">
+                            {% else %}
+                            <li class="">
+                            {% endif %}
+                                <a href="{{ url_for('tfts.tft_landing_en')}}{{port_count_item['url']}}" class="scroll-link" data-id="GoToList">
+                                    {{ port_count_item['port'] }}
+                                </a>
+                            </li>
+                        {% endfor %}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Brightness :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_brightness}} cd/m&sup2;</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Contrast :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_contrast}}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Color :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_color_amount }}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Viewing angles :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_viewing_angle_u}}/{{tft_details.tft_viewing_angle_d}}/{{tft_details.tft_viewing_angle_l }}/{{tft_details.tft_viewing_angle_r }} (L/R/U/D)</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Operating Temperatures :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_operating_temperature_min}}c&ordm;/{{tft_details.tft_operating_temperature_max}}c&ordm;</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Storage Temperatures :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_storage_temperature_min}}c&ordm;/{{tft_details.tft_storage_temperature_max}}c&ordm;</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">Touch Panel :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_touch_panel}}</td>
+                    </tr>
+                    <tr>
+                        <td class="uk-width-3-6">In production :</td>
+                        <td class="uk-width-3-6">{{tft_details.tft_in_production}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img class="uk-border-rounded" src="{{ url_for('static', filename='img/tft_displays_details/rezised_tft.png')}}">
         </div>
     </div>
 </div>

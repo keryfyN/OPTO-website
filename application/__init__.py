@@ -3,6 +3,9 @@
 from flask import Flask, render_template, request
 from flask_debugtoolbar import DebugToolbarExtension
 
+from flask_admin import Admin
+from flask_admin.contrib.sqla import ModelView
+
 from .database import db
 from .blueprints.tfts.models import TftSize, TftResolution, Tft, TftPort, TftBrand
 from .blueprints.touch_panels.models import TouchPanelSize
@@ -26,6 +29,13 @@ def create_app():
 
     toolbar = DebugToolbarExtension()
     toolbar.init_app(app)
+
+    admin = Admin(app, name='OPTOLOGIC ADMIN', template_mode='bootstrap3')
+    admin.add_view(ModelView(TftSize, db.session))
+    admin.add_view(ModelView(TftResolution, db.session))
+    admin.add_view(ModelView(TftPort, db.session))
+    admin.add_view(ModelView(TftBrand, db.session))
+    admin.add_view(ModelView(Tft, db.session))
 
     ## ------------------------------- ##
     #     initializing blueprints       #

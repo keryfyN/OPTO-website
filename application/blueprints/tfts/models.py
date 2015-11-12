@@ -11,15 +11,15 @@ class TftPort(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     port_type = db.Column(db.String(STRING_LEN))
-    port_tfts = db.relationship('Tft', secondary=port_tft_rel,
-                            backref=db.backref('tfts', lazy='dynamic'))
+    tfts = db.relationship('Tft', secondary=port_tft_rel,
+                            backref=db.backref('ports', lazy='dynamic'))
 
     def __init__(self, port_type, port_tfts):
         self.port_type = port_type
         self.port_tfts = port_tfts
 
     def __repr__(self):
-        return '< TftPort %s >' % self.port_type
+        return '{0}'.format(self.port_type)
 
 class TftBrand(db.Model):
     __tablename__ = 'tft_brand'
@@ -32,7 +32,7 @@ class TftBrand(db.Model):
         self.brand_name = brand_name
 
     def __repr__(self):
-        return '< TftBrand %s>' % str(self.brand_name)
+        return '{0}'.format(self.brand_name)
 
 class TftSize(db.Model):
     __tablename__ = 'tft_size'
@@ -47,7 +47,7 @@ class TftSize(db.Model):
         self.size_mm = (float(self.size_inch) * 25.4)
 
     def __repr__(self):
-        return '< TftSize %s [inch] >' % str(self.size_inch)
+        return '{0}"'.format(self.size_inch)
 
 
 class TftResolution(db.Model):
@@ -65,7 +65,7 @@ class TftResolution(db.Model):
         self.resolution_text = resolution_text
 
     def __repr__(self):
-        return '<TftResolution %s x %s [px]>' % str(self.resolution_x), str(self.resolution_y)
+        return '{0} x {1} | {2}'.format(str(self.resolution_x), str(self.resolution_y), self.resolution_text)
 
 
 class Tft(db.Model):
@@ -78,8 +78,6 @@ class Tft(db.Model):
     tft_brightness = db.Column(db.Integer)
     tft_contrast = db.Column(db.String(STRING_LEN))
     tft_color_amount = db.Column(db.String(STRING_LEN))
-    tft_backlight = db.Column(db.Boolean)
-    tft_viewing_direction = db.Column(db.Integer)
     tft_viewing_angle_u = db.Column(db.Integer)
     tft_viewing_angle_d = db.Column(db.Integer)
     tft_viewing_angle_l = db.Column(db.Integer)
@@ -117,24 +115,20 @@ class Tft(db.Model):
     tft_resolution_id = db.Column(db.Integer, db.ForeignKey("tft_resolution.id"))
     tft_resolution = db.relationship(TftResolution, backref=db.backref('tfts', uselist=True, cascade='delete,all'))
 
-
     # ================================================================
     # Class methods
 
     def __init__(self, article_number_opto, article_number_supplier, tft_brightness, tft_contrast, tft_color_amount,
-                 tft_backlight, tft_viewing_angle_u, tft_viewing_angle_d, tft_viewing_angle_l, tft_viewing_angle_r,
+                 tft_viewing_angle_u, tft_viewing_angle_d, tft_viewing_angle_l, tft_viewing_angle_r,
                  tft_operating_temperature_min, tft_operating_temperature_max, tft_in_production, tft_touch_panel,
                  tft_size_id, tft_resolution_id, tft_brand_id, tft_storage_temperature_min, tft_storage_temperature_max,
-                 tft_outline_h_mm, tft_outline_v_mm, tft_outline_d_mm, tft_active_area_h_mm, tft_active_area_v_mm,
-                 tft_viewing_direction):
+                 tft_outline_h_mm, tft_outline_v_mm, tft_outline_d_mm, tft_active_area_h_mm, tft_active_area_v_mm):
         self.article_number_opto = article_number_opto
         self.article_number_supplier = article_number_supplier
         self.tft_brightness = tft_brightness
         self.tft_contrast = tft_contrast
-        self.tft_backlight = tft_backlight
         self.tft_color_amount = tft_color_amount
 
-        self.tft_viewing_direction = tft_viewing_direction
         self.tft_viewing_angle_u = tft_viewing_angle_u
         self.tft_viewing_angle_d = tft_viewing_angle_d
         self.tft_viewing_angle_l = tft_viewing_angle_l
@@ -161,6 +155,5 @@ class Tft(db.Model):
         self.tft_active_area_h_mm = tft_active_area_h_mm
         self.tft_active_area_v_mm = tft_active_area_v_mm
 
-
     def __repr__(self):
-        return '<Tft %s >' % self.article_number_opto
+        return '<Tft %s (%s) >' % (self.article_number_supplier, self.article_number_opto)

@@ -4693,7 +4693,7 @@ a.uk-thumbnail:focus {
 #div_footer {
   background:#00c0b5;
   width:100%;
-  height:400px;
+  height:250px;
   bottom:0px;
   left:0;
   '''padding-left: 25px;
@@ -4839,7 +4839,7 @@ h6 {
 * + h3,
 * + h4,
 * + h5,
-* + h6 {
+* + h6{
   margin-top: 15px;
 }
 /*
@@ -4874,8 +4874,9 @@ h5,
 }
 h6,
 .uk-h6 {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 18px;
+  weight: bold;
 }
 .uk-button-secondary {
   background-color: #ffffff;
@@ -5048,6 +5049,8 @@ figure {
 #map {
   width: viewport;
   height: 63%;
+  "stylers":[
+  {"hue": "#00c0b5"}
 }
 div.gm-style-iw {
     max-height:150px;

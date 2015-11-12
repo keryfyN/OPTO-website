@@ -9,5 +9,5 @@ class ContactForm(Form):
     name = TextField("Name", validators=[InputRequired('Please enter your name.')])
     subject = TextField("Subject")
     email = EmailField("Email",  validators=[InputRequired("Please enter your email address."), Email("Please enter your email address.")])
-    message = TextAreaField("Message", validators=[InputRequired('Please enter your message.')])
+    message = TextAreaField("Message", validators=[InputRequired('Please dfdfdfdf enter your message.')])
     submit = SubmitField("Send")

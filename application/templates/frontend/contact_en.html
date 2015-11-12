@@ -1,21 +1,63 @@
 {% extends "/structure/_base.html" %}
+
 {% block content %}
-
-
-
 <div id="map">
     <script>
         function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var myLatLng = new google.maps.LatLng(46.523445, 6.899624);
-        var mapOptions = {center: myLatLng, zoom: 18, mapTypeId: google.maps.MapTypeId.SATELLITE};
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Opto Logic Technology S.A.'
+            // Create an array of styles.
+            var myLatLng = new google.maps.LatLng(46.523445, 6.899624);
+            var styles = [
+            {
+                stylers: [
+                        { hue: "#00c0b5" },
+                        { saturation: -20 }
+                    ]
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [
+                        { lightness: 100 },
+                        { visibility: "simplified" }
+                    ]
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels",
+                    stylers: [
+                        { visibility: "off" }
+                    ]
+                }
+            ];
+
+
+
+            // Create a new StyledMapType object, passing it the array of styles,
+            // as well as the name to be displayed on the map type control.
+            var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+            // Create a map object, and include the MapTypeId to add
+            // to the map type control.
+            var mapOptions = {
+                zoom: 11,
+                center: new google.maps.LatLng(46.523445, 6.899624),
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+                }
+            };
+            var map = new google.maps.Map(document.getElementById('map'),
+                mapOptions);
+
+            //Associate the styled map with the MapTypeId and set it to display.
+            map.mapTypes.set('map_style', styledMap);
+            map.setMapTypeId('map_style');
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Opto Logic Technology S.A.'
             });
-        var contentString =
+
+            var contentString =
             '<div id="content" class=uk-panel>'+
                 '<a id="firstHeading" class="firstHeading"><img src="{{ url_for('static', filename='img/logo_opto_250x51.png') }}"></a>'+
                 '<div id="bodyContent">'+
@@ -30,15 +72,16 @@
                     '</address>'+
                 '</div>'+
             '</div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
             });
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
             });
-        infowindow.open(map,marker);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
+            infowindow.open(map,marker);
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </div>
 <div class="uk-container uk-container-center">
@@ -75,26 +118,35 @@
 
 </div>
 <div style="background-color: aef3ee" class="">
-    <br>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+                {% for message in messages %}
+                   <div class="uk-alert" data-uk-alert>
+                       <a href="" class="uk-alert-success uk-close"></a>
+                       <p>{{ message }}</p>
+                   </div>
+
+                {% endfor %}
+
+        {% endif %}
+    {% endwith %}
+
     <div class="uk-container uk-container-center ">
         <div class="uk-grid">
             <form class="uk-form" method="post">
             <fieldset data-uk-margin class="">
-                <legend class="uk-text-center"><h1>Write to us</h1></legend>
-                {{ form.name.label }} {{ form.name }} <br>
-                {{ form.subject.label }} {{ form.subject }} <br>
-                {{ form.email.label }} {{ form.email }} <br>
-                -----
-                <input class="uk-form-width-large" name="name" type="text" placeholder="Insert your name.">
-                <input class="uk-form-width-large" name="email" type="text" placeholder="Insert your email address.">
-                <input class="uk-form-width-large" name="Fsubject" type="text" placeholder="Insert your subject."><br>
-                <textarea class="" cols="" rows="" type="textarea" placeholder="Insert your message here."></textarea>
-                <button class="uk-button">SEND MESSAGE</button>
+                <h1 class="uk-text-center">Write to us</h1>
+                {{ form.csrf_token }}
+                {{ form.name(class='uk-form-width-large', placeholder='Insert your name.') }}
+                {{ form.subject(class='uk-form-width-large', placeholder='Insert your subject.')  }}
+                {{ form.email(class='uk-form-width-large', placeholder='Insert your email address.')  }} <br>
+                {{ form.message(class='uk-form-width-large', placeholder='Insert your message here.')  }} <br><br>
+                {{ form.submit(class="uk-button") }} <br><br>
             </fieldset>
             </form>
         </div>
     </div>
 </div>
-
 
 {% endblock %}

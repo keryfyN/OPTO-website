@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import Blueprint, render_template
-from .models import Tft, TftSize, TftResolution, TftPort
+from .models import Tft, TftSize, TftResolution, TftPort, port_tft_rel
 
 tft = Blueprint('tfts', __name__, url_prefix='/products/displays/tfts')
 
@@ -246,4 +246,6 @@ def tft_landing_en(tft_size_link, tft_resolution_link, tft_port_link):
 @tft.route('/<int:tft_id>/details')
 def tft_details(tft_id=1):
     tft_details = Tft.query.filter_by(id=tft_id).first()
+
+    print(tft_details)
     return render_template('/tfts/tft_displays_details.html', tft_details=tft_details)
