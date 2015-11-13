@@ -1,12 +1,12 @@
 <!-- SECTION LIST -->
-<div class="uk-panel ">
+<div class="uk-panel  ">
     <div class="uk-margin-bottom">
         <h1 class="uk-margin-bottom-remove">LIST OF DISPLAYS</h1>
     </div>
     <!-- list displays SIZE -->
-    <div id="GoToList" class=" ">            <!-- Size panel-->
+    <div id="GoToList" class="">            <!-- Size panel-->
         <div class=" uk-panel">
-            <div class="uk-grid ">
+            <div class="uk-grid">
                 <!-- displaying size count -->
                 <div class="uk-width-2-10 uk-text-bold">Size &quot;  [inch]</div>
                 <div class="uk-width-8-10">
@@ -68,7 +68,6 @@
                             </li>
                         {% endfor %}
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -91,25 +90,25 @@
         </ul>
 
         <!-- LIST VISIBLE ALL MODELS -->
-        <ul id="list_switcher" class="uk-switcher uk-panel ">
+        <ul id="list_switcher" class="uk-switcher uk-panel uk-text-medium  ">
             <li>
-                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed">
-                    <thead class="">
-                        <tr class="uk-text-center">
-                            <th>Panel model</th>
-                            <th>Size &quot; [inch]</th>
-                            <th>Resolution [px/pixel]</th>
-                            <th>Brightness [Candela/m2]</th>
-                            <th>Interface (port)</th>
-                            <th>Touch</th>
-                            <th>Operating Temp [&deg;C]</th>
-                            <th>Viewing Angle [&deg;] L-R-U-D</th>
+                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed ">
+                    <thead class="uk-text-small">
+                        <tr>
+                            <th class="uk-text-medium uk-text-justify">Panel model</th>
+                            <th class="uk-text-right">Size &quot; [inch]</th>
+                            <th class="uk-text-right">Resolution [px/pixel]</th>
+                            <th class="uk-text-right">Brightness [Candela/m2]</th>
+                            <th class="uk-text-right">Interface (port)</th>
+                            <th class="uk-text-right">Touch</th>
+                            <th class="uk-text-right">Operating Temp [&deg;C]</th>
+                            <th class="uk-text-right">Viewing Angle [&deg;] L-R-U-D</th>
                         </tr>
                     </thead>
-                    <tbody  class="uk-text-center">
+                    <tbody  class="uk-text-right">
                         {% for tft in tft_list_all %}
                         <tr>
-                            <td>
+                            <td class="uk-text-justify">
                                 <a href="{{ url_for('tfts.tft_details', tft_id=tft.id) }}">
                                     {{ tft.article_number_supplier }}
                                 </a>
@@ -118,7 +117,7 @@
                             <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} : {{ tft.tft_resolution.resolution_text }}</td>
                             <td>{{ tft.tft_brightness }} </td>
                             <td>
-                                {% for port in tft.tfts %}
+                                {% for port in tft.ports %}
                                     {{ port.port_type }}
                                 {% endfor %}
                             </td>
@@ -132,24 +131,24 @@
                 </table>
             </li>
             <li>
-                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed">
-                    <thead class="">
-                        <tr>
-                            <th>Panel model</th>
-                            <th>Size &quot; [inch]</th>
-                            <th>Resolution [px/pixel]</th>
-                            <th>Brightness [Candela/m2]</th>
-                            <th>Interface (port)</th>
-                            <th>Touch</th>
-                            <th>Operating Temp [&deg;C]</th>
-                            <th>Viewing Angle [&deg;] L-R-U-D</th>
+                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed ">
+                    <thead class="uk-text-small uk-text-right">
+                        <tr class="">
+                            <th class="uk-text-medium uk-text-justify">Panel model</th>
+                            <th class="uk-text-right">Size &quot; [inch]</th>
+                            <th class="uk-text-right">Resolution [px/pixel]</th>
+                            <th class="uk-text-right">Brightness [Candela/m2]</th>
+                            <th class="uk-text-right">Interface (port)</th>
+                            <th class="uk-text-right">Touch</th>
+                            <th class="uk-text-right">Operating Temp [&deg;C]</th>
+                            <th class="uk-text-right">Viewing Angle [&deg;] L-R-U-D</th>
                         </tr>
                     </thead>
 
-                    <tbody class="uk-text-center">
+                    <tbody  class="uk-text-right">
                         {% for tft in tft_list_prod %}
                         <tr>
-                            <td>
+                            <td class="uk-text-justify">
                                 <a href="{{ url_for('tfts.tft_details', tft_id=tft.id) }}">
                                     {{ tft.article_number_supplier }}
                                 </a>
@@ -158,7 +157,7 @@
                             <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} : {{ tft.tft_resolution.resolution_text }}</td>
                             <td>{{ tft.tft_brightness }} </td>
                             <td>
-                                {% for port in tft.tfts %}
+                                {% for port in tft.ports %}
                                     {{ port.port_type }}
                                 {% endfor %}
                             </td>
@@ -172,24 +171,24 @@
                 </table>
             </li>
             <li>
-                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed">
-                    <thead class="">
-                        <tr>
-                            <th>Panel model</th>
-                            <th>Size &quot; [inch]</th>
-                            <th>Resolution [px/pixel]</th>
-                            <th>Brightness [Candela/m2]</th>
-                            <th>Interface (port)</th>
-                            <th>Touch</th>
-                            <th>Operating Temp [&deg;C]</th>
-                            <th>Viewing Angle [&deg;] L-R-U-D</th>
+                <table class="uk-table uk-table-striped uk-table-hover uk-table-condensed ">
+                    <thead class="uk-text-small uk-text-right">
+                        <tr class="">
+                            <th class="uk-text-medium uk-text-justify">Panel model</th>
+                            <th class="uk-text-right">Size &quot; [inch]</th>
+                            <th class="uk-text-right">Resolution [px/pixel]</th>
+                            <th class="uk-text-right">Brightness [Candela/m2]</th>
+                            <th class="uk-text-right">Interface (port)</th>
+                            <th class="uk-text-right">Touch</th>
+                            <th class="uk-text-right">Operating Temp [&deg;C]</th>
+                            <th class="uk-text-right">Viewing Angle [&deg;] L-R-U-D</th>
                         </tr>
                     </thead>
 
-                    <tbody class="uk-text-center">
+                    <tbody  class="uk-text-right">
                         {% for tft in tft_list_old %}
                         <tr>
-                            <td>
+                            <td class="uk-text-justify">
                                 <a href="{{ url_for('tfts.tft_details', tft_id=tft.id) }}">
                                     {{ tft.article_number_supplier }}
                                 </a>
@@ -198,7 +197,7 @@
                             <td>{{ tft.tft_resolution.resolution_x }}x{{ tft.tft_resolution.resolution_y }} : {{ tft.tft_resolution.resolution_text }}</td>
                             <td>{{ tft.tft_brightness }} </td>
                             <td>
-                                {% for port in tft.tfts %}
+                                {% for port in tft.ports %}
                                     {{ port.port_type }}
                                 {% endfor %}
                             </td>

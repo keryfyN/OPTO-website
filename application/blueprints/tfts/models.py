@@ -14,10 +14,6 @@ class TftPort(db.Model):
     tfts = db.relationship('Tft', secondary=port_tft_rel,
                             backref=db.backref('ports', lazy='dynamic'))
 
-    def __init__(self, port_type, port_tfts):
-        self.port_type = port_type
-        self.port_tfts = port_tfts
-
     def __repr__(self):
         return '{0}'.format(self.port_type)
 
@@ -27,9 +23,6 @@ class TftBrand(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     brand_name = db.Column(db.Integer)
     created_time = db.Column(db.DateTime, default=get_current_time)
-
-    def __init__(self, brand_name):
-        self.brand_name = brand_name
 
     def __repr__(self):
         return '{0}'.format(self.brand_name)
@@ -41,10 +34,6 @@ class TftSize(db.Model):
     size_inch = db.Column(db.Float)
     size_mm = db.Column(db.Float)
     created_time = db.Column(db.DateTime, default=get_current_time)
-
-    def __init__(self, size_inch):
-        self.size_inch = size_inch
-        self.size_mm = (float(self.size_inch) * 25.4)
 
     def __repr__(self):
         return '{0}"'.format(self.size_inch)
@@ -58,11 +47,6 @@ class TftResolution(db.Model):
     resolution_y = db.Column(db.Integer)
     resolution_text = db.Column(db.String(STRING_LEN))
     created_time = db.Column(db.DateTime, default=get_current_time)
-
-    def __init__(self, resolution_x, resolution_y, resolution_text):
-        self.resolution_x = resolution_x
-        self.resolution_y = resolution_y
-        self.resolution_text = resolution_text
 
     def __repr__(self):
         return '{0} x {1} | {2}'.format(str(self.resolution_x), str(self.resolution_y), self.resolution_text)
@@ -117,43 +101,6 @@ class Tft(db.Model):
 
     # ================================================================
     # Class methods
-
-    def __init__(self, article_number_opto, article_number_supplier, tft_brightness, tft_contrast, tft_color_amount,
-                 tft_viewing_angle_u, tft_viewing_angle_d, tft_viewing_angle_l, tft_viewing_angle_r,
-                 tft_operating_temperature_min, tft_operating_temperature_max, tft_in_production, tft_touch_panel,
-                 tft_size_id, tft_resolution_id, tft_brand_id, tft_storage_temperature_min, tft_storage_temperature_max,
-                 tft_outline_h_mm, tft_outline_v_mm, tft_outline_d_mm, tft_active_area_h_mm, tft_active_area_v_mm):
-        self.article_number_opto = article_number_opto
-        self.article_number_supplier = article_number_supplier
-        self.tft_brightness = tft_brightness
-        self.tft_contrast = tft_contrast
-        self.tft_color_amount = tft_color_amount
-
-        self.tft_viewing_angle_u = tft_viewing_angle_u
-        self.tft_viewing_angle_d = tft_viewing_angle_d
-        self.tft_viewing_angle_l = tft_viewing_angle_l
-        self.tft_viewing_angle_r = tft_viewing_angle_r
-
-        self.tft_operating_temperature_min = tft_operating_temperature_min
-        self.tft_operating_temperature_max = tft_operating_temperature_max
-
-        self.tft_touch_panel = tft_touch_panel
-
-        self.tft_in_production = tft_in_production
-
-        self.tft_size_id = tft_size_id
-        self.tft_resolution_id = tft_resolution_id
-        self.tft_brand_id = tft_brand_id
-
-        self.tft_storage_temperature_min = tft_storage_temperature_min
-        self.tft_storage_temperature_max = tft_storage_temperature_max
-
-        self.tft_outline_h_mm = tft_outline_h_mm
-        self.tft_outline_v_mm = tft_outline_v_mm
-        self.tft_outline_d_mm = tft_outline_d_mm
-
-        self.tft_active_area_h_mm = tft_active_area_h_mm
-        self.tft_active_area_v_mm = tft_active_area_v_mm
 
     def __repr__(self):
         return '<Tft %s (%s) >' % (self.article_number_supplier, self.article_number_opto)

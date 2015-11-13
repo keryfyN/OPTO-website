@@ -19,10 +19,10 @@ def init_db():
             db.drop_all()
             db.create_all()
 
-            ts_1 = TftSize(5.7)
-            ts_2 = TftSize(7.0)
-            ts_3 = TftSize(8.0)
-            ts_6 = TftSize(5.0)
+            ts_1 = TftSize(size_inch=5.7)
+            ts_2 = TftSize(size_inch=7.0)
+            ts_3 = TftSize(size_inch=8.0)
+            ts_6 = TftSize(size_inch=5.0)
 
 
             db.session.add(ts_1)
@@ -31,12 +31,12 @@ def init_db():
             db.session.add(ts_6)
             db.session.commit()
 
-            tr_1 = TftResolution('640', '480', 'VGA')
-            tr_2 = TftResolution('800', '600', 'SVGA')
-            tr_3 = TftResolution('1024', '768', 'XGA')
-            tr_4 = TftResolution('1280', '1024', 'SXGA')
-            tr_5 = TftResolution('1680', '1050', 'UXGA')
-            tr_6= TftResolution('800', '480', 'WVGA')
+            tr_1 = TftResolution(resolution_x='640', resolution_y='480', resolution_text='VGA')
+            tr_2 = TftResolution(resolution_x='800', resolution_y='600', resolution_text='VGA')
+            tr_3 = TftResolution(resolution_x='1024', resolution_y='768', resolution_text='VGA')
+            tr_4 = TftResolution(resolution_x='1280', resolution_y='1024', resolution_text='VGA')
+            tr_5 = TftResolution(resolution_x='1680', resolution_y='1050', resolution_text='VGA')
+            tr_6 = TftResolution(resolution_x='800', resolution_y='480', resolution_text='VGA')
 
             db.session.add(tr_1)
             db.session.add(tr_2)
@@ -46,12 +46,12 @@ def init_db():
             db.session.add(tr_6)
             db.session.commit()
 
-            tb_1 = TftBrand('Data Image')
-            tb_2 = TftBrand('Data Image')
-            tb_3 = TftBrand('Data Image')
-            tb_4 = TftBrand('Data Image')
-            tb_5 = TftBrand('Data Image')
-            tb_6 = TftBrand('Data Image')
+            tb_1 = TftBrand(brand_name='Data Image')
+            tb_2 = TftBrand(brand_name='Data Vision')
+            tb_3 = TftBrand(brand_name='DigiWise')
+            tb_4 = TftBrand(brand_name='Anshan Yes')
+            tb_5 = TftBrand(brand_name='Truly')
+            tb_6 = TftBrand(brand_name='EInk')
 
             db.session.add(tb_1)
             db.session.add(tb_2)
@@ -62,12 +62,53 @@ def init_db():
             db.session.commit()
 
 
-            t_1 = Tft('00.00.00001', 'FX000000001', '400', '1000:1', '10', 35, 45, 33, 39, 5.0, 70.0, False, True, ts_1.id, tr_1.id,tb_1.id, -40,50, 118.5,77.55,3.4,108.0,64.8)
-            t_2 = Tft('00.00.00002', 'FX000000002', '250', '1500:1', '10', 35, 45, 33, 39, 5.0, 70.0, True, True, ts_2.id, tr_2.id, tb_2.id, -40,50, 118.5,77.55,3.4,108.0,64.8)
-            t_3 = Tft('00.00.00003', 'FX000000003', '300', '1800:1', '10', 35, 45, 33, 39, 5.0, 70.0, True, False, ts_3.id, tr_3.id, tb_3.id, -40,50, 118.5,77.55,3.4,108.0,64.8)
-            t_4 = Tft('00.00.00004', 'FX000000004', '200', '1200:1', '10', 35, 45, 33, 39, 5.0, 70.0, False, False, ts_1.id, tr_4.id, tb_4.id, -40,50, 118.5,77.55,3.4,108.0,64.8)
-            t_5 = Tft('00.00.00005', 'FX000000005', '400', '1000:1', '10', 35, 45, 33, 39, 5.0, 70.0, False, True, ts_3.id, tr_5.id, tb_5.id, -40,50, 118.5,77.55,3.4,108.0,64.8)
-            t_6 = Tft('00.00.00006', '31-050WMTB00A3-S', '500', 'TBD', '10', 35,45, 33, 39, 5.0, 70.0, False, True, ts_3.id, tr_5.id, tb_5.id, -40,50, 118.5,77.55,3.4,108.0,64.8)
+            t_1 = Tft(article_number_opto='00.00.00001', article_number_supplier='FX000000001', tft_brightness='400',
+                      tft_contrast='1000:1', tft_color_amount='10', tft_viewing_angle_u=35, tft_viewing_angle_d=45,
+                      tft_viewing_angle_l=33, tft_viewing_angle_r=39, tft_operating_temperature_min=5.0,
+                      tft_operating_temperature_max=70.0, tft_in_production=False, tft_touch_panel=True,
+                      tft_size_id=ts_1.id, tft_resolution_id=tr_1.id,tft_brand_id=tb_1.id, tft_storage_temperature_min=-40,
+                      tft_storage_temperature_max=50, tft_outline_h_mm=118.5,tft_outline_v_mm=77.55,tft_outline_d_mm=3.4,
+                      tft_active_area_h_mm=108.0,tft_active_area_v_mm=64.8)
+
+            t_2 = Tft(article_number_opto='00.00.00002', article_number_supplier='FX000000002', tft_brightness='250',
+                      tft_contrast='1500:1', tft_color_amount='10', tft_viewing_angle_u=35, tft_viewing_angle_d=45,
+                      tft_viewing_angle_l=33, tft_viewing_angle_r=39, tft_operating_temperature_min=5.0,
+                      tft_operating_temperature_max=70.0, tft_in_production=True, tft_touch_panel=True,
+                      tft_size_id=ts_2.id, tft_resolution_id=tr_2.id, tft_brand_id=tb_2.id, tft_storage_temperature_min=-40,
+                      tft_storage_temperature_max=50, tft_outline_h_mm=118.5,tft_outline_v_mm=77.55,tft_outline_d_mm=3.4,
+                      tft_active_area_h_mm=108.0,tft_active_area_v_mm=64.8)
+
+            t_3 = Tft(article_number_opto='00.00.00003', article_number_supplier='FX000000003', tft_brightness='300',
+                      tft_contrast='1800:1', tft_color_amount='10', tft_viewing_angle_u=35, tft_viewing_angle_d=45,
+                      tft_viewing_angle_l=33, tft_viewing_angle_r=39, tft_operating_temperature_min=5.0,
+                      tft_operating_temperature_max=70.0, tft_in_production=True, tft_touch_panel=False,
+                      tft_size_id=ts_3.id, tft_resolution_id=tr_3.id, tft_brand_id=tb_3.id, tft_storage_temperature_min=-40,
+                      tft_storage_temperature_max=50, tft_outline_h_mm=118.5,tft_outline_v_mm=77.55,tft_outline_d_mm=3.4,
+                      tft_active_area_h_mm=108.0,tft_active_area_v_mm=64.8)
+
+            t_4 = Tft(article_number_opto='00.00.00004', article_number_supplier='FX000000004', tft_brightness='200',
+                      tft_contrast='1200:1', tft_color_amount='10', tft_viewing_angle_u=35, tft_viewing_angle_d=45,
+                      tft_viewing_angle_l=33, tft_viewing_angle_r=39, tft_operating_temperature_min=5.0,
+                      tft_operating_temperature_max=70.0, tft_in_production=False, tft_touch_panel=False,
+                      tft_size_id=ts_1.id, tft_resolution_id=tr_4.id, tft_brand_id=tb_4.id, tft_storage_temperature_min=-40,
+                      tft_storage_temperature_max=50, tft_outline_h_mm=118.5,tft_outline_v_mm=77.55,tft_outline_d_mm=3.4,
+                      tft_active_area_h_mm=108.0,tft_active_area_v_mm=64.8)
+
+            t_5 = Tft(article_number_opto='00.00.00005', article_number_supplier='FX000000005', tft_brightness='400',
+                      tft_contrast='1000:1', tft_color_amount='10', tft_viewing_angle_u=35, tft_viewing_angle_d=45,
+                      tft_viewing_angle_l=33, tft_viewing_angle_r=39, tft_operating_temperature_min=5.0,
+                      tft_operating_temperature_max=70.0, tft_in_production=False, tft_touch_panel=True,
+                      tft_size_id=ts_3.id, tft_resolution_id=tr_5.id, tft_brand_id=tb_5.id, tft_storage_temperature_min=-40,
+                      tft_storage_temperature_max=50, tft_outline_h_mm=118.5,tft_outline_v_mm=77.55,tft_outline_d_mm=3.4,
+                      tft_active_area_h_mm=108.0,tft_active_area_v_mm=64.8)
+
+            t_6 = Tft(article_number_opto='00.00.00006', article_number_supplier='31-050WMTB00A3-S', tft_brightness='500',
+                      tft_contrast='1000:1', tft_color_amount='10', tft_viewing_angle_u=35,tft_viewing_angle_d=45,
+                      tft_viewing_angle_l=33, tft_viewing_angle_r=39, tft_operating_temperature_min=5.0,
+                      tft_operating_temperature_max=70.0, tft_in_production=False, tft_touch_panel=True,
+                      tft_size_id=ts_3.id, tft_resolution_id=tr_5.id, tft_brand_id=tb_5.id, tft_storage_temperature_min=-40,
+                      tft_storage_temperature_max=50, tft_outline_h_mm=118.5,tft_outline_v_mm=77.55,tft_outline_d_mm=3.4,
+                      tft_active_area_h_mm=108.0,tft_active_area_v_mm=64.8)
 
             db.session.add(t_1)
             db.session.add(t_2)
@@ -77,11 +118,11 @@ def init_db():
             db.session.add(t_6)
             db.session.commit()
 
-            tp_1 = TftPort('LVDS', [t_1, t_2])
-            tp_2 = TftPort('RGB', [t_3])
-            tp_3 = TftPort('Serial', [t_4])
-            tp_4 = TftPort('TTL', [t_5])
-            tp_5 = TftPort('SPI', [t_1, t_2])
+            tp_1 = TftPort(port_type='LVDS', tfts=[t_1, t_2])
+            tp_2 = TftPort(port_type='RGB', tfts=[t_3])
+            tp_3 = TftPort(port_type='Serial', tfts=[t_4])
+            tp_4 = TftPort(port_type='TTL', tfts=[t_5])
+            tp_5 = TftPort(port_type='SPI', tfts=[t_1, t_2, t_6])
 
             db.session.add(tp_1)
             db.session.add(tp_2)

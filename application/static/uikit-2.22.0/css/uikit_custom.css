@@ -5048,11 +5048,14 @@ figure {
 }
 #map {
   width: viewport;
-  height: 63%;
-  "stylers":[
-  {"hue": "#00c0b5"}
+  height: 64%;
+}
+gm-style-iw{
+  width = 300px;
 }
 div.gm-style-iw {
-    max-height:150px;
-    overflow:scroll;
+    max-height: 150px;
+}
+#content{
+min-width= 250px;
 }

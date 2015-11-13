@@ -114,17 +114,11 @@
                     </tr>
                     <tr>
                         <td class="uk-width-3-6">Port :</td>
-                        <td class="uk-width-3-6">{% for port_count_item in port_count_list %}
-                            {% if port_count_item['active'] %}
-                                <li class="uk-active">
-                            {% else %}
-                            <li class="">
-                            {% endif %}
-                                <a href="{{ url_for('tfts.tft_landing_en')}}{{port_count_item['url']}}" class="scroll-link" data-id="GoToList">
-                                    {{ port_count_item['port'] }}
-                                </a>
-                            </li>
-                        {% endfor %}</td>
+                            <td class="uk-width-3-6">
+                                {% for port in tft_details.ports %}
+                                {{ port.port_type }}
+                                {% endfor %}
+                            </td>
                     </tr>
                     <tr>
                         <td class="uk-width-3-6">Brightness :</td>
