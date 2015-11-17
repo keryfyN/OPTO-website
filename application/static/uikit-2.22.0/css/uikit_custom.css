@@ -40,6 +40,7 @@ abbr[title] {
   margin: 0;
   padding: 0;
   list-style: none;
+  background:transparent;
 }
 .uk-nav li > a {
   display: block;
@@ -52,7 +53,7 @@ abbr[title] {
   padding-left: 15px;
 }
 .uk-nav ul a {
-  padding: 2px 0;
+  padding: 0px 0;
 }
 .uk-nav li > a > div {
   font-size: 12px;
@@ -115,6 +116,7 @@ ul.uk-nav-sub {
   font-weight:bold;
 
 }
+/*Custum the line in the nav bar*/
 .uk-nav-dropdown > li > a:hover,
 .uk-nav-dropdown > li > a:focus {
   border-radius: 1px;
@@ -190,7 +192,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar {
   position: center;
-  background: #00c0b5;
+  background: transparent;
   color: #eeeeee;
   height:60px;
   box-shadow: 3px 2px 5px 1px #222;
@@ -4998,50 +5000,6 @@ h6,
   padding-right: 0px;
   }
 }
-
-
-/* MARGIN!!!!!!!!!! */
-/*
- * Margins
- */
-p,
-ul,
-ol,
-dl,
-blockquote,
-pre,
-address,
-fieldset,
-figure {
-  margin: 0px;
-  margin-left: 0px;
-}
-* + p,
-* + ul,
-* + ol,
-* + dl,
-* + blockquote,
-* + pre,
-* + address,
-* + fieldset,
-* + figure {
-}
-.midnightHeader.default {
-  background: none;
-  color: black;
-}
-.midnightHeader.white {
-  background: none;
-  color: white;
-}
-.midnightHeader.blue {
-  background: blue;
-  color: white;
-}
-.midnightHeader.red {
-  background: red;
-  color: white;
-}
 [class*="uk-align-"] {
     display: block;
     margin-bottom: 0px;
@@ -5050,11 +5008,15 @@ figure {
   width: viewport;
   height: 64%;
 }
+gm-style{
+  width = 500px;
+}
 gm-style-iw{
-  width = 300px;
+  width = 400px;
 }
 div.gm-style-iw {
     max-height: 150px;
+    width = 400px;
 }
 #content{
 min-width= 250px;
