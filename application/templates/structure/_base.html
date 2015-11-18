@@ -2,7 +2,9 @@
   <head>
     <meta charset="utf-8">
     {% if title %}
-      <title>{{title}}</title>
+      <title>
+        {{title}}
+      </title>
     {% else %}
       <title>OPTO Logic TECHNOLOGY S.A.</title>
     {% endif %}
@@ -13,10 +15,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='uikit-2.22.0/css/animate.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='hover-master/css/hover.css') }}" />
 
-
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/uikit.min.js') }}"></script>
-
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slideshow.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/slideshow-fx.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/sticky.js') }}"></script>
@@ -27,31 +27,26 @@
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/components/notify.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/addons/midnight.jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='uikit-2.22.0/js/addons/wow.js') }}"></script>
+    <script src="{{ url_for('static', filename='uikit-2.22.0/js/addons/custom.js') }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-
-    <script>
-      function initialize() {}
-    </script>
-
-    <script>
-      new WOW().init();
-    </script>
-
+    <script>function initialize() {}</script>
+    <script>new WOW().init();</script>
     <script>
       // Start midnight
       $(document).ready(function(){
       // Change this to the correct selector for your nav.
-      $('nav.fixed').midnight();
+      $('midnightnav.fixed').midnight();
       });
     </script>
-
   </head>
   <body>
 
-    <div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">
+    <!--<div data-uk-sticky="{top, animation:'uk-animation-slide-top'}">-->
+    <div>
       {% include '/structure/nav_en_large.html' %}
       {% include '/structure/nav_en_small.html' %}
     </div>
+
     <div class="uk-notify uk-notify-bottom-right">
       <div class="uk-grid">
         <div class="uk-width-1-5 uk-align-right" data-uk-scrollspy="{cls:'uk-animation-fade', repeat:true}">

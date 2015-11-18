@@ -41,6 +41,7 @@ abbr[title] {
   padding: 0;
   list-style: none;
   background:transparent;
+  display: inline;
 }
 .uk-nav li > a {
   display: block;
@@ -192,7 +193,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar {
   position: center;
-  background: transparent;
+  background: #00c0b5;
   color: #eeeeee;
   height:60px;
   box-shadow: 3px 2px 5px 1px #222;
@@ -3867,7 +3868,7 @@ a.uk-thumbnail:focus {
   z-index: 1020;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 1px;
+  margin-top: 0px;
   padding-top: 0px;
   margin-left: 0px;
   margin-margin: 0px;
@@ -3877,7 +3878,7 @@ a.uk-thumbnail:focus {
   vertical-align: middle;
   max-width: 39em;
   font-size: 1em;
-  padding-left: 2px;
+  padding-left: 0px;
 }
 .uk-open > .uk-dropdown {
   display: block;
@@ -5021,3 +5022,30 @@ div.gm-style-iw {
 #content{
 min-width= 250px;
 }
+.spacer{
+  height:50px;
+}
+#sticky {
+  color: #fff;
+  font-size: 2em;
+
+  border-radius: 0.5ex;
+}
+/*from http://blog.yjl.im/2010/01/stick-div-at-top-after-scrolling.html */
+#sticky.stick {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  border-radius: 0 0 0.5em 0.5em;
+}
+/*Midnight*/
+midnightHeader.default {background-color:#fff;color: black;}
+.midnightHeader.blue {background-color:#17b3cb;color: white;}
+.midnightHeader.section_tft {background-color:#transparent; color: black;}
+.midnightHeader.blue .navbar-brand, .midnightHeader.blue .navbar-nav > li > a {color: #fff;}
+.midnightHeader.red {background-color:red;color: white;}
+.midnightHeader.red .navbar-brand, .midnightHeader.red .navbar-nav > li > a {color: #fff;}
+.midnightHeader.orange {background-color:#ee6215;color: white;}
+.midnightHeader.orange .navbar-brand, .midnightHeader.orange .navbar-nav > li > a {color: #fff;}
+
+

@@ -1,147 +1,147 @@
-    <nav id="navbar" class="uk-navbar uk-hidden-small">
-        <a href="{{ url_for('frontend.index') }}" class="uk-navbar-brand">
-          <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
-        </a>
-        <ul class="uk-navbar-nav uk-navbar-flip ">
-            <!-- Products menu -->
-            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-                <!-- section products -->
-                <a href="#" class="hvr-underline-from-center">Products</a>
-                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3">
-                    <div class="uk-grid uk-dropdown-grid">
-                        <!-- Column 1 -->
-                        <div class="uk-width-1-3">
-                            <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                <!-- new sub -->
-                                <li class="uk-panel">
-                                    <a href="#">
-                                        <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
-                                    </a>
-                                </li>
-                                <li><a href="{{ url_for('tfts.tft_landing_en')}}"><p> TFT Displays</p></a></li>
-                                <li><a href="{{ url_for('lcd.lcd_graphic')}}"> <p>LCD Graphic</p></a></li>
-                                <li><a href="{{ url_for('lcd.lcd_segment')}}"> <p>LCD Segment</p></a></li>
-                                <li><a href="{{ url_for('oled.oled_landing_en')}}"> <p>OLED</p></a></li>
-                                <li><a href="{{ url_for('epaper.epaper_landing_en')}}"> <p>ePAPER</p></a></li>
-                                <li><a href="{{ url_for('custom_displays.custom_displays_landing_en')}}"> <p>CUSTOM Displays</p></a></li>
-                            </ul>
-                        </div>
-                        <!-- Column 2 -->
-                        <div class="uk-width-1-3">
-                            <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                <!-- new sub -->
-                                <li class="uk-panel">
-                                    <a href="#" style="padding:0; margin:0">
-                                        <figure class="uk-overlay">
-                                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:8px; padding-top:8px">
-                                                Thermal Printer
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li><a href="#"><p>Panel printer</p></a></li>
-                                <li><a href="#"><p>Mobile printer</p></a></li>
-                                <li><a href="#"><p>Pos printer</p></a></li>
-                                <li><a href="#"><p>Mechanism</p></a></li>
-                                <!-- new sub -->
-                                <li class="uk-panel">
-                                    <a href="#">
-                                        <figure class="uk-overlay">
-                                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium"> Touch Panels
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li><a href="#"><p>PCAP</p></a></li>
-                                <li><a href="#"><p>RTP</p></a></li>
-                            </ul>
-                        </div>
-                        <!-- Column 3 -->
-                        <div class="uk-width-1-3">
-                            <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                <li>
-                                    <a href="#" style="padding:0; margin:0">
-                                        <figure class="uk-overlay">
-                                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
-                                                Computers
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li><a href="#"><p>Industrial PCs</p></a></li>
-                                <li><a href="#"><p>Monitors</p></a></li>
-                                <li><a href="#"><p>SOM</p></a></li>
-                                <!-- new sub -->
-                                <li><a href="#" style="padding:0; margin:0">
-                                        <figure class="uk-overlay">
-                                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                            <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
-                                                Others
-                                            </figcaption>
-                                        </figure>
-                                    </a>
+<nav data-uk-sticky id="midnightnav" class="uk-navbar navbar-default navbar-fixed-top uk-hidden-small">
+    <a href="{{ url_for('frontend.index') }}" class="uk-navbar-brand">
+        <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
+    </a>
+    <ul class="uk-navbar-nav uk-navbar-flip ">
+        <!-- Products menu -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <!-- section products -->
+            <a href="#" class="hvr-underline-from-center">Products</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-3">
+                <div class="uk-grid uk-dropdown-grid">
+                    <!-- Column 1 -->
+                    <div class="uk-width-1-3">
+                        <ul class="uk-nav uk-nav-dropdown uk-panel">
+                            <!-- new sub -->
+                            <li class="uk-panel">
+                                <a href="#">
+                                    <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
+                                </a>
+                            </li>
+                            <li><a href="{{ url_for('tfts.tft_landing_en')}}"><p> TFT Displays</p></a></li>
+                            <li><a href="{{ url_for('lcd.lcd_graphic')}}"> <p>LCD Graphic</p></a></li>
+                            <li><a href="{{ url_for('lcd.lcd_segment')}}"> <p>LCD Segment</p></a></li>
+                            <li><a href="{{ url_for('oled.oled_landing_en')}}"> <p>OLED</p></a></li>
+                            <li><a href="{{ url_for('epaper.epaper_landing_en')}}"> <p>ePAPER</p></a></li>
+                            <li><a href="{{ url_for('custom_displays.custom_displays_landing_en')}}"> <p>CUSTOM Displays</p></a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="uk-width-1-3">
+                        <ul class="uk-nav uk-nav-dropdown uk-panel">
+                            <!-- new sub -->
+                            <li class="uk-panel">
+                                <a href="#" style="padding:0; margin:0">
+                                    <figure class="uk-overlay">
+                                        <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:8px; padding-top:8px">
+                                            Thermal Printer
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li><a href="#"><p>Panel printer</p></a></li>
+                            <li><a href="#"><p>Mobile printer</p></a></li>
+                            <li><a href="#"><p>Pos printer</p></a></li>
+                            <li><a href="#"><p>Mechanism</p></a></li>
+                            <!-- new sub -->
+                            <li class="uk-panel">
+                                <a href="#">
+                                    <figure class="uk-overlay">
+                                        <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium"> Touch Panels
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li><a href="#"><p>PCAP</p></a></li>
+                            <li><a href="#"><p>RTP</p></a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="uk-width-1-3">
+                        <ul class="uk-nav uk-nav-dropdown uk-panel">
+                            <li>
+                                <a href="#" style="padding:0; margin:0">
+                                    <figure class="uk-overlay">
+                                        <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
+                                            Computers
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li><a href="#"><p>Industrial PCs</p></a></li>
+                            <li><a href="#"><p>Monitors</p></a></li>
+                            <li><a href="#"><p>SOM</p></a></li>
+                            <!-- new sub -->
+                            <li><a href="#" style="padding:0; margin:0">
+                                    <figure class="uk-overlay">
+                                        <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
+                                            Others
+                                        </figcaption>
+                                    </figure>
+                                </a>
 
-                                </li>
-                                <li><a href="#"><p>Laser diodes</p></a></li>
-                                <li><a href="#"><p>POS systems</p></a></li>
+                            </li>
+                            <li><a href="#"><p>Laser diodes</p></a></li>
+                            <li><a href="#"><p>POS systems</p></a></li>
 
 
-                            </ul>
+                        </ul>
 
-                        </div>
                     </div>
                 </div>
-            </li>
-            <!-- Solutions -->
-            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-                <a href="#" class="hvr-underline-from-center"> Solutions </a>
-                <div style="" class="uk-dropdown uk-dropdown-navbar">
-                  ...
-                </div>
-            </li>
-            <!-- Partners -->
-            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-                <a href="#" class="hvr-underline-from-center">Partners</a>
-                <div style="" class="uk-dropdown uk-dropdown-navbar">
-                  ...
-                </div>
-            </li>
-            <!-- Company -->
-            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-                <a href="#" class="hvr-underline-from-center">Company</a>
-                <div style="" class="uk-dropdown uk-dropdown-navbar">
-                    <ul class="uk-nav uk-nav-dropdown uk-panel">
-                        <li class="uk-panel">
-                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                        </li>
-                        <li><a href="#"><p>Presentation</p></a></li>
-                        <li><a href="#"><p>Philosophy</p></a></li>
-                        <li><a href="#"><p>Quality management</p></a></li>
-                        <li><a href="#"><p>Job opportunities</p></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- Support -->
-            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-                <a href="#" class="hvr-underline-from-center">Support</a>
-                <div style="" class="uk-dropdown uk-dropdown-navbar">
-                    <ul class="uk-nav uk-nav-dropdown uk-panel">
-                        <li class="uk-panel">
-                            <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                        </li>
-                        <li><a href="#"><p>RMA</p></a></li>
-                        <li><a href="#"><p>Terms & conditions</p></a></li>
-                        <li><a href="#"><p>Drivers</p></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- Contact -->
-            <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
-                <a href="{{ url_for('frontend.contact')}}" class="hvr-underline-from-center">Contact</a>
+            </div>
+        </li>
+        <!-- Solutions -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-center"> Solutions </a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+              ...
+            </div>
+        </li>
+        <!-- Partners -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-center">Partners</a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+              ...
+            </div>
+        </li>
+        <!-- Company -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-center">Company</a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                    <li class="uk-panel">
+                        <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                    </li>
+                    <li><a href="#"><p>Presentation</p></a></li>
+                    <li><a href="#"><p>Philosophy</p></a></li>
+                    <li><a href="#"><p>Quality management</p></a></li>
+                    <li><a href="#"><p>Job opportunities</p></a></li>
+                </ul>
+            </div>
+        </li>
+        <!-- Support -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="#" class="hvr-underline-from-center">Support</a>
+            <div style="" class="uk-dropdown uk-dropdown-navbar">
+                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                    <li class="uk-panel">
+                        <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
+                    </li>
+                    <li><a href="#"><p>RMA</p></a></li>
+                    <li><a href="#"><p>Terms & conditions</p></a></li>
+                    <li><a href="#"><p>Drivers</p></a></li>
+                </ul>
+            </div>
+        </li>
+        <!-- Contact -->
+        <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
+            <a href="{{ url_for('frontend.contact')}}" class="hvr-underline-from-center">Contact</a>
 
-            </li>
-        </ul>
-    </nav>
+        </li>
+    </ul>
+</nav>

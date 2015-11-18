@@ -1,25 +1,15 @@
 {% extends "structure/_base.html" %}
 
 {% block slideshow %}
-  {% include 'frontend/_slideshow_index_en.html' %}
+    {% include 'frontend/_slideshow_index_en.html' %}
 {% endblock %}
 
 {% block content %}
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-{% include 'frontend/_index_section_tft.html' %}
-</div>
-
-{% include 'frontend/_index_section_2_parallax.html' %}
-
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-        {% include 'frontend/_index_section_3.html' %}
-</div>
-{% include 'frontend/_index_section_4_parallax.html' %}
-
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-        {% include 'frontend/_index_section_5.html' %}
-</div>
-
+    {% include 'frontend/_index_section_tft.html' %}
+    {% include 'frontend/_index_section_epaper_parallax.html' %}
+    {% include 'frontend/_index_section_3.html' %}
+    {% include 'frontend/_index_section_4_parallax.html' %}
+    {% include 'frontend/_index_section_5.html' %}
 {% endblock %}
 
 
