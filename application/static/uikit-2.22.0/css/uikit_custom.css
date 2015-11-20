@@ -121,8 +121,8 @@ ul.uk-nav-sub {
 .uk-nav-dropdown > li > a:hover,
 .uk-nav-dropdown > li > a:focus {
   border-radius: 1px;
-  background: #00c0b5;
-  color: #ffffff;
+  background: #fff;
+  color: #00c0b5;
   outline: none;
   box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.5) inset;
   border-left-color: (0, 0, 0, 0.1);
@@ -5035,17 +5035,31 @@ min-width= 250px;
 #sticky.stick {
   position: fixed;
   top: 0;
-  z-index: 10000;
+  z-index: 1021;
   border-radius: 0 0 0.5em 0.5em;
 }
 /*Midnight*/
-midnightHeader.default {background-color:#fff;color: black;}
-.midnightHeader.blue {background-color:#17b3cb;color: white;}
-.midnightHeader.section_tft {background-color:#transparent; color: black;}
-.midnightHeader.blue .navbar-brand, .midnightHeader.blue .navbar-nav > li > a {color: #fff;}
+midnightHeader.default {
+background-color: #transparent;
+color: white;
+}
+.midnightHeader.section_tft {
+background-color:#000000;
+color: white;
+}
+.midnightHeader.blue .navbar-brand, .midnightHeader.section_tft .navbar-nav > li > a {
+color: #fff;
+}
 .midnightHeader.red {background-color:red;color: white;}
-.midnightHeader.red .navbar-brand, .midnightHeader.red .navbar-nav > li > a {color: #fff;}
-.midnightHeader.orange {background-color:#ee6215;color: white;}
-.midnightHeader.orange .navbar-brand, .midnightHeader.orange .navbar-nav > li > a {color: #fff;}
+.midnightHeader.red .navbar-brand, .midnightHeader.red .navbar-nav > li > a {
+color: #000000;
+}
+.midnightHeader.orange {
+background-color:#ee6215;
+color: white;
+}
+.midnightHeader.orange .navbar-brand, .midnightHeader.orange .navbar-nav > li > a {
+color: #fff;
+}
 
 

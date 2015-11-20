@@ -32,11 +32,9 @@
     <script>function initialize() {}</script>
     <script>new WOW().init();</script>
     <script>
-      // Start midnight
-      $(document).ready(function(){
-      // Change this to the correct selector for your nav.
-      $('midnightnav.fixed').midnight();
-      });
+        $(document).ready(function(){
+        $('#midnightnav').midnight();
+        });
     </script>
   </head>
   <body>
@@ -47,7 +45,7 @@
       {% include '/structure/nav_en_small.html' %}
     </div>
 
-    <div class="uk-notify uk-notify-bottom-right">
+    <div  id="midnightnotify" class="uk-notify uk-notify-bottom-right">
       <div class="uk-grid">
         <div class="uk-width-1-5 uk-align-right" data-uk-scrollspy="{cls:'uk-animation-fade', repeat:true}">
           <a1 href="#top" class="uk-icon-chevron-up uk-icon-large" data-uk-smooth-scroll></a1>

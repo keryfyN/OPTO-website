@@ -1,8 +1,8 @@
-<nav data-uk-sticky id="midnightnav" class="uk-navbar navbar-default navbar-fixed-top uk-hidden-small">
+<nav data-uk-sticky class="uk-navbar navbar-default uk-hidden-small " role="navigation">
     <a href="{{ url_for('frontend.index') }}" class="uk-navbar-brand">
         <img src="{{ url_for('static', filename='img/logo_opto_vecto.svg') }}" alt="OPTO Logic TECHNOLOGY SA" width="160px">
     </a>
-    <ul class="uk-navbar-nav uk-navbar-flip ">
+    <ul class="uk-navbar-nav uk-navbar-flip">
         <!-- Products menu -->
         <li aria-expanded="false" aria-haspopup="true" class="uk-parent" data-uk-dropdown="">
             <!-- section products -->
@@ -11,19 +11,19 @@
                 <div class="uk-grid uk-dropdown-grid">
                     <!-- Column 1 -->
                     <div class="uk-width-1-3">
-                        <ul class="uk-nav uk-nav-dropdown uk-panel">
+                        <ul class="uk-nav uk-nav-dropdown uk-panel ">
                             <!-- new sub -->
-                            <li class="uk-panel">
+                            <li class="uk-panel  ">
                                 <a href="#">
                                     <img src="{{ url_for('static', filename='img/bandeau-display.png') }}" alt="Displays">
                                 </a>
                             </li>
-                            <li><a href="{{ url_for('tfts.tft_landing_en')}}"><p> TFT Displays</p></a></li>
-                            <li><a href="{{ url_for('lcd.lcd_graphic')}}"> <p>LCD Graphic</p></a></li>
-                            <li><a href="{{ url_for('lcd.lcd_segment')}}"> <p>LCD Segment</p></a></li>
-                            <li><a href="{{ url_for('oled.oled_landing_en')}}"> <p>OLED</p></a></li>
-                            <li><a href="{{ url_for('epaper.epaper_landing_en')}}"> <p>ePAPER</p></a></li>
-                            <li><a href="{{ url_for('custom_displays.custom_displays_landing_en')}}"> <p>CUSTOM Displays</p></a></li>
+                            <li ><a class="hvr-underline-from-center" href="{{ url_for('tfts.tft_landing_en')}}"><p> TFT Displays</p></a></li>
+                            <li><a class="hvr-underline-from-center" href="{{ url_for('lcd.lcd_graphic')}}"> <p>LCD Graphic</p></a></li>
+                            <li><a class="hvr-underline-from-center" href="{{ url_for('lcd.lcd_segment')}}"> <p>LCD Segment</p></a></li>
+                            <li><a class="hvr-underline-from-center" href="{{ url_for('oled.oled_landing_en')}}"> <p>OLED</p></a></li>
+                            <li><a class="hvr-underline-from-center" href="{{ url_for('epaper.epaper_landing_en')}}"> <p>ePAPER</p></a></li>
+                            <li><a class="hvr-underline-from-center" href="{{ url_for('custom_displays.custom_displays_landing_en')}}"> <p>CUSTOM Displays</p></a></li>
                         </ul>
                     </div>
                     <!-- Column 2 -->
@@ -65,7 +65,7 @@
                                 <a href="#" style="padding:0; margin:0">
                                     <figure class="uk-overlay">
                                         <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
+                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium ">
                                             Computers
                                         </figcaption>
                                     </figure>
@@ -75,10 +75,10 @@
                             <li><a href="#"><p>Monitors</p></a></li>
                             <li><a href="#"><p>SOM</p></a></li>
                             <!-- new sub -->
-                            <li><a href="#" style="padding:0; margin:0">
+                            <li><a href="#">
                                     <figure class="uk-overlay">
                                         <img src="{{ url_for('static', filename='img/bandeau-neutre.png') }}">
-                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium " style="padding-left:0px; padding-top:0px">
+                                        <figcaption class="uk-overlay-panel-black-txt uk-text-medium ">
                                             Others
                                         </figcaption>
                                     </figure>
